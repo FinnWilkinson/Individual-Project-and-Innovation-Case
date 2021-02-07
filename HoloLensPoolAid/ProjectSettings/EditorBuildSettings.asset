@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/MarkerBasedARExample.unity
+    guid: 9ca6f59179481a246a6ff5fb6a185e5d
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/ShowLicense.unity
+    guid: 4aac1a9576275d2419459363bb7758c6
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/ShowARMarker.unity
+    guid: 88b71990ccc3bae4aa5e29685ad1692f
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/Texture2DMarkerBasedARExample/Texture2DMarkerBasedARExample.unity
+    guid: 3b33571815be17748acced37af8563f9
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/WebCamTextureMarkerBasedARExample/WebCamTextureMarkerBasedARExample.unity
+    guid: 1255f55469112b948a6518ca82eeb35a
+  - enabled: 0
+    path: Assets/MarkerBasedARExample/GyroSensorMarkerBasedARExample/GyroSensorMarkerBasedARExample.unity
+    guid: 4c9916506ead15540ae41add9390931f
+  - enabled: 1
+    path: Assets/OpenCV+Unity/Demo/Marker_Detector/MarkerDetectorScene.unity
+    guid: 1d83579c4bfab024a80d40e6207c2158
+  m_configObjects: {}

@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\BoehmGC.cpp"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\GCHandle.cpp"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\GarbageCollector.cpp"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\NullGC.cpp"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\WriteBarrier.cpp"
+#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\gc\WriteBarrierValidation.cpp"
