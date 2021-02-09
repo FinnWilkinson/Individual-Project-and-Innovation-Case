@@ -42,6 +42,9 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_SystemCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CoreCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_SharedInternalsModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CoreModuleCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_ObjectModelCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_RuntimeCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Runtime_WindowsRuntime_UI_XamlCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_PhysicsModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_SubsystemsModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_TextRenderingModuleCodeGenModule;
@@ -53,7 +56,9 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_InputLegacyModuleCodeGen
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_Physics2DModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModuleCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WindowsRuntimeMetadataCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18NCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Runtime_WindowsRuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AIModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AssetBundleModuleCodeGenModule;
@@ -77,7 +82,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18N_WestCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[42] = 
+const Il2CppCodeGenModule* g_CodeGenModules[47] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -87,6 +92,9 @@ const Il2CppCodeGenModule* g_CodeGenModules[42] =
 	(&g_System_CoreCodeGenModule),
 	(&g_UnityEngine_SharedInternalsModuleCodeGenModule),
 	(&g_UnityEngine_CoreModuleCodeGenModule),
+	(&g_System_ObjectModelCodeGenModule),
+	(&g_System_RuntimeCodeGenModule),
+	(&g_System_Runtime_WindowsRuntime_UI_XamlCodeGenModule),
 	(&g_UnityEngine_PhysicsModuleCodeGenModule),
 	(&g_UnityEngine_SubsystemsModuleCodeGenModule),
 	(&g_UnityEngine_TextRenderingModuleCodeGenModule),
@@ -98,7 +106,9 @@ const Il2CppCodeGenModule* g_CodeGenModules[42] =
 	(&g_UnityEngine_Physics2DModuleCodeGenModule),
 	(&g_UnityEngine_UIModuleCodeGenModule),
 	(&g_UnityEngine_XRModuleCodeGenModule),
+	(&g_WindowsRuntimeMetadataCodeGenModule),
 	(&g_I18NCodeGenModule),
+	(&g_System_Runtime_WindowsRuntimeCodeGenModule),
 	(&g_UnityEngine_AIModuleCodeGenModule),
 	(&g_UnityEngine_AndroidJNIModuleCodeGenModule),
 	(&g_UnityEngine_AssetBundleModuleCodeGenModule),
@@ -127,19 +137,19 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	2,
 	g_ReversePInvokeWrapperPointers,
-	14774,
+	18411,
 	g_Il2CppGenericMethodPointers,
-	4186,
+	2874,
 	g_Il2CppInvokerPointers,
-	4680,
+	3994,
 	g_AttributeGenerators,
-	735,
+	1186,
 	g_UnresolvedVirtualMethodPointers,
-	285,
+	3826,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	42,
+	47,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

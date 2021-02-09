@@ -128,199 +128,223 @@ extern void GestureErrorEventArgs_set_error_m9BC2D2DBF1B4DB34393E38AD35CEB56773C
 extern void GestureErrorEventArgs_set_hresult_m8CF0A45B2196E307D16D13BB9D8E0AE0B520DDDF_AdjustorThunk (void);
 // 0x00000036 System.Void UnityEngine.XR.WSA.Input.GestureErrorEventArgs::.ctor(System.String,System.Int32)
 extern void GestureErrorEventArgs__ctor_mBC7728EEE85A73791A6D91B06935BA38D285EDA9_AdjustorThunk (void);
-// 0x00000037 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000037 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::add_Tapped(System.Action`1<UnityEngine.XR.WSA.Input.TappedEventArgs>)
+extern void GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC (void);
+// 0x00000038 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::remove_Tapped(System.Action`1<UnityEngine.XR.WSA.Input.TappedEventArgs>)
+extern void GestureRecognizer_remove_Tapped_mB7FCD101CEEA7DF998931E64E4358F734A06F840 (void);
+// 0x00000039 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::.ctor()
+extern void GestureRecognizer__ctor_m4EC0013B225C0189D0ACB2DC77092C809764F1D5 (void);
+// 0x0000003A System.IntPtr UnityEngine.XR.WSA.Input.GestureRecognizer::Internal_Create(UnityEngine.XR.WSA.Input.GestureRecognizer)
+extern void GestureRecognizer_Internal_Create_m9129CAF44B2E13C242676BAE5411E34C87071DB6 (void);
+// 0x0000003B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::Finalize()
+extern void GestureRecognizer_Finalize_m276601D68E2EF58C2286101AD6BBD369EB33F1F3 (void);
+// 0x0000003C System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::DestroyThreaded()
+extern void GestureRecognizer_DestroyThreaded_m1C5095AA124113EB403DB4CC55EF8231F48F47DB (void);
+// 0x0000003D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::Dispose()
+extern void GestureRecognizer_Dispose_mCDB9196736129DA85372020E13A8768175E9A97C (void);
+// 0x0000003E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::Destroy()
+extern void GestureRecognizer_Destroy_mB698484AD27F6B324450134F777B4CF411941C81 (void);
+// 0x0000003F UnityEngine.XR.WSA.Input.GestureSettings UnityEngine.XR.WSA.Input.GestureRecognizer::SetRecognizableGestures(UnityEngine.XR.WSA.Input.GestureSettings)
+extern void GestureRecognizer_SetRecognizableGestures_mF459BAE914B9B2E01E7B1652ACF23C5C2722DA68 (void);
+// 0x00000040 System.Int32 UnityEngine.XR.WSA.Input.GestureRecognizer::SetRecognizableGestures_Internal(System.Int32)
+extern void GestureRecognizer_SetRecognizableGestures_Internal_mCC4360215E114FC39D35DE9104BE8BE9F74471D0 (void);
+// 0x00000041 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::StartCapturingGestures()
+extern void GestureRecognizer_StartCapturingGestures_mD02F289C8263C8EACB47B4593E55C8B767C524FA (void);
+// 0x00000042 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::StopCapturingGestures()
+extern void GestureRecognizer_StopCapturingGestures_mBA5D5DFFC507CE972150A242E9DFC59B06121D61 (void);
+// 0x00000043 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeHoldCanceled_mC34AE7488EB2F23E0484F55EC5B06A2195E28788 (void);
-// 0x00000038 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000044 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeHoldCompleted_mD4B85266C373031A6560CD9F8E0ABD106BD275D4 (void);
-// 0x00000039 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000045 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeHoldStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeHoldStarted_m6E5AF40A3DB2A8DDD12726E2A5220280835D7853 (void);
-// 0x0000003A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeTapped(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,System.Int32)
+// 0x00000046 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeTapped(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,System.Int32)
 extern void GestureRecognizer_InvokeTapped_mD670AC122C9088630460544749701C246B1B2A49 (void);
-// 0x0000003B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000047 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeManipulationCanceled_m1BF8273F58D455F4F509EA1C819FC63109762922 (void);
-// 0x0000003C System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
+// 0x00000048 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
 extern void GestureRecognizer_InvokeManipulationCompleted_m6553513E4776E6D01BA438497E82387B219DDB7A (void);
-// 0x0000003D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000049 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeManipulationStarted_m24AB97B545BEBCC96200E52F8648903D27CB6EFF (void);
-// 0x0000003E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationUpdated(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
+// 0x0000004A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeManipulationUpdated(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
 extern void GestureRecognizer_InvokeManipulationUpdated_mFFFD261C7F13C3D7A890C6A7F2D9B8EEDDB2974B (void);
-// 0x0000003F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x0000004B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationCanceled(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeNavigationCanceled_m39FE74B1B69937DFE5F775D4B15F11BDF5A23B8E (void);
-// 0x00000040 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
+// 0x0000004C System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationCompleted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
 extern void GestureRecognizer_InvokeNavigationCompleted_m6A60E54BD33834390D15D7CF163B6C0DDDCFE776 (void);
-// 0x00000041 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x0000004D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeNavigationStarted_m2079422473B03AE0A036518C2BE0D5C13D6A89CF (void);
-// 0x00000042 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationUpdated(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
+// 0x0000004E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeNavigationUpdated(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose,UnityEngine.Vector3)
 extern void GestureRecognizer_InvokeNavigationUpdated_m94F6C1A11FC117B2B5346840247780C79ACAEB5D (void);
-// 0x00000043 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeRecognitionEnded(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x0000004F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeRecognitionEnded(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeRecognitionEnded_mDFBDE51B56D682C1636521441816533C81CC753A (void);
-// 0x00000044 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeRecognitionStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
+// 0x00000050 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeRecognitionStarted(UnityEngine.XR.WSA.Input.InteractionSource,UnityEngine.XR.WSA.Input.InteractionSourcePose,UnityEngine.Pose)
 extern void GestureRecognizer_InvokeRecognitionStarted_m1E8873104D35064A51A0BAAC7774CDFFEED61924 (void);
-// 0x00000045 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeErrorEvent(System.String,System.Int32)
+// 0x00000051 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::InvokeErrorEvent(System.String,System.Int32)
 extern void GestureRecognizer_InvokeErrorEvent_m59368BCBE12B89289E8BFF2309A58002268DE43A (void);
-// 0x00000046 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000052 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void HoldCanceledEventDelegate__ctor_m415846F1351B43B163D8ED9BB9978DFA5555767C (void);
-// 0x00000047 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
+// 0x00000053 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
 extern void HoldCanceledEventDelegate_Invoke_m1544130A1A2D9112BAE59903EFD5605AD96D5002 (void);
-// 0x00000048 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000054 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void HoldCanceledEventDelegate_BeginInvoke_mB7C6B86BCBD192C46E0DB0CC76536B659DE914B7 (void);
-// 0x00000049 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000055 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCanceledEventDelegate::EndInvoke(System.IAsyncResult)
 extern void HoldCanceledEventDelegate_EndInvoke_mF3F211617D95995D5E91C9634FBDEAA562428723 (void);
-// 0x0000004A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000056 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void HoldCompletedEventDelegate__ctor_m8FCF57072F5D1D8D4BEC8663B49D960BDDF2DD1F (void);
-// 0x0000004B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
+// 0x00000057 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
 extern void HoldCompletedEventDelegate_Invoke_m6FA6CDA845F589846063D014356C1E0445320798 (void);
-// 0x0000004C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000058 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void HoldCompletedEventDelegate_BeginInvoke_m6990F58B8B07706460F6D685EAB6F8B6A27E3025 (void);
-// 0x0000004D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000059 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldCompletedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void HoldCompletedEventDelegate_EndInvoke_mF79F6340B3988CED18D33E83C5809C52463676E2 (void);
-// 0x0000004E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000005A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void HoldStartedEventDelegate__ctor_m5C557DA90E407F179E6EBB911BEB6B4EA808A4B2 (void);
-// 0x0000004F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
+// 0x0000005B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
 extern void HoldStartedEventDelegate_Invoke_m504D569012750F2C63512FDB35614DF5ECDAF7FA (void);
-// 0x00000050 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x0000005C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void HoldStartedEventDelegate_BeginInvoke_mEB69CDD03CA2F7E2AC53F90C1F983A9681F102A5 (void);
-// 0x00000051 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x0000005D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_HoldStartedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void HoldStartedEventDelegate_EndInvoke_m9F7E4EF554B40FF1A978BD36CAA76FAC5F70E9C6 (void);
-// 0x00000052 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000005E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void TappedEventDelegate__ctor_mBA7F688B363C5440A47B2EF02A690C7B7832BBEC (void);
-// 0x00000053 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,System.Int32,UnityEngine.Ray)
+// 0x0000005F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,System.Int32,UnityEngine.Ray)
 extern void TappedEventDelegate_Invoke_m02055A4BCAD7BCFD64AAB05FDFDCC6BD8E6F189B (void);
-// 0x00000054 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,System.Int32,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000060 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,System.Int32,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void TappedEventDelegate_BeginInvoke_m1523B624800012E92D400C62904EB0E3F45D8715 (void);
-// 0x00000055 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000061 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_TappedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void TappedEventDelegate_EndInvoke_mA14E66DC254C3EB3DA3E1B7D1ABC4A56DA9587D3 (void);
-// 0x00000056 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000062 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void ManipulationCanceledEventDelegate__ctor_m79AFE305BCE0BC58EEDEA921B4DBE5F6558AA065 (void);
-// 0x00000057 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x00000063 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void ManipulationCanceledEventDelegate_Invoke_m97FD70C68AE74FE5EB03D3B461F969F6E3E2C231 (void);
-// 0x00000058 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000064 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void ManipulationCanceledEventDelegate_BeginInvoke_m2F42D255FB64C543111584E2B183D66809A72FE0 (void);
-// 0x00000059 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000065 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCanceledEventDelegate::EndInvoke(System.IAsyncResult)
 extern void ManipulationCanceledEventDelegate_EndInvoke_m5B012B4C44F179D710A2B0E68505A393A413771C (void);
-// 0x0000005A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000066 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void ManipulationCompletedEventDelegate__ctor_m1F78398A94D42CB17CF57D19994E0535091B4F1A (void);
-// 0x0000005B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x00000067 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void ManipulationCompletedEventDelegate_Invoke_m93DD17C1359B1F4B931D2C4467D85716AD92A0F2 (void);
-// 0x0000005C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000068 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void ManipulationCompletedEventDelegate_BeginInvoke_m27EECB11BB8511FF754685CB629E072A6FED723B (void);
-// 0x0000005D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000069 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationCompletedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void ManipulationCompletedEventDelegate_EndInvoke_mBDA5687CCFE095F96371447677BECE5159E44506 (void);
-// 0x0000005E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000006A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void ManipulationStartedEventDelegate__ctor_m30296A34DCF31477F0704637E8CBA79BB79F50A7 (void);
-// 0x0000005F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x0000006B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void ManipulationStartedEventDelegate_Invoke_mDA7BE6F4F51E1B0933EAD00C5555CDE8F4931450 (void);
-// 0x00000060 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x0000006C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void ManipulationStartedEventDelegate_BeginInvoke_mE4118447769181F38B295DDCD5484F0974CE7CAB (void);
-// 0x00000061 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x0000006D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationStartedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void ManipulationStartedEventDelegate_EndInvoke_m81CE2B949D06C3276755D1F17BE5572AF311EDB7 (void);
-// 0x00000062 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000006E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void ManipulationUpdatedEventDelegate__ctor_m33281C9A682C131115621B74915C5BCC6323C47E (void);
-// 0x00000063 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x0000006F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void ManipulationUpdatedEventDelegate_Invoke_m39222E61BA5CE3B8EA1E3C892C4E399C641CED20 (void);
-// 0x00000064 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000070 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void ManipulationUpdatedEventDelegate_BeginInvoke_m109B92F35D22F6CB8BDDB76F65947BB3E36343AF (void);
-// 0x00000065 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000071 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_ManipulationUpdatedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void ManipulationUpdatedEventDelegate_EndInvoke_mA85AE986C163140321876052A72C2A1BDDFF9D90 (void);
-// 0x00000066 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000072 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void NavigationCanceledEventDelegate__ctor_mB3FDA9309D2B4FFEAF12612CC32CA17ABB5DED2B (void);
-// 0x00000067 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x00000073 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void NavigationCanceledEventDelegate_Invoke_mE1BC888BB04B0915D6CFF1A94144D993CEF0FDB5 (void);
-// 0x00000068 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000074 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void NavigationCanceledEventDelegate_BeginInvoke_mD9BCA54B098777B5EF4A96DBB14CD92AF3919306 (void);
-// 0x00000069 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000075 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCanceledEventDelegate::EndInvoke(System.IAsyncResult)
 extern void NavigationCanceledEventDelegate_EndInvoke_m223D7722D0C4534DE5AC1D7E390DC3CC12602285 (void);
-// 0x0000006A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000076 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void NavigationCompletedEventDelegate__ctor_m33D586D83B9C75F8F6BBE0B3630BF4C99615B737 (void);
-// 0x0000006B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x00000077 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void NavigationCompletedEventDelegate_Invoke_mE2C0283BE82345A791C543C8696BA5C2B462E1FD (void);
-// 0x0000006C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000078 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void NavigationCompletedEventDelegate_BeginInvoke_m3B0EF279ADD1EA29A764D156DA3C248E519408F2 (void);
-// 0x0000006D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000079 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationCompletedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void NavigationCompletedEventDelegate_EndInvoke_m849C460A2902310E230EE05658D9473F3CF350E0 (void);
-// 0x0000006E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000007A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void NavigationStartedEventDelegate__ctor_mE86F12962AC8D07F0334FA5A588F4B00FBC170E6 (void);
-// 0x0000006F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x0000007B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void NavigationStartedEventDelegate_Invoke_mFD08DF0FF1C8B9E87D59C9BC0F03EBB998360EB9 (void);
-// 0x00000070 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x0000007C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void NavigationStartedEventDelegate_BeginInvoke_m7F938167F8941BA728FC429CC9D7587E4DF5E5EB (void);
-// 0x00000071 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x0000007D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationStartedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void NavigationStartedEventDelegate_EndInvoke_m9B84A1E024D2E32DB1002F78C0C396E7AA499539 (void);
-// 0x00000072 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000007E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void NavigationUpdatedEventDelegate__ctor_m2A31CA914B39EA13ED572FC8594C30B9AF1805CF (void);
-// 0x00000073 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
+// 0x0000007F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray)
 extern void NavigationUpdatedEventDelegate_Invoke_mE6FB25850173B4E42B65D60F587A101CAA62C1C2 (void);
-// 0x00000074 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000080 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Vector3,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void NavigationUpdatedEventDelegate_BeginInvoke_m529EFAB702CC51B45F2B16FA2FC8144DECF32F20 (void);
-// 0x00000075 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000081 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_NavigationUpdatedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void NavigationUpdatedEventDelegate_EndInvoke_mAEA1AB925D417E6C3267C0046B0EFCEF29A75D59 (void);
-// 0x00000076 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000082 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void RecognitionEndedEventDelegate__ctor_mFEEB685DBC9813C403AB761F95D6D63909E362CE (void);
-// 0x00000077 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
+// 0x00000083 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
 extern void RecognitionEndedEventDelegate_Invoke_mCE7877BDB4BA9DDB85C2C2908FF33DFA38426063 (void);
-// 0x00000078 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000084 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void RecognitionEndedEventDelegate_BeginInvoke_mF3478908780F05C95ABBED5BFA17151A74981F8D (void);
-// 0x00000079 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000085 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionEndedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void RecognitionEndedEventDelegate_EndInvoke_mDDEEE066AA475CD967BF04BCE09FC3122DDE6BC2 (void);
-// 0x0000007A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000086 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::.ctor(System.Object,System.IntPtr)
 extern void RecognitionStartedEventDelegate__ctor_m98B9C00469A86B9D0AC39CDCA69189D6CEB9E6AC (void);
-// 0x0000007B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
+// 0x00000087 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray)
 extern void RecognitionStartedEventDelegate_Invoke_mAB4BFDD255D2CA76718D285598A6832631AA9BB4 (void);
-// 0x0000007C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
+// 0x00000088 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceKind,UnityEngine.Ray,System.AsyncCallback,System.Object)
 extern void RecognitionStartedEventDelegate_BeginInvoke_m51C50FCE97EB51769763374DD3DFB4FD38EA8F54 (void);
-// 0x0000007D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000089 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_RecognitionStartedEventDelegate::EndInvoke(System.IAsyncResult)
 extern void RecognitionStartedEventDelegate_EndInvoke_mA6F74502C69A300D09B01E38FF79BF7FFAEA5770 (void);
-// 0x0000007E System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::.ctor(System.Object,System.IntPtr)
+// 0x0000008A System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::.ctor(System.Object,System.IntPtr)
 extern void GestureErrorDelegate__ctor_mD4C38B3820145B0F317EAD4A0B19EB139F27820B (void);
-// 0x0000007F System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::Invoke(System.String,System.Int32)
+// 0x0000008B System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::Invoke(System.String,System.Int32)
 extern void GestureErrorDelegate_Invoke_m7474F967FEDDFC0FFEE7089771F3A4BC589FC0FF (void);
-// 0x00000080 System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::BeginInvoke(System.String,System.Int32,System.AsyncCallback,System.Object)
+// 0x0000008C System.IAsyncResult UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::BeginInvoke(System.String,System.Int32,System.AsyncCallback,System.Object)
 extern void GestureErrorDelegate_BeginInvoke_m74CC1A18B8CACCA1FA512F2173BD31AC7AAAB441 (void);
-// 0x00000081 System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::EndInvoke(System.IAsyncResult)
+// 0x0000008D System.Void UnityEngine.XR.WSA.Input.GestureRecognizer_GestureErrorDelegate::EndInvoke(System.IAsyncResult)
 extern void GestureErrorDelegate_EndInvoke_m68CAF56B044377516E3AE39C8D9BF5D937B62005 (void);
-// 0x00000082 System.Boolean UnityEngine.XR.WSA.Input.InteractionSource::Equals(System.Object)
+// 0x0000008E System.Boolean UnityEngine.XR.WSA.Input.InteractionSource::Equals(System.Object)
 extern void InteractionSource_Equals_m826241F239D49E68D24D6CADEC50FF3E60D6928C_AdjustorThunk (void);
-// 0x00000083 System.Boolean UnityEngine.XR.WSA.Input.InteractionSource::Equals(UnityEngine.XR.WSA.Input.InteractionSource)
+// 0x0000008F System.Boolean UnityEngine.XR.WSA.Input.InteractionSource::Equals(UnityEngine.XR.WSA.Input.InteractionSource)
 extern void InteractionSource_Equals_mEAC22BC627922A90171992CC8DA4BA43953AC645_AdjustorThunk (void);
-// 0x00000084 System.Int32 UnityEngine.XR.WSA.Input.InteractionSource::GetHashCode()
+// 0x00000090 System.Int32 UnityEngine.XR.WSA.Input.InteractionSource::GetHashCode()
 extern void InteractionSource_GetHashCode_m86EC32248092C3E1CE990C74D52E35E0E3CFF515_AdjustorThunk (void);
-// 0x00000085 System.Void UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000091 System.Void UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceDetectedEventArgs_set_state_mB81F4E131E023DE37120C37CD281FEDCB2107240_AdjustorThunk (void);
-// 0x00000086 System.Void UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000092 System.Void UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceDetectedEventArgs__ctor_m2FBA271484B0D35C53DB7BE9C4251236737E4580_AdjustorThunk (void);
-// 0x00000087 System.Void UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000093 System.Void UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceLostEventArgs_set_state_m962283240DCDBB2FB97987B371073238BCF5BC23_AdjustorThunk (void);
-// 0x00000088 System.Void UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000094 System.Void UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceLostEventArgs__ctor_mE13D688DF29978E37FC86E1EEC3469D46532D7BF_AdjustorThunk (void);
-// 0x00000089 System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000095 System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourcePressedEventArgs_set_state_mE9F1061B3EB95D4C9C435A9B29B657B0D4F73E08_AdjustorThunk (void);
-// 0x0000008A System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_pressType(UnityEngine.XR.WSA.Input.InteractionSourcePressType)
+// 0x00000096 System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_pressType(UnityEngine.XR.WSA.Input.InteractionSourcePressType)
 extern void InteractionSourcePressedEventArgs_set_pressType_m4A6D5E8933BA021E93C7586349CD2653B6BFA855_AdjustorThunk (void);
-// 0x0000008B System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
+// 0x00000097 System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
 extern void InteractionSourcePressedEventArgs__ctor_m82FD8AD6FF6F74715630EA2A6B620A0B6B953B5E_AdjustorThunk (void);
-// 0x0000008C System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x00000098 System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceReleasedEventArgs_set_state_mF578C2E57593D54ABEB8C130A49E6B44AE2C080F_AdjustorThunk (void);
-// 0x0000008D System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::set_pressType(UnityEngine.XR.WSA.Input.InteractionSourcePressType)
+// 0x00000099 System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::set_pressType(UnityEngine.XR.WSA.Input.InteractionSourcePressType)
 extern void InteractionSourceReleasedEventArgs_set_pressType_m3F75A57B06238ACD617D4C151B977B92AD6460CF_AdjustorThunk (void);
-// 0x0000008E System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
+// 0x0000009A System.Void UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
 extern void InteractionSourceReleasedEventArgs__ctor_m3874456214E10087996D31930D5FDE577E2D4939_AdjustorThunk (void);
-// 0x0000008F System.Void UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x0000009B System.Void UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceUpdatedEventArgs_set_state_mF28D9130B81128B020B1C8D3003A6A9A84D1E8B6_AdjustorThunk (void);
-// 0x00000090 System.Void UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x0000009C System.Void UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs::.ctor(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void InteractionSourceUpdatedEventArgs__ctor_m78938DD82C92670ECEF9C43CA844F6448F22FA76_AdjustorThunk (void);
-// 0x00000091 System.Void UnityEngine.XR.WSA.Input.InteractionManager::.cctor()
+// 0x0000009D System.Void UnityEngine.XR.WSA.Input.InteractionManager::.cctor()
 extern void InteractionManager__cctor_m0DE800BAFE143A6D365E33EB68ECB1375F7446C5 (void);
-// 0x00000092 System.Void UnityEngine.XR.WSA.Input.InteractionManager::OnSourceEvent(UnityEngine.XR.WSA.Input.InteractionManager_EventType,System.IntPtr,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
+// 0x0000009E System.Void UnityEngine.XR.WSA.Input.InteractionManager::OnSourceEvent(UnityEngine.XR.WSA.Input.InteractionManager_EventType,System.IntPtr,UnityEngine.XR.WSA.Input.InteractionSourcePressType)
 extern void InteractionManager_OnSourceEvent_mC853244D8689197F06A503F65D1F4195C57ED8FB (void);
-// 0x00000093 System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x0000009F System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::.ctor(System.Object,System.IntPtr)
 extern void SourceEventHandler__ctor_m1EAC8086B0A86E60C97EF19963CB3D978609A40A (void);
-// 0x00000094 System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceState)
+// 0x000000A0 System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::Invoke(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern void SourceEventHandler_Invoke_mC13C60B714BB48292BC11625A124A685F07B9E30 (void);
-// 0x00000095 System.IAsyncResult UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceState,System.AsyncCallback,System.Object)
+// 0x000000A1 System.IAsyncResult UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::BeginInvoke(UnityEngine.XR.WSA.Input.InteractionSourceState,System.AsyncCallback,System.Object)
 extern void SourceEventHandler_BeginInvoke_m3A04E1F637F48F7B18E726173549DD5B9D60295E (void);
-// 0x00000096 System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::EndInvoke(System.IAsyncResult)
+// 0x000000A2 System.Void UnityEngine.XR.WSA.Input.InteractionManager_SourceEventHandler::EndInvoke(System.IAsyncResult)
 extern void SourceEventHandler_EndInvoke_mE6623F946EBAAE16F855336DB4E92352BCABD83F (void);
-static Il2CppMethodPointer s_methodPointers[150] = 
+static Il2CppMethodPointer s_methodPointers[162] = 
 {
 	XRDevice_InvokeDeviceLoaded_mD5D5577A4E03D0474FAFBB2596B698B6A8B5FD11,
 	XRDevice__cctor_m4FE111291FBDF43A481045CBABECF9AEC70B5EC9,
@@ -376,6 +400,18 @@ static Il2CppMethodPointer s_methodPointers[150] =
 	GestureErrorEventArgs_set_error_m9BC2D2DBF1B4DB34393E38AD35CEB56773CE8E32_AdjustorThunk,
 	GestureErrorEventArgs_set_hresult_m8CF0A45B2196E307D16D13BB9D8E0AE0B520DDDF_AdjustorThunk,
 	GestureErrorEventArgs__ctor_mBC7728EEE85A73791A6D91B06935BA38D285EDA9_AdjustorThunk,
+	GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC,
+	GestureRecognizer_remove_Tapped_mB7FCD101CEEA7DF998931E64E4358F734A06F840,
+	GestureRecognizer__ctor_m4EC0013B225C0189D0ACB2DC77092C809764F1D5,
+	GestureRecognizer_Internal_Create_m9129CAF44B2E13C242676BAE5411E34C87071DB6,
+	GestureRecognizer_Finalize_m276601D68E2EF58C2286101AD6BBD369EB33F1F3,
+	GestureRecognizer_DestroyThreaded_m1C5095AA124113EB403DB4CC55EF8231F48F47DB,
+	GestureRecognizer_Dispose_mCDB9196736129DA85372020E13A8768175E9A97C,
+	GestureRecognizer_Destroy_mB698484AD27F6B324450134F777B4CF411941C81,
+	GestureRecognizer_SetRecognizableGestures_mF459BAE914B9B2E01E7B1652ACF23C5C2722DA68,
+	GestureRecognizer_SetRecognizableGestures_Internal_mCC4360215E114FC39D35DE9104BE8BE9F74471D0,
+	GestureRecognizer_StartCapturingGestures_mD02F289C8263C8EACB47B4593E55C8B767C524FA,
+	GestureRecognizer_StopCapturingGestures_mBA5D5DFFC507CE972150A242E9DFC59B06121D61,
 	GestureRecognizer_InvokeHoldCanceled_mC34AE7488EB2F23E0484F55EC5B06A2195E28788,
 	GestureRecognizer_InvokeHoldCompleted_mD4B85266C373031A6560CD9F8E0ABD106BD275D4,
 	GestureRecognizer_InvokeHoldStarted_m6E5AF40A3DB2A8DDD12726E2A5220280835D7853,
@@ -473,29 +509,29 @@ static Il2CppMethodPointer s_methodPointers[150] =
 	SourceEventHandler_BeginInvoke_m3A04E1F637F48F7B18E726173549DD5B9D60295E,
 	SourceEventHandler_EndInvoke_mE6623F946EBAAE16F855336DB4E92352BCABD83F,
 };
-static const int32_t s_InvokerIndices[150] = 
+static const int32_t s_InvokerIndices[162] = 
 {
 	129,
 	3,
-	1661,
-	1662,
+	1668,
+	1669,
 	111,
-	1663,
-	1664,
+	1670,
+	1671,
 	26,
 	111,
-	1665,
-	1666,
+	1672,
+	1673,
 	26,
-	568,
+	567,
 	111,
 	94,
-	790,
+	789,
 	26,
 	142,
 	111,
 	176,
-	1236,
+	1240,
 	26,
 	7,
 	23,
@@ -504,21 +540,21 @@ static const int32_t s_InvokerIndices[150] =
 	23,
 	141,
 	330,
-	1667,
+	1674,
 	111,
 	26,
 	184,
 	26,
 	111,
 	32,
-	546,
+	545,
 	26,
 	111,
 	62,
 	311,
 	26,
 	7,
-	920,
+	922,
 	23,
 	23,
 	3,
@@ -529,108 +565,120 @@ static const int32_t s_InvokerIndices[150] =
 	26,
 	32,
 	143,
-	1668,
-	1668,
-	1668,
-	1669,
-	1668,
-	1670,
-	1668,
-	1670,
-	1668,
-	1670,
-	1668,
-	1670,
-	1668,
-	1668,
+	26,
+	26,
+	23,
+	24,
+	23,
+	23,
+	23,
+	23,
+	37,
+	37,
+	23,
+	23,
+	1675,
+	1675,
+	1675,
+	1676,
+	1675,
+	1677,
+	1675,
+	1677,
+	1675,
+	1677,
+	1675,
+	1677,
+	1675,
+	1675,
 	143,
 	111,
-	1671,
-	1672,
+	1678,
+	1679,
 	26,
 	111,
-	1671,
-	1672,
+	1678,
+	1679,
 	26,
 	111,
-	1671,
-	1672,
+	1678,
+	1679,
 	26,
 	111,
-	1673,
-	1674,
+	1680,
+	1681,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1675,
-	1676,
+	1682,
+	1683,
 	26,
 	111,
-	1671,
-	1672,
+	1678,
+	1679,
 	26,
 	111,
-	1671,
-	1672,
+	1678,
+	1679,
 	26,
 	111,
 	143,
-	1241,
+	1245,
 	26,
 	9,
-	1677,
+	1684,
 	10,
-	1678,
-	1678,
-	1678,
-	1678,
-	1678,
+	1685,
+	1685,
+	1685,
+	1685,
+	1685,
 	32,
-	1679,
-	1678,
+	1686,
+	1685,
 	32,
-	1679,
-	1678,
-	1678,
+	1686,
+	1685,
+	1685,
 	3,
-	1680,
+	1687,
 	111,
-	1678,
-	1681,
+	1685,
+	1688,
 	26,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_VRModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VRModuleCodeGenModule = 
 {
 	"UnityEngine.VRModule.dll",
-	150,
+	162,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

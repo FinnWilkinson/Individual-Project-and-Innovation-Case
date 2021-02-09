@@ -808,6 +808,12 @@ IL2CPP_EXTERN_C_END
 
 // System.Object
 
+// Windows.Foundation.IStringable
+struct NOVTABLE IStringable_tC919620080C884858AC41684EF7711F71AB2F928 : Il2CppIInspectable
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IStringable_ToString_m52082689C4261A2691DF8177D839F717B13705FF(Il2CppHString* comReturnValue) = 0;
+};
 struct Il2CppArrayBounds;
 
 // System.Array
@@ -8986,6 +8992,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_Compare_m5BD1EF8904C9B13BEDB7A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __Filters__ctor_mA9DEA9B853B953C85A78E101A8001E9EE0E66B35 (__Filters_tDD9D6B7C7A31B12AB3D5CCF1B115DD693F62DB34 * __this, const RuntimeMethod* method);
 // System.Void System.__Il2CppComObject::Finalize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9 (Il2CppComObject * __this, const RuntimeMethod* method);
+// System.String System.Object::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_ToString_m1A80FB949DD14590DAE917A7B7274CC9FAD46EF4 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void System.PlatformNotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlatformNotSupportedException__ctor_m651139B17C9EE918551490BC675754EA8EA3E7C7 (PlatformNotSupportedException_t14FE109377F8FA8B3B2F9A0C4FE3BF10662C73B5 * __this, const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
@@ -20028,6 +20036,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __Il2CppComDelegate_Finalize_m893C22F7BE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.String System.__Il2CppComObject::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* __Il2CppComObject_ToString_mBA1B61590E5A9D251ED47D830B8693883CE950FA (Il2CppComObject * __this, const RuntimeMethod* method)
+{
+	IStringable_tC919620080C884858AC41684EF7711F71AB2F928* ____istringable_tC919620080C884858AC41684EF7711F71AB2F928 = il2cpp_codegen_com_query_interface_no_throw<IStringable_tC919620080C884858AC41684EF7711F71AB2F928>(__this);
+	if (____istringable_tC919620080C884858AC41684EF7711F71AB2F928 != NULL)
+	{
+		// Native function invocation
+		Il2CppHString returnValue = NULL;
+		const il2cpp_hresult_t hr = ____istringable_tC919620080C884858AC41684EF7711F71AB2F928->IStringable_ToString_m52082689C4261A2691DF8177D839F717B13705FF(&returnValue);
+
+		il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+
+		// Marshaling of return value back from native representation
+		String_t* _returnValue_unmarshaled = NULL;
+		_returnValue_unmarshaled = il2cpp_codegen_marshal_hstring_result(returnValue);
+
+		// Marshaling cleanup of return value native representation
+		il2cpp_codegen_marshal_free_hstring(returnValue);
+		returnValue = NULL;
+
+		return _returnValue_unmarshaled;
+	}
+	return Object_ToString_m1A80FB949DD14590DAE917A7B7274CC9FAD46EF4(__this, NULL);
+}
 // System.Void System.__Il2CppComObject::Finalize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9 (Il2CppComObject * __this, const RuntimeMethod* method)
 {

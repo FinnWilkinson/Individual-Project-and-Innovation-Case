@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/OpenCV+Unity/Demo/Marker_Detector/MarkerDetectorScene.unity
+- path: Assets/Scenes/PoolAid.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
