@@ -18,11 +18,12 @@ using UnityEngine.XR.WSA.Input;
 using System.Threading;
 
 
+
 // App permissions, modify the appx file for research mode streams
 // https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
 
 // Reimplement as list loop structure... 
-namespace HoloLensForCVUnity
+namespace HoloLensPoolAid
 {
     // Using the hololens for cv .winmd file for runtime support
     // Build HoloLensForCV c++ project (x86) and copy all output files
@@ -105,7 +106,6 @@ namespace HoloLensForCVUnity
         }
 
         #endregion
-
         async Task StartHoloLensMediaFrameSourceGroups()
         {
 #if ENABLE_WINMD_SUPPORT
@@ -172,6 +172,8 @@ namespace HoloLensForCVUnity
             byte* inBytesPV = GetByteArrayFromSoftwareBitmap(pvFrame);
             cameraFrameTexture.LoadRawTextureData((IntPtr)inBytesPV, pvFrame.PixelWidth * pvFrame.PixelHeight * 4);
             cameraFrameTexture.Apply();
+
+            //update material texture
             cameraFrameMaterial.mainTexture = cameraFrameTexture;
 
             myText.text = "Began streaming sensor frames. Double tap to end streaming.";
@@ -267,6 +269,7 @@ namespace HoloLensForCVUnity
             _gestureRecognizer.Dispose();
         }
         #endregion
+
     }
 }
 

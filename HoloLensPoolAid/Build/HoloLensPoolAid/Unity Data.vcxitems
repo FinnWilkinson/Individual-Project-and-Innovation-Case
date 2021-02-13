@@ -19,14 +19,9 @@
     <UnityPlayerConfiguration>Master</UnityPlayerConfiguration>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)HoloLensForCV.dll">
-      <DeploymentContent>true</DeploymentContent>
-      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)opencv_world3411.dll">
-      <DeploymentContent>true</DeploymentContent>
-      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
-    </None>
+    <Reference Include="$(MSBuildThisFileDirectory)HoloLensForCV.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
     <Resource Include="$(MSBuildThisFileDirectory)Resource.res">
     </Resource>
     <None Include="$(MSBuildThisFileDirectory)StoreManifest.xml">
@@ -161,6 +156,14 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)opencv_world3411.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="$(UnityWSAPlayerDir)Players\UAP\il2cpp\$(PlatformTarget)\$(UnityPlayerConfiguration)\UnityPlayer.winmd">
@@ -182,8 +185,14 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <Target Name="BeforeResolveReferences" Condition="'$(BuildingProject)' == 'true'">
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.dll" DestinationFiles="$(MSBuildThisFileDirectory)HoloLensForCV.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)HoloLensForCV.pdb" Condition="Exists('$(MSBuildThisFileDirectory)HoloLensForCV.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.pdb" DestinationFiles="$(MSBuildThisFileDirectory)HoloLensForCV.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll" DestinationFiles="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb" Condition="Exists('$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb" DestinationFiles="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.dll" DestinationFiles="$(MSBuildThisFileDirectory)opencv_world3411.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)opencv_world3411.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb" DestinationFiles="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb')" />
   </Target>
 </Project>

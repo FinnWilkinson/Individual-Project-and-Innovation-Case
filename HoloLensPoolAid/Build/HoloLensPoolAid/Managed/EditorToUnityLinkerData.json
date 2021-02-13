@@ -434,7 +434,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "HoloLensForCVUnity.SensorStreams",
+            "fullManagedTypeName": "HoloLensPoolAid.SensorStreams",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -30,8 +30,8 @@ struct SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577;
 struct __IMediaFrameSourceGroupFactory_t894789955B54B857FA6F305E74D5720C20FE782B;
 // HoloLensForCV.__ISensorFrameFactory
 struct __ISensorFrameFactory_tF959F4204E0A248B87E0E87A77C5233CAE4716D1;
-// HoloLensForCVUnity.SensorStreams
-struct SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3;
+// HoloLensPoolAid.SensorStreams
+struct SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF;
 // I18N.CJK.DbcsConvert
 struct DbcsConvert_t594A84AACFDBB2B8EB4AAFEECC0A52BC632C8D8C;
 // I18N.CJK.GB18030Source/GB18030Map[]
@@ -1226,11 +1226,11 @@ struct NOVTABLE __ISpatialPerceptionPublicNonVirtuals_t30DD9212F05E1C1DAA90C94A8
 	virtual il2cpp_hresult_t STDCALL __ISpatialPerceptionPublicNonVirtuals_U24__Stripped2_GetOriginFrameOfReference_m65AFE42ADE850A48F8F9BB031730EFBACECCC76C() = 0;
 	virtual il2cpp_hresult_t STDCALL __ISpatialPerceptionPublicNonVirtuals_U24__Stripped3_CreatePerceptionTimestamp_mAA236155B72AE75EAEF95B46B478135E564B04DE() = 0;
 };
-// HoloLensForCVUnity.SensorStreams_IMemoryBufferByteAccess
-struct NOVTABLE IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED : Il2CppIUnknown
+// HoloLensPoolAid.SensorStreams_IMemoryBufferByteAccess
+struct NOVTABLE IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A : Il2CppIUnknown
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IMemoryBufferByteAccess_GetBuffer_m418FC1F54A70DDCC2A4CE855FB8ED06962E54A1C(uint8_t** ___buffer0, uint32_t* ___capacity1) = 0;
+	virtual il2cpp_hresult_t STDCALL IMemoryBufferByteAccess_GetBuffer_m04268B60D4B4241323DA55575E233C39D6351464(uint8_t** ___buffer0, uint32_t* ___capacity1) = 0;
 };
 
 // System.Object
@@ -11470,15 +11470,15 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_SensorTypeUnity
-struct  SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1 
+// HoloLensPoolAid.SensorStreams_SensorTypeUnity
+struct  SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_SensorTypeUnity::value__
+	// System.Int32 HoloLensPoolAid.SensorStreams_SensorTypeUnity::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -19456,21 +19456,21 @@ struct NOVTABLE __ISensorFrameStreamerPublicNonVirtuals_t8C9ECA5E465C3AB054CD0F0
 	virtual il2cpp_hresult_t STDCALL __ISensorFrameStreamerPublicNonVirtuals_Enable_mEB8BA82DC3A972451160EED070743001E66C41F2(int32_t ___sensorType0) = 0;
 };
 
-// HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14
-struct  U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED 
+// HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14
+struct  U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>t__builder
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>t__builder
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -19478,7 +19478,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3Et__builder_1)); }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  value)
@@ -19496,16 +19496,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -19516,21 +19516,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<Start>d__12
-struct  U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 
+// HoloLensPoolAid.SensorStreams_<Start>d__12
+struct  U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<Start>d__12::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<Start>d__12::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensForCVUnity.SensorStreams_<Start>d__12::<>t__builder
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensPoolAid.SensorStreams_<Start>d__12::<>t__builder
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<Start>d__12::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<Start>d__12::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<Start>d__12::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<Start>d__12::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -19538,7 +19538,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3Et__builder_1)); }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  value)
@@ -19556,16 +19556,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -26767,21 +26767,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15
-struct  U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 
+// HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15
+struct  U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>t__builder
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>t__builder
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -26789,7 +26789,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3Et__builder_1)); }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  value)
@@ -26804,16 +26804,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -26824,21 +26824,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17
-struct  U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 
+// HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17
+struct  U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>t__builder
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>t__builder
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -26846,7 +26846,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3Et__builder_1)); }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  value)
@@ -26861,16 +26861,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -36512,35 +36512,35 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams
-struct  SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+// HoloLensPoolAid.SensorStreams
+struct  SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.UI.Text HoloLensForCVUnity.SensorStreams::myText
+	// UnityEngine.UI.Text HoloLensPoolAid.SensorStreams::myText
 	Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * ___myText_4;
-	// HoloLensForCVUnity.SensorStreams_SensorTypeUnity HoloLensForCVUnity.SensorStreams::sensorTypePv
+	// HoloLensPoolAid.SensorStreams_SensorTypeUnity HoloLensPoolAid.SensorStreams::sensorTypePv
 	int32_t ___sensorTypePv_5;
-	// UnityEngine.GameObject HoloLensForCVUnity.SensorStreams::cameraFrameGO
+	// UnityEngine.GameObject HoloLensPoolAid.SensorStreams::cameraFrameGO
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___cameraFrameGO_6;
-	// UnityEngine.Material HoloLensForCVUnity.SensorStreams::cameraFrameMaterial
+	// UnityEngine.Material HoloLensPoolAid.SensorStreams::cameraFrameMaterial
 	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___cameraFrameMaterial_7;
-	// UnityEngine.Texture2D HoloLensForCVUnity.SensorStreams::cameraFrameTexture
+	// UnityEngine.Texture2D HoloLensPoolAid.SensorStreams::cameraFrameTexture
 	Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * ___cameraFrameTexture_8;
-	// System.Boolean HoloLensForCVUnity.SensorStreams::_mediaFrameSourceGroupsStarted
+	// System.Boolean HoloLensPoolAid.SensorStreams::_mediaFrameSourceGroupsStarted
 	bool ____mediaFrameSourceGroupsStarted_9;
-	// HoloLensForCV.SensorFrameStreamer HoloLensForCVUnity.SensorStreams::_sensorFrameStreamerPv
+	// HoloLensForCV.SensorFrameStreamer HoloLensPoolAid.SensorStreams::_sensorFrameStreamerPv
 	SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * ____sensorFrameStreamerPv_10;
-	// HoloLensForCV.SpatialPerception HoloLensForCVUnity.SensorStreams::_spatialPerception
+	// HoloLensForCV.SpatialPerception HoloLensPoolAid.SensorStreams::_spatialPerception
 	SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * ____spatialPerception_11;
-	// HoloLensForCV.MediaFrameSourceGroup HoloLensForCVUnity.SensorStreams::_pvMediaFrameSourceGroup
+	// HoloLensForCV.MediaFrameSourceGroup HoloLensPoolAid.SensorStreams::_pvMediaFrameSourceGroup
 	MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * ____pvMediaFrameSourceGroup_12;
-	// HoloLensForCV.SensorType HoloLensForCVUnity.SensorStreams::_sensorType
+	// HoloLensForCV.SensorType HoloLensPoolAid.SensorStreams::_sensorType
 	int32_t ____sensorType_13;
-	// UnityEngine.XR.WSA.Input.GestureRecognizer HoloLensForCVUnity.SensorStreams::_gestureRecognizer
+	// UnityEngine.XR.WSA.Input.GestureRecognizer HoloLensPoolAid.SensorStreams::_gestureRecognizer
 	GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * ____gestureRecognizer_14;
 
 public:
-	inline static int32_t get_offset_of_myText_4() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___myText_4)); }
+	inline static int32_t get_offset_of_myText_4() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___myText_4)); }
 	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * get_myText_4() const { return ___myText_4; }
 	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 ** get_address_of_myText_4() { return &___myText_4; }
 	inline void set_myText_4(Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * value)
@@ -36549,7 +36549,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___myText_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_sensorTypePv_5() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___sensorTypePv_5)); }
+	inline static int32_t get_offset_of_sensorTypePv_5() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___sensorTypePv_5)); }
 	inline int32_t get_sensorTypePv_5() const { return ___sensorTypePv_5; }
 	inline int32_t* get_address_of_sensorTypePv_5() { return &___sensorTypePv_5; }
 	inline void set_sensorTypePv_5(int32_t value)
@@ -36557,7 +36557,7 @@ public:
 		___sensorTypePv_5 = value;
 	}
 
-	inline static int32_t get_offset_of_cameraFrameGO_6() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameGO_6)); }
+	inline static int32_t get_offset_of_cameraFrameGO_6() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameGO_6)); }
 	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_cameraFrameGO_6() const { return ___cameraFrameGO_6; }
 	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_cameraFrameGO_6() { return &___cameraFrameGO_6; }
 	inline void set_cameraFrameGO_6(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
@@ -36566,7 +36566,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameGO_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_cameraFrameMaterial_7() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameMaterial_7)); }
+	inline static int32_t get_offset_of_cameraFrameMaterial_7() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameMaterial_7)); }
 	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_cameraFrameMaterial_7() const { return ___cameraFrameMaterial_7; }
 	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_cameraFrameMaterial_7() { return &___cameraFrameMaterial_7; }
 	inline void set_cameraFrameMaterial_7(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
@@ -36575,7 +36575,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameMaterial_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_cameraFrameTexture_8() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameTexture_8)); }
+	inline static int32_t get_offset_of_cameraFrameTexture_8() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameTexture_8)); }
 	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * get_cameraFrameTexture_8() const { return ___cameraFrameTexture_8; }
 	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C ** get_address_of_cameraFrameTexture_8() { return &___cameraFrameTexture_8; }
 	inline void set_cameraFrameTexture_8(Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * value)
@@ -36584,7 +36584,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameTexture_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__mediaFrameSourceGroupsStarted_9() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____mediaFrameSourceGroupsStarted_9)); }
+	inline static int32_t get_offset_of__mediaFrameSourceGroupsStarted_9() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____mediaFrameSourceGroupsStarted_9)); }
 	inline bool get__mediaFrameSourceGroupsStarted_9() const { return ____mediaFrameSourceGroupsStarted_9; }
 	inline bool* get_address_of__mediaFrameSourceGroupsStarted_9() { return &____mediaFrameSourceGroupsStarted_9; }
 	inline void set__mediaFrameSourceGroupsStarted_9(bool value)
@@ -36592,7 +36592,7 @@ public:
 		____mediaFrameSourceGroupsStarted_9 = value;
 	}
 
-	inline static int32_t get_offset_of__sensorFrameStreamerPv_10() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____sensorFrameStreamerPv_10)); }
+	inline static int32_t get_offset_of__sensorFrameStreamerPv_10() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____sensorFrameStreamerPv_10)); }
 	inline SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * get__sensorFrameStreamerPv_10() const { return ____sensorFrameStreamerPv_10; }
 	inline SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 ** get_address_of__sensorFrameStreamerPv_10() { return &____sensorFrameStreamerPv_10; }
 	inline void set__sensorFrameStreamerPv_10(SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * value)
@@ -36601,7 +36601,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____sensorFrameStreamerPv_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__spatialPerception_11() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____spatialPerception_11)); }
+	inline static int32_t get_offset_of__spatialPerception_11() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____spatialPerception_11)); }
 	inline SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * get__spatialPerception_11() const { return ____spatialPerception_11; }
 	inline SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 ** get_address_of__spatialPerception_11() { return &____spatialPerception_11; }
 	inline void set__spatialPerception_11(SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * value)
@@ -36610,7 +36610,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____spatialPerception_11), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__pvMediaFrameSourceGroup_12() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____pvMediaFrameSourceGroup_12)); }
+	inline static int32_t get_offset_of__pvMediaFrameSourceGroup_12() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____pvMediaFrameSourceGroup_12)); }
 	inline MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * get__pvMediaFrameSourceGroup_12() const { return ____pvMediaFrameSourceGroup_12; }
 	inline MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 ** get_address_of__pvMediaFrameSourceGroup_12() { return &____pvMediaFrameSourceGroup_12; }
 	inline void set__pvMediaFrameSourceGroup_12(MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * value)
@@ -36619,7 +36619,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____pvMediaFrameSourceGroup_12), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__sensorType_13() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____sensorType_13)); }
+	inline static int32_t get_offset_of__sensorType_13() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____sensorType_13)); }
 	inline int32_t get__sensorType_13() const { return ____sensorType_13; }
 	inline int32_t* get_address_of__sensorType_13() { return &____sensorType_13; }
 	inline void set__sensorType_13(int32_t value)
@@ -36627,7 +36627,7 @@ public:
 		____sensorType_13 = value;
 	}
 
-	inline static int32_t get_offset_of__gestureRecognizer_14() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____gestureRecognizer_14)); }
+	inline static int32_t get_offset_of__gestureRecognizer_14() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____gestureRecognizer_14)); }
 	inline GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * get__gestureRecognizer_14() const { return ____gestureRecognizer_14; }
 	inline GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE ** get_address_of__gestureRecognizer_14() { return &____gestureRecognizer_14; }
 	inline void set__gestureRecognizer_14(GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * value)
@@ -47766,66 +47766,66 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3171 = { sizeof (U3CModuleU3
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3172;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3172 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3173;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3173 = { sizeof (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3173 = { sizeof (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3173[11] = 
 {
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of_myText_4(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of_sensorTypePv_5(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of_cameraFrameGO_6(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of_cameraFrameMaterial_7(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of_cameraFrameTexture_8(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__mediaFrameSourceGroupsStarted_9(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__sensorFrameStreamerPv_10(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__spatialPerception_11(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__pvMediaFrameSourceGroup_12(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__sensorType_13(),
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3::get_offset_of__gestureRecognizer_14(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of_myText_4(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of_sensorTypePv_5(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of_cameraFrameGO_6(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of_cameraFrameMaterial_7(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of_cameraFrameTexture_8(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__mediaFrameSourceGroupsStarted_9(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__sensorFrameStreamerPv_10(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__spatialPerception_11(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__pvMediaFrameSourceGroup_12(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__sensorType_13(),
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF::get_offset_of__gestureRecognizer_14(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3174;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3174 = { sizeof (SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3174 = { sizeof (SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3174[3] = 
 {
-	SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3175;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3175 = { 0, sizeof(IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED*), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3175 = { 0, sizeof(IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A*), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3176;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3176 = { sizeof (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764)+ sizeof (RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3176 = { sizeof (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24)+ sizeof (RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3176[4] = 
 {
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3177;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3177 = { sizeof (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED)+ sizeof (RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3177 = { sizeof (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB)+ sizeof (RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3177[4] = 
 {
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3178;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3178 = { sizeof (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081)+ sizeof (RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3178 = { sizeof (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73)+ sizeof (RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3178[4] = 
 {
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3179;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3179 = { sizeof (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746)+ sizeof (RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3179 = { sizeof (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963)+ sizeof (RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3179[4] = 
 {
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963::get_offset_of_U3CU3E1__state_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963::get_offset_of_U3CU3Et__builder_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963::get_offset_of_U3CU3E4__this_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963::get_offset_of_U3CU3Eu__1_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

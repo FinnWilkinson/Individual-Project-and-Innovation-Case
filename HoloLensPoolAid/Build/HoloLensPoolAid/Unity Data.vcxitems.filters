@@ -2,49 +2,48 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Data">
-      <UniqueIdentifier>{2efda975-ebbb-45f7-bafa-0553364dd89d}</UniqueIdentifier>
+      <UniqueIdentifier>{20a1599e-d097-44f6-8bf7-f08a8a51e021}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono">
-      <UniqueIdentifier>{e4ef08e0-98d2-4eaf-8cd6-2db6bccb95aa}</UniqueIdentifier>
+      <UniqueIdentifier>{3cc79e32-90b8-4f51-beb2-decd71449180}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0">
-      <UniqueIdentifier>{003addea-55cc-43a7-9ef3-868d6d0717e4}</UniqueIdentifier>
+      <UniqueIdentifier>{151b3c0b-f178-4ac6-9bc3-ab065c95dea4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0\Browsers">
-      <UniqueIdentifier>{aaecaa13-1dfe-459c-956d-017860e52d87}</UniqueIdentifier>
+      <UniqueIdentifier>{f73b9035-6fcf-44c7-a2aa-7604c60d48fb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0">
-      <UniqueIdentifier>{b66f4a78-a353-47b6-84b4-b197e7ab39fd}</UniqueIdentifier>
+      <UniqueIdentifier>{dd27cab5-b173-45ae-924d-e3d6f7897578}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0\Browsers">
-      <UniqueIdentifier>{7e9670aa-8bb1-4d17-a779-dc0663b48199}</UniqueIdentifier>
+      <UniqueIdentifier>{349125cd-9f1e-4544-a6c8-6d51872293c3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5">
-      <UniqueIdentifier>{f00bcc0a-f022-4f7e-be2f-db323bb4ad79}</UniqueIdentifier>
+      <UniqueIdentifier>{de718327-6260-4bab-9ac9-2e417a531f66}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5\Browsers">
-      <UniqueIdentifier>{d2a404ba-9a00-4d72-8c64-6c8fd293ecbc}</UniqueIdentifier>
+      <UniqueIdentifier>{b88336cd-bca9-4b87-94c5-199f718f615b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\mconfig">
-      <UniqueIdentifier>{81a9f2bb-dd98-4e5b-8d83-9c3ca7bdde6e}</UniqueIdentifier>
+      <UniqueIdentifier>{bf4ba852-beb3-4967-b55f-fe37a93635dc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Metadata">
-      <UniqueIdentifier>{5949f319-0224-46c4-9b81-5de7232ba219}</UniqueIdentifier>
+      <UniqueIdentifier>{e962744f-ace7-4cc5-addc-bf89a4c0d734}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Resources">
-      <UniqueIdentifier>{eb8762ae-2efa-40bc-b258-b6760b400866}</UniqueIdentifier>
+      <UniqueIdentifier>{fa21b8f2-7fab-4276-8944-d08938ed585f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\Resources">
-      <UniqueIdentifier>{692e87af-7a46-4ec5-a2d6-4e8971c5539f}</UniqueIdentifier>
+      <UniqueIdentifier>{9c8fd9f2-7159-4e0f-b076-a69ca4974f6c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc">
-      <UniqueIdentifier>{e6ac2594-6933-4d47-8531-0f2beddfb0ac}</UniqueIdentifier>
+      <UniqueIdentifier>{950c7ec7-aa31-42ad-91fe-d1f14532a9f2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data">
-      <UniqueIdentifier>{b1d1da42-358e-483f-977b-a937020578da}</UniqueIdentifier>
+      <UniqueIdentifier>{e14adb74-06fb-423b-9f1f-07c686eb44cb}</UniqueIdentifier>
     </Filter>
-    <None Include="$(MSBuildThisFileDirectory)HoloLensForCV.dll" />
-    <None Include="$(MSBuildThisFileDirectory)opencv_world3411.dll" />
+    <Reference Include="$(MSBuildThisFileDirectory)HoloLensForCV.winmd" />
     <Resource Include="$(MSBuildThisFileDirectory)Resource.res" />
     <None Include="$(MSBuildThisFileDirectory)StoreManifest.xml" />
     <ClCompile Include="$(MSBuildThisFileDirectory)UnityGenerated.cpp" />
@@ -137,6 +136,7 @@
       <Filter>Data\Resources</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" />
+    <None Include="$(MSBuildThisFileDirectory)opencv_world3411.dll" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(OutDir)GameAssembly.dll" />

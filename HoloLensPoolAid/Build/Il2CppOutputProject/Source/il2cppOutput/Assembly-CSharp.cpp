@@ -65,8 +65,8 @@ struct SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577;
 struct __IMediaFrameSourceGroupFactory_t894789955B54B857FA6F305E74D5720C20FE782B;
 // HoloLensForCV.__ISensorFrameFactory
 struct __ISensorFrameFactory_tF959F4204E0A248B87E0E87A77C5233CAE4716D1;
-// HoloLensForCVUnity.SensorStreams
-struct SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3;
+// HoloLensPoolAid.SensorStreams
+struct SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF;
 // IActivationFactory
 struct Il2CppIActivationFactory;
 // System.Action
@@ -252,7 +252,7 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t7218B22548186B208D65EA5B7870503810A2D15A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849_il2cpp_TypeInfo_var;
@@ -266,27 +266,27 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA97FE5BE55A60552D5A67C321D11E2A23B3F36F4
 IL2CPP_EXTERN_C String_t* _stringLiteralB4E4829D6802BCDC01293620CF84BEF699ECC5A4;
 IL2CPP_EXTERN_C String_t* _stringLiteralDE4748660C68C578CE09DBF781372426E97DA31B;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* SensorStreams_GestureRecognizer_Tapped_m7CBC5626280BF549641384187E5F8992B3916F6B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_GetByteArrayFromSoftwareBitmap_m7573B9EB39B0085195125EB940BF79A9F33414D9_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_InitializeHandler_mE97A0A700366423C4760F8D3E54950ECD4B75B91_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_OnApplicationQuit_mD8062CC896FFD85659B577244D56933D228FE8A5_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_StartHoloLensMediaFrameSourceGroups_mA4397A4BC299A3053D06E2786D486B50834AD5F5_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_Start_mF1F7970045FD7725E9FAA308725E29F368E48237_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m7B3BB3688BA64F50A0F5F33C369D5BCDA2CBC892_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C_MetadataUsageId;
+IL2CPP_EXTERN_C const RuntimeMethod* SensorStreams_GestureRecognizer_Tapped_m0EBCA055EBBE55F36AF35D270DF0D3DA1910C4C3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_GetByteArrayFromSoftwareBitmap_m91CCC97D1AFFD2C60361C5A4D5E3FC2CE82F5E35_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_InitializeHandler_mE3C3C69516ED274D506A95C4D430382A4DB9F2D5_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_OnApplicationQuit_m4FEB924117CF6138E8F10B13C2A7C74E690262EE_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_StartHoloLensMediaFrameSourceGroups_mA5BC109287F9D96FA0C460F09EC70B2B696BC81E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_Start_mCEB6D412109BC5E31C5DC742AE256F8E647EACC3_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m4DF56A3D7D305AA6972D9646C88574895F9FB562_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E_MetadataUsageId;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -330,11 +330,11 @@ struct NOVTABLE __ISensorFrameFactory_tF959F4204E0A248B87E0E87A77C5233CAE4716D1 
 	static const Il2CppGuid IID;
 	virtual il2cpp_hresult_t STDCALL __ISensorFrameFactory_U24__Stripped0_CreateInstance_m439DE405D5A811C89B3FEE98F8DFD24AA97F3CAC() = 0;
 };
-// HoloLensForCVUnity.SensorStreams_IMemoryBufferByteAccess
-struct NOVTABLE IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED : Il2CppIUnknown
+// HoloLensPoolAid.SensorStreams_IMemoryBufferByteAccess
+struct NOVTABLE IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A : Il2CppIUnknown
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IMemoryBufferByteAccess_GetBuffer_m418FC1F54A70DDCC2A4CE855FB8ED06962E54A1C(uint8_t** ___buffer0, uint32_t* ___capacity1) = 0;
+	virtual il2cpp_hresult_t STDCALL IMemoryBufferByteAccess_GetBuffer_m04268B60D4B4241323DA55575E233C39D6351464(uint8_t** ___buffer0, uint32_t* ___capacity1) = 0;
 };
 
 // System.Object
@@ -1102,15 +1102,15 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_SensorTypeUnity
-struct  SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1 
+// HoloLensPoolAid.SensorStreams_SensorTypeUnity
+struct  SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_SensorTypeUnity::value__
+	// System.Int32 HoloLensPoolAid.SensorStreams_SensorTypeUnity::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SensorTypeUnity_tDA69A7511A0B6AD0415A9E3470AE2AC7560069F1, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SensorTypeUnity_t38C1F3291EBE87CF39FBB7516BFD72B4E83F847B, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -2556,21 +2556,21 @@ struct NOVTABLE __IMediaFrameSourceGroupFactory_t894789955B54B857FA6F305E74D5720
 	virtual il2cpp_hresult_t STDCALL __IMediaFrameSourceGroupFactory_CreateInstance_m18380402FBB02BE86B32A1557A1B1FE76DAE5F2E(int32_t ___mediaFrameSourceGroupType0, __ISpatialPerceptionPublicNonVirtuals_t30DD9212F05E1C1DAA90C94A8347EFD4CDFB3FAD* ___spacialPerception1, ISensorFrameSinkGroup_tF5B6B0A94C69297B65BCE11AD1C48E9B9A2036E4* ___optionalSensorFrameSinkGroup2, __IMediaFrameSourceGroupPublicNonVirtuals_t2AF40F8686B5E8E011733613FE80F10FC716ACAB** comReturnValue) = 0;
 };
 
-// HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14
-struct  U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED 
+// HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14
+struct  U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>t__builder
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>t__builder
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -2578,7 +2578,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3Et__builder_1)); }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  value)
@@ -2596,16 +2596,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -2616,21 +2616,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<Start>d__12
-struct  U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 
+// HoloLensPoolAid.SensorStreams_<Start>d__12
+struct  U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<Start>d__12::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<Start>d__12::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensForCVUnity.SensorStreams_<Start>d__12::<>t__builder
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder HoloLensPoolAid.SensorStreams_<Start>d__12::<>t__builder
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<Start>d__12::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<Start>d__12::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<Start>d__12::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<Start>d__12::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -2638,7 +2638,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3Et__builder_1)); }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  value)
@@ -2656,16 +2656,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -3047,21 +3047,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15
-struct  U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 
+// HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15
+struct  U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>t__builder
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>t__builder
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -3069,7 +3069,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3Et__builder_1)); }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  value)
@@ -3084,16 +3084,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -3104,21 +3104,21 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17
-struct  U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 
+// HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17
+struct  U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 
 {
 public:
-	// System.Int32 HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>1__state
+	// System.Int32 HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>t__builder
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>t__builder
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  ___U3CU3Et__builder_1;
-	// HoloLensForCVUnity.SensorStreams HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>4__this
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * ___U3CU3E4__this_2;
-	// System.Runtime.CompilerServices.TaskAwaiter HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>u__1
+	// HoloLensPoolAid.SensorStreams HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>4__this
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::<>u__1
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  ___U3CU3Eu__1_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -3126,7 +3126,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3Et__builder_1)); }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  value)
@@ -3141,16 +3141,16 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3E4__this_2)); }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
-	inline SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
-	inline void set_U3CU3E4__this_2(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3E4__this_2)); }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * value)
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746, ___U3CU3Eu__1_3)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_3() { return static_cast<int32_t>(offsetof(U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963, ___U3CU3Eu__1_3)); }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  get_U3CU3Eu__1_3() const { return ___U3CU3Eu__1_3; }
 	inline TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * get_address_of_U3CU3Eu__1_3() { return &___U3CU3Eu__1_3; }
 	inline void set_U3CU3Eu__1_3(TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  value)
@@ -3335,35 +3335,35 @@ public:
 };
 
 
-// HoloLensForCVUnity.SensorStreams
-struct  SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+// HoloLensPoolAid.SensorStreams
+struct  SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.UI.Text HoloLensForCVUnity.SensorStreams::myText
+	// UnityEngine.UI.Text HoloLensPoolAid.SensorStreams::myText
 	Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * ___myText_4;
-	// HoloLensForCVUnity.SensorStreams_SensorTypeUnity HoloLensForCVUnity.SensorStreams::sensorTypePv
+	// HoloLensPoolAid.SensorStreams_SensorTypeUnity HoloLensPoolAid.SensorStreams::sensorTypePv
 	int32_t ___sensorTypePv_5;
-	// UnityEngine.GameObject HoloLensForCVUnity.SensorStreams::cameraFrameGO
+	// UnityEngine.GameObject HoloLensPoolAid.SensorStreams::cameraFrameGO
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___cameraFrameGO_6;
-	// UnityEngine.Material HoloLensForCVUnity.SensorStreams::cameraFrameMaterial
+	// UnityEngine.Material HoloLensPoolAid.SensorStreams::cameraFrameMaterial
 	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___cameraFrameMaterial_7;
-	// UnityEngine.Texture2D HoloLensForCVUnity.SensorStreams::cameraFrameTexture
+	// UnityEngine.Texture2D HoloLensPoolAid.SensorStreams::cameraFrameTexture
 	Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * ___cameraFrameTexture_8;
-	// System.Boolean HoloLensForCVUnity.SensorStreams::_mediaFrameSourceGroupsStarted
+	// System.Boolean HoloLensPoolAid.SensorStreams::_mediaFrameSourceGroupsStarted
 	bool ____mediaFrameSourceGroupsStarted_9;
-	// HoloLensForCV.SensorFrameStreamer HoloLensForCVUnity.SensorStreams::_sensorFrameStreamerPv
+	// HoloLensForCV.SensorFrameStreamer HoloLensPoolAid.SensorStreams::_sensorFrameStreamerPv
 	SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * ____sensorFrameStreamerPv_10;
-	// HoloLensForCV.SpatialPerception HoloLensForCVUnity.SensorStreams::_spatialPerception
+	// HoloLensForCV.SpatialPerception HoloLensPoolAid.SensorStreams::_spatialPerception
 	SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * ____spatialPerception_11;
-	// HoloLensForCV.MediaFrameSourceGroup HoloLensForCVUnity.SensorStreams::_pvMediaFrameSourceGroup
+	// HoloLensForCV.MediaFrameSourceGroup HoloLensPoolAid.SensorStreams::_pvMediaFrameSourceGroup
 	MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * ____pvMediaFrameSourceGroup_12;
-	// HoloLensForCV.SensorType HoloLensForCVUnity.SensorStreams::_sensorType
+	// HoloLensForCV.SensorType HoloLensPoolAid.SensorStreams::_sensorType
 	int32_t ____sensorType_13;
-	// UnityEngine.XR.WSA.Input.GestureRecognizer HoloLensForCVUnity.SensorStreams::_gestureRecognizer
+	// UnityEngine.XR.WSA.Input.GestureRecognizer HoloLensPoolAid.SensorStreams::_gestureRecognizer
 	GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * ____gestureRecognizer_14;
 
 public:
-	inline static int32_t get_offset_of_myText_4() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___myText_4)); }
+	inline static int32_t get_offset_of_myText_4() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___myText_4)); }
 	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * get_myText_4() const { return ___myText_4; }
 	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 ** get_address_of_myText_4() { return &___myText_4; }
 	inline void set_myText_4(Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * value)
@@ -3372,7 +3372,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___myText_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_sensorTypePv_5() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___sensorTypePv_5)); }
+	inline static int32_t get_offset_of_sensorTypePv_5() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___sensorTypePv_5)); }
 	inline int32_t get_sensorTypePv_5() const { return ___sensorTypePv_5; }
 	inline int32_t* get_address_of_sensorTypePv_5() { return &___sensorTypePv_5; }
 	inline void set_sensorTypePv_5(int32_t value)
@@ -3380,7 +3380,7 @@ public:
 		___sensorTypePv_5 = value;
 	}
 
-	inline static int32_t get_offset_of_cameraFrameGO_6() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameGO_6)); }
+	inline static int32_t get_offset_of_cameraFrameGO_6() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameGO_6)); }
 	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_cameraFrameGO_6() const { return ___cameraFrameGO_6; }
 	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_cameraFrameGO_6() { return &___cameraFrameGO_6; }
 	inline void set_cameraFrameGO_6(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
@@ -3389,7 +3389,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameGO_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_cameraFrameMaterial_7() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameMaterial_7)); }
+	inline static int32_t get_offset_of_cameraFrameMaterial_7() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameMaterial_7)); }
 	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_cameraFrameMaterial_7() const { return ___cameraFrameMaterial_7; }
 	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_cameraFrameMaterial_7() { return &___cameraFrameMaterial_7; }
 	inline void set_cameraFrameMaterial_7(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
@@ -3398,7 +3398,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameMaterial_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_cameraFrameTexture_8() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ___cameraFrameTexture_8)); }
+	inline static int32_t get_offset_of_cameraFrameTexture_8() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ___cameraFrameTexture_8)); }
 	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * get_cameraFrameTexture_8() const { return ___cameraFrameTexture_8; }
 	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C ** get_address_of_cameraFrameTexture_8() { return &___cameraFrameTexture_8; }
 	inline void set_cameraFrameTexture_8(Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * value)
@@ -3407,7 +3407,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___cameraFrameTexture_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__mediaFrameSourceGroupsStarted_9() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____mediaFrameSourceGroupsStarted_9)); }
+	inline static int32_t get_offset_of__mediaFrameSourceGroupsStarted_9() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____mediaFrameSourceGroupsStarted_9)); }
 	inline bool get__mediaFrameSourceGroupsStarted_9() const { return ____mediaFrameSourceGroupsStarted_9; }
 	inline bool* get_address_of__mediaFrameSourceGroupsStarted_9() { return &____mediaFrameSourceGroupsStarted_9; }
 	inline void set__mediaFrameSourceGroupsStarted_9(bool value)
@@ -3415,7 +3415,7 @@ public:
 		____mediaFrameSourceGroupsStarted_9 = value;
 	}
 
-	inline static int32_t get_offset_of__sensorFrameStreamerPv_10() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____sensorFrameStreamerPv_10)); }
+	inline static int32_t get_offset_of__sensorFrameStreamerPv_10() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____sensorFrameStreamerPv_10)); }
 	inline SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * get__sensorFrameStreamerPv_10() const { return ____sensorFrameStreamerPv_10; }
 	inline SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 ** get_address_of__sensorFrameStreamerPv_10() { return &____sensorFrameStreamerPv_10; }
 	inline void set__sensorFrameStreamerPv_10(SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * value)
@@ -3424,7 +3424,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____sensorFrameStreamerPv_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__spatialPerception_11() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____spatialPerception_11)); }
+	inline static int32_t get_offset_of__spatialPerception_11() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____spatialPerception_11)); }
 	inline SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * get__spatialPerception_11() const { return ____spatialPerception_11; }
 	inline SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 ** get_address_of__spatialPerception_11() { return &____spatialPerception_11; }
 	inline void set__spatialPerception_11(SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * value)
@@ -3433,7 +3433,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____spatialPerception_11), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__pvMediaFrameSourceGroup_12() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____pvMediaFrameSourceGroup_12)); }
+	inline static int32_t get_offset_of__pvMediaFrameSourceGroup_12() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____pvMediaFrameSourceGroup_12)); }
 	inline MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * get__pvMediaFrameSourceGroup_12() const { return ____pvMediaFrameSourceGroup_12; }
 	inline MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 ** get_address_of__pvMediaFrameSourceGroup_12() { return &____pvMediaFrameSourceGroup_12; }
 	inline void set__pvMediaFrameSourceGroup_12(MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * value)
@@ -3442,7 +3442,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____pvMediaFrameSourceGroup_12), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__sensorType_13() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____sensorType_13)); }
+	inline static int32_t get_offset_of__sensorType_13() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____sensorType_13)); }
 	inline int32_t get__sensorType_13() const { return ____sensorType_13; }
 	inline int32_t* get_address_of__sensorType_13() { return &____sensorType_13; }
 	inline void set__sensorType_13(int32_t value)
@@ -3450,7 +3450,7 @@ public:
 		____sensorType_13 = value;
 	}
 
-	inline static int32_t get_offset_of__gestureRecognizer_14() { return static_cast<int32_t>(offsetof(SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3, ____gestureRecognizer_14)); }
+	inline static int32_t get_offset_of__gestureRecognizer_14() { return static_cast<int32_t>(offsetof(SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF, ____gestureRecognizer_14)); }
 	inline GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * get__gestureRecognizer_14() const { return ____gestureRecognizer_14; }
 	inline GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE ** get_address_of__gestureRecognizer_14() { return &____gestureRecognizer_14; }
 	inline void set__gestureRecognizer_14(GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * value)
@@ -3914,47 +3914,47 @@ public:
 #endif
 
 
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<Start>d__12>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * ___stateMachine0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * ___stateMachine0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * ___stateMachine0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<Start>d__12>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * ___stateMachine0, const RuntimeMethod* method);
 // System.Void System.Action`1<UnityEngine.XR.WSA.Input.TappedEventArgs>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0_gshared (Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * ___stateMachine1, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_GetComponent_TisRuntimeObject_mE03C66715289D7957CA068A675826B7EE0887BE3_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<Start>d__12>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * ___stateMachine1, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * ___stateMachine1, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<Start>d__12>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044_gshared (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D_gshared (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * ___stateMachine1, const RuntimeMethod* method);
 
 // System.Runtime.CompilerServices.AsyncVoidMethodBuilder System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  AsyncVoidMethodBuilder_Create_m2EF884A75C3C230F0E6A63B1E23DC82F3B159130 (const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<Start>d__12>(!!0&)
-inline void AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * ___stateMachine0, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<Start>d__12>(!!0&)
+inline void AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676_gshared)(__this, ___stateMachine0, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams::UpdateHoloLensMediaFrameSourceGroup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m7B3BB3688BA64F50A0F5F33C369D5BCDA2CBC892 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14>(!!0&)
-inline void AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * ___stateMachine0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::UpdateHoloLensMediaFrameSourceGroup()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m4DF56A3D7D305AA6972D9646C88574895F9FB562 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14>(!!0&)
+inline void AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B_gshared)(__this, ___stateMachine0, method);
 }
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  AsyncTaskMethodBuilder_Create_m081DF9A202E7C2F3CF3D41E1E63E63DA18F19FDB (const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&)
-inline void AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * ___stateMachine0, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&)
+inline void AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26_gshared)(__this, ___stateMachine0, method);
 }
 // System.Threading.Tasks.Task System.Runtime.CompilerServices.AsyncTaskMethodBuilder::get_Task()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * AsyncTaskMethodBuilder_get_Task_m3E45BC00F7D224FEA04AB9BF26DB52E131D33022 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, const RuntimeMethod* method);
@@ -3972,8 +3972,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SoftwareBitmap_get_PixelWidth_m99F5BA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SoftwareBitmap_get_PixelHeight_m371B24AF945EE588975E740133CA3089A79C7EED (SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D__ctor_m22561E039BC96019757E6B2427BE09734AE2C44A (Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * __this, int32_t ___width0, int32_t ___height1, int32_t ___textureFormat2, bool ___mipChain3, const RuntimeMethod* method);
-// System.Byte* HoloLensForCVUnity.SensorStreams::GetByteArrayFromSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* SensorStreams_GetByteArrayFromSoftwareBitmap_m7573B9EB39B0085195125EB940BF79A9F33414D9 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * ___sb0, const RuntimeMethod* method);
+// System.Byte* HoloLensPoolAid.SensorStreams::GetByteArrayFromSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* SensorStreams_GetByteArrayFromSoftwareBitmap_m91CCC97D1AFFD2C60361C5A4D5E3FC2CE82F5E35 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * ___sb0, const RuntimeMethod* method);
 // System.IntPtr System.IntPtr::op_Explicit(System.Void*)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t IntPtr_op_Explicit_m7F0C4B884FFB05BD231154CBDAEBCF1917019C21 (void* ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Texture2D::LoadRawTextureData(System.IntPtr,System.Int32)
@@ -3982,10 +3982,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_LoadRawTextureData_m7F70DFFDBF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_Apply_m0F3B4A4B1B89E44E2AF60ABDEFAA18D93735B5CA (Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::set_mainTexture(UnityEngine.Texture)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * ___value0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&)
-inline void AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * ___stateMachine0, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&)
+inline void AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89_gshared)(__this, ___stateMachine0, method);
 }
 // Windows.Graphics.Imaging.BitmapPixelFormat Windows.Graphics.Imaging.SoftwareBitmap::get_BitmapPixelFormat()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SoftwareBitmap_get_BitmapPixelFormat_m7AAF02FED0729C6527D012B064D6DFAFB63056D4 (SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * __this, const RuntimeMethod* method);
@@ -4010,10 +4010,10 @@ inline void Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0 (Action_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC (GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * __this, Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708 (RuntimeObject * ___message0, const RuntimeMethod* method);
-// System.Threading.Tasks.Task HoloLensForCVUnity.SensorStreams::StopHoloLensMediaFrameSourceGroup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams::CloseHandler()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_CloseHandler_mCBD583B2329DA12DB8C50E9476C717D8B0FD53F4 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method);
+// System.Threading.Tasks.Task HoloLensPoolAid.SensorStreams::StopHoloLensMediaFrameSourceGroup()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams::CloseHandler()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_CloseHandler_mC569C2E75BC0A04D123D72270D9E6E5BC1DF356F (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::StopCapturingGestures()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GestureRecognizer_StopCapturingGestures_mBA5D5DFFC507CE972150A242E9DFC59B06121D61 (GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::Dispose()
@@ -4024,10 +4024,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_mEAEC84B222C60319D59
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  Task_GetAwaiter_m73027D5E4C16E961C658B83526BED8E32FD2AC6C (Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * __this, const RuntimeMethod* method);
 // System.Boolean System.Runtime.CompilerServices.TaskAwaiter::get_IsCompleted()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_get_IsCompleted_m5A2B6FEA0ED3B01B5E88DBF2D8BC4A45652ABD87 (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14>(!!0&,!!1&)
-inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * ___stateMachine1, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14>(!!0&,!!1&)
+inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.TaskAwaiter::GetResult()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_m89868C01592AC2B06CE1FD42D9B9C187C6FD928A (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * __this, const RuntimeMethod* method);
@@ -4035,14 +4035,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_m89868C01592AC2B06
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetException_mA7D834CA1ECA91D65074D7608AADA2E2A9533136 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, Exception_t * ___exception0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::SetResult()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetResult_mFF6028CDDC809252656354DC1714B4EB5E40A625 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116 (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetStateMachine_mF3AEE42ED8474F11A5521D94271E884CF99E65B3 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<OnApplicationQuit>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_SetStateMachine_mF230B57B7118AB493101DF4B99F35350C175B23A (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams::InitializeHandler()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE97A0A700366423C4760F8D3E54950ECD4B75B91 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<OnApplicationQuit>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_SetStateMachine_m4011D7DCCA3A216D90250E5D5F21FE9F929AA9DA (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams::InitializeHandler()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE3C3C69516ED274D506A95C4D430382A4DB9F2D5 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshRenderer>()
 inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
 {
@@ -4050,17 +4050,17 @@ inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * GameObject_GetCo
 }
 // UnityEngine.Material UnityEngine.Renderer::get_material()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617 (Renderer_t0556D67DD582620D1F495627EDE30D03284151F4 * __this, const RuntimeMethod* method);
-// System.Threading.Tasks.Task HoloLensForCVUnity.SensorStreams::StartHoloLensMediaFrameSourceGroups()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StartHoloLensMediaFrameSourceGroups_mA4397A4BC299A3053D06E2786D486B50834AD5F5 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<Start>d__12>(!!0&,!!1&)
-inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * ___stateMachine1, const RuntimeMethod* method)
+// System.Threading.Tasks.Task HoloLensPoolAid.SensorStreams::StartHoloLensMediaFrameSourceGroups()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StartHoloLensMediaFrameSourceGroups_mA5BC109287F9D96FA0C460F09EC70B2B696BC81E (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<Start>d__12>(!!0&,!!1&)
+inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044 (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams/<Start>d__12::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788 (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * __this, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<Start>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_SetStateMachine_m10860B324F538B91EE2D27E1E84CD5648773A3D7 (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<Start>d__12::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<Start>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_SetStateMachine_m1D7B42BC27E3F2468CA73DEF16C5B13757F55FA5 (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
 // System.Void HoloLensForCV.SensorFrameStreamer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorFrameStreamer__ctor_m2A7FE63EE0D6B674FB9C840663B0EAFBF377C657 (SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * __this, const RuntimeMethod* method);
 // System.Void HoloLensForCV.SensorFrameStreamer::Enable(HoloLensForCV.SensorType)
@@ -4075,32 +4075,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaFrameSourceGroup_Enable_mFB95B66C15
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaFrameSourceGroup_StartAsync_m526B5B8956EB089601E9B7CA2A9AFE318DD6490C (MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * __this, const RuntimeMethod* method);
 // System.Runtime.CompilerServices.TaskAwaiter System.WindowsRuntimeSystemExtensions::GetAwaiter(Windows.Foundation.IAsyncAction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  WindowsRuntimeSystemExtensions_GetAwaiter_m1E46B83D2D5BEE385305CFFD9496572784AB5D2C (RuntimeObject* ___source0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&,!!1&)
-inline void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * ___stateMachine1, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15>(!!0&,!!1&)
+inline void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *, const RuntimeMethod*))AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *, const RuntimeMethod*))AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetException(System.Exception)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetException_m370C484922A63A6EF96E241D1370B8814F1F2D6B (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, Exception_t * ___exception0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetResult()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetResult_m151016FB698F3BB34A73BAE693A97513A7E4C838 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetStateMachine_mB5DD68F7C49EA6D452AEBA02B1B98AED898C3C25 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m03D2CD49B5251BDEFB8CAD018CCFACD74794D11D (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<StartHoloLensMediaFrameSourceGroups>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m25C02DF76D2AF55D18B682097EFFD3907CF79A47 (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
 // Windows.Foundation.IAsyncAction HoloLensForCV.MediaFrameSourceGroup::StopAsync()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaFrameSourceGroup_StopAsync_m7BD719AB4F6251735FE4EAFA4A0C48794CD23368 (MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&,!!1&)
-inline void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7 (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * ___stateMachine1, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17>(!!0&,!!1&)
+inline void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * __this, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F * ___awaiter0, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *, const RuntimeMethod*))AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *, TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *, U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *, const RuntimeMethod*))AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * __this, const RuntimeMethod* method);
-// System.Void HoloLensForCVUnity.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_mD4ADDEDAA34CCDE20D477C2B4FCB0F5BE32042DF (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * __this, const RuntimeMethod* method);
+// System.Void HoloLensPoolAid.SensorStreams/<StopHoloLensMediaFrameSourceGroup>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_m53DF6F1E9C56A1E0C4E85CCA890E5C42A4DCA7D3 (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -4114,16 +4114,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void HoloLensForCVUnity.SensorStreams::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_Start_mF1F7970045FD7725E9FAA308725E29F368E48237 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_Start_mCEB6D412109BC5E31C5DC742AE256F8E647EACC3 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_Start_mF1F7970045FD7725E9FAA308725E29F368E48237_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_Start_mCEB6D412109BC5E31C5DC742AE256F8E647EACC3_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764  V_0;
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  V_1;
 	memset((&V_1), 0, sizeof(V_1));
@@ -4132,33 +4132,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_Start_mF1F7970045FD7725E9F
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  L_0 = AsyncVoidMethodBuilder_Create_m2EF884A75C3C230F0E6A63B1E23DC82F3B159130(/*hidden argument*/NULL);
 		(&V_0)->set_U3CU3Et__builder_1(L_0);
 		(&V_0)->set_U3CU3E1__state_0((-1));
-		U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764  L_1 = V_0;
+		U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24  L_1 = V_0;
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  L_2 = L_1.get_U3CU3Et__builder_1();
 		V_1 = L_2;
-		AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)(&V_1), (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *)(&V_0), /*hidden argument*/AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m1F0CC664C1E6559617735CEC97A4B8397D6B137C_RuntimeMethod_var);
+		AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)(&V_1), (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *)(&V_0), /*hidden argument*/AsyncVoidMethodBuilder_Start_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m3B6838E87DE88C44CB8F9F81633FDB84182A1676_RuntimeMethod_var);
 		return;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_Update_mE8B4F8B291ECC0642A94C2EDE7956CAE863017C9 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_Update_m02F97DFA5437BA953C03286A4BF0F53F77EC8901 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	{
 		// UpdateHoloLensMediaFrameSourceGroup();
-		SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m7B3BB3688BA64F50A0F5F33C369D5BCDA2CBC892(__this, /*hidden argument*/NULL);
+		SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m4DF56A3D7D305AA6972D9646C88574895F9FB562(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::OnApplicationQuit()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_OnApplicationQuit_mD8062CC896FFD85659B577244D56933D228FE8A5 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::OnApplicationQuit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_OnApplicationQuit_m4FEB924117CF6138E8F10B13C2A7C74E690262EE (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_OnApplicationQuit_mD8062CC896FFD85659B577244D56933D228FE8A5_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_OnApplicationQuit_m4FEB924117CF6138E8F10B13C2A7C74E690262EE_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED  V_0;
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  V_1;
 	memset((&V_1), 0, sizeof(V_1));
@@ -4167,23 +4167,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_OnApplicationQuit_mD8062CC
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  L_0 = AsyncVoidMethodBuilder_Create_m2EF884A75C3C230F0E6A63B1E23DC82F3B159130(/*hidden argument*/NULL);
 		(&V_0)->set_U3CU3Et__builder_1(L_0);
 		(&V_0)->set_U3CU3E1__state_0((-1));
-		U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED  L_1 = V_0;
+		U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB  L_1 = V_0;
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF  L_2 = L_1.get_U3CU3Et__builder_1();
 		V_1 = L_2;
-		AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)(&V_1), (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *)(&V_0), /*hidden argument*/AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_mE34BA43F09B2CA1381B16F73CAA90BF03EFCB033_RuntimeMethod_var);
+		AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)(&V_1), (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *)(&V_0), /*hidden argument*/AsyncVoidMethodBuilder_Start_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m43C66FE5FAD7023FA0722ECF2932B0184C01083B_RuntimeMethod_var);
 		return;
 	}
 }
-// System.Threading.Tasks.Task HoloLensForCVUnity.SensorStreams::StartHoloLensMediaFrameSourceGroups()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StartHoloLensMediaFrameSourceGroups_mA4397A4BC299A3053D06E2786D486B50834AD5F5 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Threading.Tasks.Task HoloLensPoolAid.SensorStreams::StartHoloLensMediaFrameSourceGroups()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StartHoloLensMediaFrameSourceGroups_mA5BC109287F9D96FA0C460F09EC70B2B696BC81E (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_StartHoloLensMediaFrameSourceGroups_mA4397A4BC299A3053D06E2786D486B50834AD5F5_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_StartHoloLensMediaFrameSourceGroups_mA5BC109287F9D96FA0C460F09EC70B2B696BC81E_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081  V_0;
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  V_1;
 	memset((&V_1), 0, sizeof(V_1));
@@ -4193,22 +4193,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  L_0 = AsyncTaskMethodBuilder_Create_m081DF9A202E7C2F3CF3D41E1E63E63DA18F19FDB(/*hidden argument*/NULL);
 		(&V_0)->set_U3CU3Et__builder_1(L_0);
 		(&V_0)->set_U3CU3E1__state_0((-1));
-		U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081  L_1 = V_0;
+		U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73  L_1 = V_0;
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  L_2 = L_1.get_U3CU3Et__builder_1();
 		V_1 = L_2;
-		AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)(&V_1), (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mA3C56A951E6B800ABF3810B72B96668D2E2389FC_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)(&V_1), (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_Start_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m2289EFE1EEC54929F7273D7EA85AACC8A8CA4A26_RuntimeMethod_var);
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_3 = (&V_0)->get_address_of_U3CU3Et__builder_1();
 		Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_4 = AsyncTaskMethodBuilder_get_Task_m3E45BC00F7D224FEA04AB9BF26DB52E131D33022((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_3, /*hidden argument*/NULL);
 		return L_4;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::UpdateHoloLensMediaFrameSourceGroup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m7B3BB3688BA64F50A0F5F33C369D5BCDA2CBC892 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::UpdateHoloLensMediaFrameSourceGroup()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m4DF56A3D7D305AA6972D9646C88574895F9FB562 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m7B3BB3688BA64F50A0F5F33C369D5BCDA2CBC892_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_UpdateHoloLensMediaFrameSourceGroup_m4DF56A3D7D305AA6972D9646C88574895F9FB562_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * V_0 = NULL;
@@ -4272,7 +4272,7 @@ IL_0011:
 		__this->set_cameraFrameTexture_8(L_12);
 		// byte* inBytesPV = GetByteArrayFromSoftwareBitmap(pvFrame);
 		SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * L_13 = V_0;
-		uint8_t* L_14 = SensorStreams_GetByteArrayFromSoftwareBitmap_m7573B9EB39B0085195125EB940BF79A9F33414D9(__this, L_13, /*hidden argument*/NULL);
+		uint8_t* L_14 = SensorStreams_GetByteArrayFromSoftwareBitmap_m91CCC97D1AFFD2C60361C5A4D5E3FC2CE82F5E35(__this, L_13, /*hidden argument*/NULL);
 		V_1 = (uint8_t*)L_14;
 		// cameraFrameTexture.LoadRawTextureData((IntPtr)inBytesPV, pvFrame.PixelWidth * pvFrame.PixelHeight * 4);
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_15 = __this->get_cameraFrameTexture_8();
@@ -4303,16 +4303,16 @@ IL_0011:
 		return;
 	}
 }
-// System.Threading.Tasks.Task HoloLensForCVUnity.SensorStreams::StopHoloLensMediaFrameSourceGroup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Threading.Tasks.Task HoloLensPoolAid.SensorStreams::StopHoloLensMediaFrameSourceGroup()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746  V_0;
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  V_1;
 	memset((&V_1), 0, sizeof(V_1));
@@ -4322,22 +4322,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  L_0 = AsyncTaskMethodBuilder_Create_m081DF9A202E7C2F3CF3D41E1E63E63DA18F19FDB(/*hidden argument*/NULL);
 		(&V_0)->set_U3CU3Et__builder_1(L_0);
 		(&V_0)->set_U3CU3E1__state_0((-1));
-		U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746  L_1 = V_0;
+		U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963  L_1 = V_0;
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487  L_2 = L_1.get_U3CU3Et__builder_1();
 		V_1 = L_2;
-		AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)(&V_1), (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0932FD9F2A52D730F844C39389C0544FC1C5DE23_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)(&V_1), (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_Start_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_mB3061F926C7DD653F810EF82B636E988B2E98C89_RuntimeMethod_var);
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_3 = (&V_0)->get_address_of_U3CU3Et__builder_1();
 		Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_4 = AsyncTaskMethodBuilder_get_Task_m3E45BC00F7D224FEA04AB9BF26DB52E131D33022((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_3, /*hidden argument*/NULL);
 		return L_4;
 	}
 }
-// System.Byte* HoloLensForCVUnity.SensorStreams::GetByteArrayFromSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* SensorStreams_GetByteArrayFromSoftwareBitmap_m7573B9EB39B0085195125EB940BF79A9F33414D9 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * ___sb0, const RuntimeMethod* method)
+// System.Byte* HoloLensPoolAid.SensorStreams::GetByteArrayFromSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* SensorStreams_GetByteArrayFromSoftwareBitmap_m91CCC97D1AFFD2C60361C5A4D5E3FC2CE82F5E35 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * ___sb0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_GetByteArrayFromSoftwareBitmap_m7573B9EB39B0085195125EB940BF79A9F33414D9_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_GetByteArrayFromSoftwareBitmap_m91CCC97D1AFFD2C60361C5A4D5E3FC2CE82F5E35_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	SoftwareBitmap_t871B3C0711A694F4528932C74C6772A4B469710C * V_0 = NULL;
@@ -4407,8 +4407,8 @@ IL_0036:
 		{ // begin try (depth: 2)
 			// ((IMemoryBufferByteAccess)inputReference).GetBuffer(out inputBytes, out inputCapacity);
 			RuntimeObject* L_13 = V_2;
-			NullCheck(((RuntimeObject*)Castclass((RuntimeObject*)L_13, IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED_il2cpp_TypeInfo_var)));
-			InterfaceActionInvoker2< uint8_t**, uint32_t* >::Invoke(0 /* System.Void HoloLensForCVUnity.SensorStreams/IMemoryBufferByteAccess::GetBuffer(System.Byte*&,System.UInt32&) */, IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED_il2cpp_TypeInfo_var, ((RuntimeObject*)Castclass((RuntimeObject*)L_13, IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED_il2cpp_TypeInfo_var)), (uint8_t**)(&V_3), (uint32_t*)(&V_4));
+			NullCheck(((RuntimeObject*)Castclass((RuntimeObject*)L_13, IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A_il2cpp_TypeInfo_var)));
+			InterfaceActionInvoker2< uint8_t**, uint32_t* >::Invoke(0 /* System.Void HoloLensPoolAid.SensorStreams/IMemoryBufferByteAccess::GetBuffer(System.Byte*&,System.UInt32&) */, IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A_il2cpp_TypeInfo_var, ((RuntimeObject*)Castclass((RuntimeObject*)L_13, IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A_il2cpp_TypeInfo_var)), (uint8_t**)(&V_3), (uint32_t*)(&V_4));
 			// return inputBytes;
 			uint8_t* L_14 = V_3;
 			V_5 = (uint8_t*)L_14;
@@ -4489,13 +4489,13 @@ IL_005e:
 		return (uint8_t*)(L_19);
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::InitializeHandler()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE97A0A700366423C4760F8D3E54950ECD4B75B91 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::InitializeHandler()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE3C3C69516ED274D506A95C4D430382A4DB9F2D5 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SensorStreams_InitializeHandler_mE97A0A700366423C4760F8D3E54950ECD4B75B91_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SensorStreams_InitializeHandler_mE3C3C69516ED274D506A95C4D430382A4DB9F2D5_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -4514,7 +4514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE97A0A7
 		// _gestureRecognizer.Tapped += GestureRecognizer_Tapped;
 		GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * L_3 = __this->get__gestureRecognizer_14();
 		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_4 = (Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)il2cpp_codegen_object_new(Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_il2cpp_TypeInfo_var);
-		Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0(L_4, __this, (intptr_t)((intptr_t)SensorStreams_GestureRecognizer_Tapped_m7CBC5626280BF549641384187E5F8992B3916F6B_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0_RuntimeMethod_var);
+		Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0(L_4, __this, (intptr_t)((intptr_t)SensorStreams_GestureRecognizer_Tapped_m0EBCA055EBBE55F36AF35D270DF0D3DA1910C4C3_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_mC172C98F4F0CF247C0880F1F05D557C9005F0FF0_RuntimeMethod_var);
 		NullCheck(L_3);
 		GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC(L_3, L_4, /*hidden argument*/NULL);
 		// Debug.Log("Gesture recognizer initialized.");
@@ -4524,20 +4524,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_InitializeHandler_mE97A0A7
 		return;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::GestureRecognizer_Tapped(UnityEngine.XR.WSA.Input.TappedEventArgs)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_GestureRecognizer_Tapped_m7CBC5626280BF549641384187E5F8992B3916F6B (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, TappedEventArgs_t1E2125DB3E5E3F28EF3018C15F6A7786EDE8E9D6  ___obj0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::GestureRecognizer_Tapped(UnityEngine.XR.WSA.Input.TappedEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_GestureRecognizer_Tapped_m0EBCA055EBBE55F36AF35D270DF0D3DA1910C4C3 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, TappedEventArgs_t1E2125DB3E5E3F28EF3018C15F6A7786EDE8E9D6  ___obj0, const RuntimeMethod* method)
 {
 	{
 		// StopHoloLensMediaFrameSourceGroup();
-		SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF(__this, /*hidden argument*/NULL);
+		SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486(__this, /*hidden argument*/NULL);
 		// CloseHandler();
-		SensorStreams_CloseHandler_mCBD583B2329DA12DB8C50E9476C717D8B0FD53F4(__this, /*hidden argument*/NULL);
+		SensorStreams_CloseHandler_mC569C2E75BC0A04D123D72270D9E6E5BC1DF356F(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::CloseHandler()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_CloseHandler_mCBD583B2329DA12DB8C50E9476C717D8B0FD53F4 (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::CloseHandler()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_CloseHandler_mC569C2E75BC0A04D123D72270D9E6E5BC1DF356F (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	{
 		// _gestureRecognizer.StopCapturingGestures();
@@ -4552,8 +4552,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams_CloseHandler_mCBD583B2329D
 		return;
 	}
 }
-// System.Void HoloLensForCVUnity.SensorStreams::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams__ctor_m228FB23A249A97B00195E9A02DC2F5014C47C15D (SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams__ctor_m65B92453CF2EC3C00CDF0D7E02C7AF8712088660 (SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * __this, const RuntimeMethod* method)
 {
 	{
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
@@ -4568,17 +4568,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SensorStreams__ctor_m228FB23A249A97B0019
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116 (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * V_1 = NULL;
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * V_1 = NULL;
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	Exception_t * V_3 = NULL;
@@ -4592,7 +4592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_MoveNext_mC
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_1 = __this->get_U3CU3E4__this_2();
+		SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_1 = __this->get_U3CU3E4__this_2();
 		V_1 = L_1;
 	}
 
@@ -4610,9 +4610,9 @@ IL_000e:
 IL_0011:
 		{
 			// await StopHoloLensMediaFrameSourceGroup();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_3 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_3 = V_1;
 			NullCheck(L_3);
-			Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_4 = SensorStreams_StopHoloLensMediaFrameSourceGroup_mE3EEA8B25D268890DF5F44DC0E153C9A4173B7AF(L_3, /*hidden argument*/NULL);
+			Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_4 = SensorStreams_StopHoloLensMediaFrameSourceGroup_m86AC9FBC2EE97199091302A99F70ACC7EFC06486(L_3, /*hidden argument*/NULL);
 			NullCheck(L_4);
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_5 = Task_GetAwaiter_m73027D5E4C16E961C658B83526BED8E32FD2AC6C(L_4, /*hidden argument*/NULL);
 			V_2 = L_5;
@@ -4631,7 +4631,7 @@ IL_0026:
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_8 = V_2;
 			__this->set_U3CU3Eu__1_3(L_8);
 			AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * L_9 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)L_9, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *)__this, /*hidden argument*/AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED_m017361423703CA6EBA34ECF0672413271EE74EA4_RuntimeMethod_var);
+			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)L_9, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *)__this, /*hidden argument*/AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB_m8368300A99C10A16CD5EE05E7B8E5ED7FEBBE4D2_RuntimeMethod_var);
 			goto IL_0095;
 		}
 
@@ -4683,14 +4683,14 @@ IL_0095:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * _thisAdjusted = reinterpret_cast<U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *>(__this + _offset);
-	U3COnApplicationQuitU3Ed__14_MoveNext_mC6B8A8A2198E0268CB5ED0B880CBBD2C128D2116(_thisAdjusted, method);
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * _thisAdjusted = reinterpret_cast<U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *>(__this + _offset);
+	U3COnApplicationQuitU3Ed__14_MoveNext_mAF08712B9AC85A4A497A6A796B96065EAA82F52A(_thisAdjusted, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams_<OnApplicationQuit>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_SetStateMachine_mF230B57B7118AB493101DF4B99F35350C175B23A (U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<OnApplicationQuit>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_SetStateMachine_m4011D7DCCA3A216D90250E5D5F21FE9F929AA9DA (U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	{
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * L_0 = __this->get_address_of_U3CU3Et__builder_1();
@@ -4699,11 +4699,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnApplicationQuitU3Ed__14_SetStateMac
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3COnApplicationQuitU3Ed__14_SetStateMachine_mF230B57B7118AB493101DF4B99F35350C175B23A_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3COnApplicationQuitU3Ed__14_SetStateMachine_m4011D7DCCA3A216D90250E5D5F21FE9F929AA9DA_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED * _thisAdjusted = reinterpret_cast<U3COnApplicationQuitU3Ed__14_t479416921654CC85A8712513579C2DAA46BCC1ED *>(__this + _offset);
-	U3COnApplicationQuitU3Ed__14_SetStateMachine_mF230B57B7118AB493101DF4B99F35350C175B23A(_thisAdjusted, ___stateMachine0, method);
+	U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB * _thisAdjusted = reinterpret_cast<U3COnApplicationQuitU3Ed__14_t538CE09CA8745C526D8857BD28DBDAC8220A6DDB *>(__this + _offset);
+	U3COnApplicationQuitU3Ed__14_SetStateMachine_m4011D7DCCA3A216D90250E5D5F21FE9F929AA9DA(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -4713,17 +4713,17 @@ IL2CPP_EXTERN_C  void U3COnApplicationQuitU3Ed__14_SetStateMachine_mF230B57B7118
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void HoloLensForCVUnity.SensorStreams_<Start>d__12::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788 (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<Start>d__12::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * V_1 = NULL;
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * V_1 = NULL;
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	Exception_t * V_3 = NULL;
@@ -4737,7 +4737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_MoveNext_m7A712DA085537
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_1 = __this->get_U3CU3E4__this_2();
+		SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_1 = __this->get_U3CU3E4__this_2();
 		V_1 = L_1;
 	}
 
@@ -4755,12 +4755,12 @@ IL_000e:
 IL_0011:
 		{
 			// InitializeHandler();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_3 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_3 = V_1;
 			NullCheck(L_3);
-			SensorStreams_InitializeHandler_mE97A0A700366423C4760F8D3E54950ECD4B75B91(L_3, /*hidden argument*/NULL);
+			SensorStreams_InitializeHandler_mE3C3C69516ED274D506A95C4D430382A4DB9F2D5(L_3, /*hidden argument*/NULL);
 			// cameraFrameMaterial = cameraFrameGO.GetComponent<MeshRenderer>().material;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_4 = V_1;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_5 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_4 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_5 = V_1;
 			NullCheck(L_5);
 			GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_6 = L_5->get_cameraFrameGO_6();
 			NullCheck(L_6);
@@ -4770,9 +4770,9 @@ IL_0011:
 			NullCheck(L_4);
 			L_4->set_cameraFrameMaterial_7(L_8);
 			// await StartHoloLensMediaFrameSourceGroups();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_9 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_9 = V_1;
 			NullCheck(L_9);
-			Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_10 = SensorStreams_StartHoloLensMediaFrameSourceGroups_mA4397A4BC299A3053D06E2786D486B50834AD5F5(L_9, /*hidden argument*/NULL);
+			Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_10 = SensorStreams_StartHoloLensMediaFrameSourceGroups_mA5BC109287F9D96FA0C460F09EC70B2B696BC81E(L_9, /*hidden argument*/NULL);
 			NullCheck(L_10);
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_11 = Task_GetAwaiter_m73027D5E4C16E961C658B83526BED8E32FD2AC6C(L_10, /*hidden argument*/NULL);
 			V_2 = L_11;
@@ -4791,7 +4791,7 @@ IL_0042:
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_14 = V_2;
 			__this->set_U3CU3Eu__1_3(L_14);
 			AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * L_15 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)L_15, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *)__this, /*hidden argument*/AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764_m2FF0B602E41C1F95FB6C674E6AE1FDE011A322F0_RuntimeMethod_var);
+			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044((AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF *)L_15, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *)__this, /*hidden argument*/AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24_m228027C933F882CED68E15E9945193B5DE8D2044_RuntimeMethod_var);
 			goto IL_00b1;
 		}
 
@@ -4843,14 +4843,14 @@ IL_00b1:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * _thisAdjusted = reinterpret_cast<U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *>(__this + _offset);
-	U3CStartU3Ed__12_MoveNext_m7A712DA085537D5502BE674F42BBE5A5F039F788(_thisAdjusted, method);
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * _thisAdjusted = reinterpret_cast<U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *>(__this + _offset);
+	U3CStartU3Ed__12_MoveNext_m906538A7C2FB31B717A2E15D111A0A159115406E(_thisAdjusted, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams_<Start>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_SetStateMachine_m10860B324F538B91EE2D27E1E84CD5648773A3D7 (U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<Start>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_SetStateMachine_m1D7B42BC27E3F2468CA73DEF16C5B13757F55FA5 (U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	{
 		AsyncVoidMethodBuilder_t44E3C9B52B019BB5BDCC0E1BB83188B536161CFF * L_0 = __this->get_address_of_U3CU3Et__builder_1();
@@ -4859,11 +4859,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12_SetStateMachine_m10860B
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStartU3Ed__12_SetStateMachine_m10860B324F538B91EE2D27E1E84CD5648773A3D7_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStartU3Ed__12_SetStateMachine_m1D7B42BC27E3F2468CA73DEF16C5B13757F55FA5_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 * _thisAdjusted = reinterpret_cast<U3CStartU3Ed__12_t0657647115F8AEA59A0803A1BC640310B05EF764 *>(__this + _offset);
-	U3CStartU3Ed__12_SetStateMachine_m10860B324F538B91EE2D27E1E84CD5648773A3D7(_thisAdjusted, ___stateMachine0, method);
+	U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 * _thisAdjusted = reinterpret_cast<U3CStartU3Ed__12_t7B4D961E9280B654A673C50A72914E11EFBA3A24 *>(__this + _offset);
+	U3CStartU3Ed__12_SetStateMachine_m1D7B42BC27E3F2468CA73DEF16C5B13757F55FA5(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -4873,17 +4873,17 @@ IL2CPP_EXTERN_C  void U3CStartU3Ed__12_SetStateMachine_m10860B324F538B91EE2D27E1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * V_1 = NULL;
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * V_1 = NULL;
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	Exception_t * V_3 = NULL;
@@ -4897,7 +4897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_1 = __this->get_U3CU3E4__this_2();
+		SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_1 = __this->get_U3CU3E4__this_2();
 		V_1 = L_1;
 	}
 
@@ -4915,35 +4915,35 @@ IL_000e:
 IL_0014:
 		{
 			// myText.text = "Initalizing MediaFrameSourceGroups...";
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_3 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_3 = V_1;
 			NullCheck(L_3);
 			Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_4 = L_3->get_myText_4();
 			NullCheck(L_4);
 			VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, _stringLiteralA55F23ED9B01772ABC8B1080BD661AA928CADFBB);
 			// _sensorFrameStreamerPv = new SensorFrameStreamer();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_5 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_5 = V_1;
 			SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * L_6 = (SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 *)il2cpp_codegen_object_new(SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849_il2cpp_TypeInfo_var);
 			SensorFrameStreamer__ctor_m2A7FE63EE0D6B674FB9C840663B0EAFBF377C657(L_6, /*hidden argument*/NULL);
 			NullCheck(L_5);
 			L_5->set__sensorFrameStreamerPv_10(L_6);
 			// _sensorType = (SensorType)sensorTypePv;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_7 = V_1;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_8 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_7 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_8 = V_1;
 			NullCheck(L_8);
 			int32_t L_9 = L_8->get_sensorTypePv_5();
 			NullCheck(L_7);
 			L_7->set__sensorType_13(L_9);
 			// _sensorFrameStreamerPv.Enable(_sensorType);
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_10 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_10 = V_1;
 			NullCheck(L_10);
 			SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * L_11 = L_10->get__sensorFrameStreamerPv_10();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_12 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_12 = V_1;
 			NullCheck(L_12);
 			int32_t L_13 = L_12->get__sensorType_13();
 			NullCheck(L_11);
 			SensorFrameStreamer_Enable_m76FACD01E7F7662E5C8045742125D0D6494E82AD(L_11, L_13, /*hidden argument*/NULL);
 			// _spatialPerception = new SpatialPerception();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_14 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_14 = V_1;
 			SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * L_15 = (SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 *)il2cpp_codegen_object_new(SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577_il2cpp_TypeInfo_var);
 			SpatialPerception__ctor_mEF5E6D7D5750DD1AF34E9F594E10846F1EB007D3(L_15, /*hidden argument*/NULL);
 			NullCheck(L_14);
@@ -4952,11 +4952,11 @@ IL_0014:
 			//     MediaFrameSourceGroupType.PhotoVideoCamera,
 			//     _spatialPerception,
 			//     _sensorFrameStreamerPv);
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_16 = V_1;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_17 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_16 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_17 = V_1;
 			NullCheck(L_17);
 			SpatialPerception_tDD728203A074E13BCA1E015A265D6CC013A08577 * L_18 = L_17->get__spatialPerception_11();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_19 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_19 = V_1;
 			NullCheck(L_19);
 			SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 * L_20 = L_19->get__sensorFrameStreamerPv_10();
 			MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * L_21 = (MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 *)il2cpp_codegen_object_new(MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8_il2cpp_TypeInfo_var);
@@ -4964,22 +4964,22 @@ IL_0014:
 			NullCheck(L_16);
 			L_16->set__pvMediaFrameSourceGroup_12(L_21);
 			// _pvMediaFrameSourceGroup.Enable(_sensorType);
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_22 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_22 = V_1;
 			NullCheck(L_22);
 			MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * L_23 = L_22->get__pvMediaFrameSourceGroup_12();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_24 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_24 = V_1;
 			NullCheck(L_24);
 			int32_t L_25 = L_24->get__sensorType_13();
 			NullCheck(L_23);
 			MediaFrameSourceGroup_Enable_mFB95B66C15BEAD3C5AC911DD021551BBE8692532(L_23, L_25, /*hidden argument*/NULL);
 			// myText.text = "Starting MediaFrameSourceGroups...";
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_26 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_26 = V_1;
 			NullCheck(L_26);
 			Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_27 = L_26->get_myText_4();
 			NullCheck(L_27);
 			VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_27, _stringLiteral4ED5D681651AC9A6E74DC13E8C360629648BE9D1);
 			// await _pvMediaFrameSourceGroup.StartAsync();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_28 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_28 = V_1;
 			NullCheck(L_28);
 			MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * L_29 = L_28->get__pvMediaFrameSourceGroup_12();
 			NullCheck(L_29);
@@ -5001,7 +5001,7 @@ IL_00aa:
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_34 = V_2;
 			__this->set_U3CU3Eu__1_3(L_34);
 			AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_35 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_35, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081_mC687285452C1F1C8F4CE790AE305D3936C32C4C5_RuntimeMethod_var);
+			AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_35, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73_m050E15B97D24C1FD835A35ACF50A5241D1D8CD91_RuntimeMethod_var);
 			goto IL_0130;
 		}
 
@@ -5020,11 +5020,11 @@ IL_00e6:
 		{
 			TaskAwaiter_GetResult_m89868C01592AC2B06CE1FD42D9B9C187C6FD928A((TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), /*hidden argument*/NULL);
 			// _mediaFrameSourceGroupsStarted = true;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_39 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_39 = V_1;
 			NullCheck(L_39);
 			L_39->set__mediaFrameSourceGroupsStarted_9((bool)1);
 			// myText.text = "MediaFrameSourceGroups started...";
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_40 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_40 = V_1;
 			NullCheck(L_40);
 			Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_41 = L_40->get_myText_4();
 			NullCheck(L_41);
@@ -5063,14 +5063,14 @@ IL_0130:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * _thisAdjusted = reinterpret_cast<U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *>(__this + _offset);
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_mAF59F0D12AFD845F70578CDB707210592A81685A(_thisAdjusted, method);
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * _thisAdjusted = reinterpret_cast<U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *>(__this + _offset);
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_MoveNext_m35FEF1800C58D7535C735F1EBBF6E0758468291D(_thisAdjusted, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m03D2CD49B5251BDEFB8CAD018CCFACD74794D11D (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<StartHoloLensMediaFrameSourceGroups>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m25C02DF76D2AF55D18B682097EFFD3907CF79A47 (U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	{
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_0 = __this->get_address_of_U3CU3Et__builder_1();
@@ -5079,11 +5079,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartHoloLensMediaFrameSourceGroupsU3
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m03D2CD49B5251BDEFB8CAD018CCFACD74794D11D_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m25C02DF76D2AF55D18B682097EFFD3907CF79A47_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 * _thisAdjusted = reinterpret_cast<U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_t57110825D3B2E2F6CEF3CC28427AF348982B5081 *>(__this + _offset);
-	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m03D2CD49B5251BDEFB8CAD018CCFACD74794D11D(_thisAdjusted, ___stateMachine0, method);
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 * _thisAdjusted = reinterpret_cast<U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_tABD26C4028A4AEBDBE27A0089F2D1DFA06BB4C73 *>(__this + _offset);
+	U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMachine_m25C02DF76D2AF55D18B682097EFFD3907CF79A47(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -5093,17 +5093,17 @@ IL2CPP_EXTERN_C  void U3CStartHoloLensMediaFrameSourceGroupsU3Ed__15_SetStateMac
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * __this, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * V_1 = NULL;
+	SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * V_1 = NULL;
 	TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	Exception_t * V_3 = NULL;
@@ -5117,7 +5117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_1 = __this->get_U3CU3E4__this_2();
+		SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_1 = __this->get_U3CU3E4__this_2();
 		V_1 = L_1;
 	}
 
@@ -5136,7 +5136,7 @@ IL_0011:
 		{
 			// if (!_mediaFrameSourceGroupsStarted ||
 			//     _pvMediaFrameSourceGroup == null)
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_3 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_3 = V_1;
 			NullCheck(L_3);
 			bool L_4 = L_3->get__mediaFrameSourceGroupsStarted_9();
 			if (!L_4)
@@ -5147,7 +5147,7 @@ IL_0011:
 
 IL_0019:
 		{
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_5 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_5 = V_1;
 			NullCheck(L_5);
 			MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * L_6 = L_5->get__pvMediaFrameSourceGroup_12();
 			if (L_6)
@@ -5165,7 +5165,7 @@ IL_0021:
 IL_0026:
 		{
 			// await _pvMediaFrameSourceGroup.StopAsync();
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_7 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_7 = V_1;
 			NullCheck(L_7);
 			MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 * L_8 = L_7->get__pvMediaFrameSourceGroup_12();
 			NullCheck(L_8);
@@ -5187,7 +5187,7 @@ IL_0040:
 			TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F  L_13 = V_2;
 			__this->set_U3CU3Eu__1_3(L_13);
 			AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_14 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_14, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746_m0B3CFDC4225D6B5248E9926F63F10A54DCBA65E7_RuntimeMethod_var);
+			AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D((AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 *)L_14, (TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F_TisU3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963_m897DE1A8C4D78B44DCF3C91E9B945360597AE19D_RuntimeMethod_var);
 			goto IL_00d4;
 		}
 
@@ -5206,19 +5206,19 @@ IL_007c:
 		{
 			TaskAwaiter_GetResult_m89868C01592AC2B06CE1FD42D9B9C187C6FD928A((TaskAwaiter_t0CDE8DBB564F0A0EA55FA6B3D43EEF96BC26252F *)(&V_2), /*hidden argument*/NULL);
 			// _pvMediaFrameSourceGroup = null;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_18 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_18 = V_1;
 			NullCheck(L_18);
 			L_18->set__pvMediaFrameSourceGroup_12((MediaFrameSourceGroup_t81A62BB7229CDBDE57DACE8362C9A7657B19DEB8 *)NULL);
 			// _sensorFrameStreamerPv = null;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_19 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_19 = V_1;
 			NullCheck(L_19);
 			L_19->set__sensorFrameStreamerPv_10((SensorFrameStreamer_t260E842ACC198DB23E5DDF4E161D537DFB2A0849 *)NULL);
 			// _mediaFrameSourceGroupsStarted = false;
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_20 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_20 = V_1;
 			NullCheck(L_20);
 			L_20->set__mediaFrameSourceGroupsStarted_9((bool)0);
 			// myText.text = "Stopped streaming sensor frames. Okay to exit app.";
-			SensorStreams_t7BA07283EE5C468C9CD292C159EDE3E8204CA2D3 * L_21 = V_1;
+			SensorStreams_t32C05E131555E611C2D06D1CE09362989666C3CF * L_21 = V_1;
 			NullCheck(L_21);
 			Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_22 = L_21->get_myText_4();
 			NullCheck(L_22);
@@ -5257,14 +5257,14 @@ IL_00d4:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * _thisAdjusted = reinterpret_cast<U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *>(__this + _offset);
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mE570DE634AC0E56564913D5E7FFD384D2D79A93C(_thisAdjusted, method);
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * _thisAdjusted = reinterpret_cast<U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *>(__this + _offset);
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_MoveNext_mD932B53D4531F8C14FB844A7E8D59F039B847D1E(_thisAdjusted, method);
 }
-// System.Void HoloLensForCVUnity.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_mD4ADDEDAA34CCDE20D477C2B4FCB0F5BE32042DF (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+// System.Void HoloLensPoolAid.SensorStreams_<StopHoloLensMediaFrameSourceGroup>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_m53DF6F1E9C56A1E0C4E85CCA890E5C42A4DCA7D3 (U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	{
 		AsyncTaskMethodBuilder_t0CD1893D670405BED201BE8CA6F2E811F2C0F487 * L_0 = __this->get_address_of_U3CU3Et__builder_1();
@@ -5273,11 +5273,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopHoloLensMediaFrameSourceGroupU3Ed
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_mD4ADDEDAA34CCDE20D477C2B4FCB0F5BE32042DF_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_m53DF6F1E9C56A1E0C4E85CCA890E5C42A4DCA7D3_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 * _thisAdjusted = reinterpret_cast<U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t3E82C990D0E005F875AEE249C620340E34AB5746 *>(__this + _offset);
-	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_mD4ADDEDAA34CCDE20D477C2B4FCB0F5BE32042DF(_thisAdjusted, ___stateMachine0, method);
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 * _thisAdjusted = reinterpret_cast<U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_t2FABFD81262284D03A775F17F6F5B3AA99840963 *>(__this + _offset);
+	U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachine_m53DF6F1E9C56A1E0C4E85CCA890E5C42A4DCA7D3(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -5287,19 +5287,19 @@ IL2CPP_EXTERN_C  void U3CStopHoloLensMediaFrameSourceGroupU3Ed__17_SetStateMachi
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// HoloLensForCVUnity.SensorStreams_IMemoryBufferByteAccess
-const Il2CppGuid IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED::IID = { 0x5b0d3235, 0x4dba, 0x4d44, 0x86, 0x5e, 0x8f, 0x1d, 0xe, 0x4f, 0xd0, 0x4d };
-// System.Void HoloLensForCVUnity.SensorStreams_IMemoryBufferByteAccess::GetBuffer(System.Byte*&,System.UInt32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IMemoryBufferByteAccess_GetBuffer_m418FC1F54A70DDCC2A4CE855FB8ED06962E54A1C (RuntimeObject* __this, uint8_t** ___buffer0, uint32_t* ___capacity1, const RuntimeMethod* method)
+// HoloLensPoolAid.SensorStreams_IMemoryBufferByteAccess
+const Il2CppGuid IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A::IID = { 0x5b0d3235, 0x4dba, 0x4d44, 0x86, 0x5e, 0x8f, 0x1d, 0xe, 0x4f, 0xd0, 0x4d };
+// System.Void HoloLensPoolAid.SensorStreams_IMemoryBufferByteAccess::GetBuffer(System.Byte*&,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IMemoryBufferByteAccess_GetBuffer_m04268B60D4B4241323DA55575E233C39D6351464 (RuntimeObject* __this, uint8_t** ___buffer0, uint32_t* ___capacity1, const RuntimeMethod* method)
 {
-	IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED* ____imemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED = il2cpp_codegen_com_query_interface<IMemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED>(static_cast<Il2CppComObject*>(__this));
+	IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A* ____imemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A = il2cpp_codegen_com_query_interface<IMemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A>(static_cast<Il2CppComObject*>(__this));
 
 	// Marshaling of parameter '___buffer0' to native representation
 	uint8_t* ____buffer0_empty = NULL;
 	uint8_t** ____buffer0_marshaled = &____buffer0_empty;
 
 	// Native function invocation
-	const il2cpp_hresult_t hr = ____imemoryBufferByteAccess_t940D03FF611DF0D974F33F2F4CB57E90B4EA5AED->IMemoryBufferByteAccess_GetBuffer_m418FC1F54A70DDCC2A4CE855FB8ED06962E54A1C(____buffer0_marshaled, ___capacity1);
+	const il2cpp_hresult_t hr = ____imemoryBufferByteAccess_t0923917C72EF856F533B3FB97EA493FDD7A19B7A->IMemoryBufferByteAccess_GetBuffer_m04268B60D4B4241323DA55575E233C39D6351464(____buffer0_marshaled, ___capacity1);
 
 	il2cpp_codegen_com_raise_exception_if_failed(hr, true);
 

@@ -267,6 +267,7 @@ MonoBehaviour:
   myText: {fileID: 616508440}
   sensorTypePv: 0
   cameraFrameGO: {fileID: 788867547}
+  arucoDictionary: 0
 --- !u!1 &616508438
 GameObject:
   m_ObjectHideFlags: 0

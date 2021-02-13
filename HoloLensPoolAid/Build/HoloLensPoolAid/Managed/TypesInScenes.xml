@@ -41,7 +41,7 @@
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="HoloLensForCVUnity.SensorStreams" preserve="nothing"/>
+		<type fullname="HoloLensPoolAid.SensorStreams" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
