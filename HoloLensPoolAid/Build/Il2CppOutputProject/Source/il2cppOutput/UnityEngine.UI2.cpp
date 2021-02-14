@@ -295,7 +295,7 @@ struct List_1_t4FB5BF302DAD74D690156A022C4FA4D4081E9B26;
 // System.Collections.Generic.List`1<UnityEngine.EventSystems.EventSystem>
 struct List_1_t882412D5BE0B5BFC1900366319F8B2EB544BDD8B;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
-struct List_1_t0087C02D52C7E5CFF8C0C55FC0453A28FD5F055B;
+struct List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0;
 // System.Collections.Generic.List`1<UnityEngine.RectTransform>
 struct List_1_t6E2F647783FBCA5123C6D7868CA8A1B87E57EFE7;
 // System.Collections.Generic.List`1<UnityEngine.UI.Image>
@@ -6270,7 +6270,7 @@ public:
 	// UnityEngine.EventSystems.RaycastResult UnityEngine.EventSystems.PointerEventData::<pointerPressRaycast>k__BackingField
 	RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91  ___U3CpointerPressRaycastU3Ek__BackingField_8;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> UnityEngine.EventSystems.PointerEventData::hovered
-	List_1_t0087C02D52C7E5CFF8C0C55FC0453A28FD5F055B * ___hovered_9;
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___hovered_9;
 	// System.Boolean UnityEngine.EventSystems.PointerEventData::<eligibleForClick>k__BackingField
 	bool ___U3CeligibleForClickU3Ek__BackingField_10;
 	// System.Int32 UnityEngine.EventSystems.PointerEventData::<pointerId>k__BackingField
@@ -6369,9 +6369,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_hovered_9() { return static_cast<int32_t>(offsetof(PointerEventData_tC18994283B7753E430E316A62D9E45BA6D644C63, ___hovered_9)); }
-	inline List_1_t0087C02D52C7E5CFF8C0C55FC0453A28FD5F055B * get_hovered_9() const { return ___hovered_9; }
-	inline List_1_t0087C02D52C7E5CFF8C0C55FC0453A28FD5F055B ** get_address_of_hovered_9() { return &___hovered_9; }
-	inline void set_hovered_9(List_1_t0087C02D52C7E5CFF8C0C55FC0453A28FD5F055B * value)
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_hovered_9() const { return ___hovered_9; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_hovered_9() { return &___hovered_9; }
+	inline void set_hovered_9(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
 	{
 		___hovered_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___hovered_9), (void*)value);
@@ -9915,7 +9915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutGroup_SetProperty_TisRuntimeObject
 // System.Void UnityEngine.UI.LayoutGroup::SetProperty<System.Int32Enum>(T&,T)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutGroup_SetProperty_TisInt32Enum_t6312CE4586C17FE2E2E513D2E7655B574F10FDCD_mCC572EEB2E79CE983B0218BCB4D69A61A74A91CD_gshared (LayoutGroup_t9E072B95DA6476C487C0B07A815291249025C0E4 * __this, int32_t* ___currentValue0, int32_t ___newValue1, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_mC5CFC6C9F3007FC24FE020198265D4B5B0659FFC_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1<T> UnityEngine.UI.ListPool`1<System.Object>::Get()
@@ -10116,7 +10116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mBC2401774F3BE33E8CF6
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.RectTransform>()
 inline RectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20 * Component_GetComponent_TisRectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20_mEF939F54B6B56187EC11E16F51DCB12EB62C2103 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
 {
-	return ((  RectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20 * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared)(__this, method);
+	return ((  RectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20 * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.RectTransform>::Clear()
 inline void List_1_Clear_m4DEC1EC1F01699D3BFFC9A89DC9E285A23E147AE (List_1_t6E2F647783FBCA5123C6D7868CA8A1B87E57EFE7 * __this, const RuntimeMethod* method)
@@ -10344,7 +10344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Graphic>()
 inline Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8 * Component_GetComponent_TisGraphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8_mFA58F3A4B73E992545A39ABAD4D36D0BBFAEBBAE (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
 {
-	return ((  Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8 * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared)(__this, method);
+	return ((  Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8 * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared)(__this, method);
 }
 // UnityEngine.CanvasRenderer UnityEngine.UI.Graphic::get_canvasRenderer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CanvasRenderer_tB4D9C9FE77FD5C9C4546FC022D6E956960BC2B72 * Graphic_get_canvasRenderer_mB3E532BE19116A3F0D6ADC1CD29D242428EAE8AA (Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8 * __this, const RuntimeMethod* method);
@@ -10825,7 +10825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBehaviour_OnCanvasHierarchyChanged_m63
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Transform>()
 inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * Component_GetComponent_TisTransform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA_m1F9576DC1C4A81D31D05BDDEBCE134AA97FF4075 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
 {
-	return ((  Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared)(__this, method);
+	return ((  Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared)(__this, method);
 }
 // System.Reflection.MethodInfo System.Type::GetMethod(System.String,System.Type[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t * Type_GetMethod_m54E1EF62AFF44AA621E074D123C5C0B3E73A7DD5 (Type_t * __this, String_t* ___name0, TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* ___types1, const RuntimeMethod* method);
@@ -11165,7 +11165,7 @@ inline void List_1__ctor_mD67A0D00E62A8AA37A4004C6830EAA2318C1873B (List_1_tE774
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
 inline Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * Component_GetComponent_TisAnimator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A_mEA6C8FBABE309599A828D6BB8777278BCFB28719 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
 {
-	return ((  Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared)(__this, method);
+	return ((  Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared)(__this, method);
 }
 // System.Void UnityEngine.Component::GetComponents<UnityEngine.CanvasGroup>(System.Collections.Generic.List`1<!!0>)
 inline void Component_GetComponents_TisCanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90_m5DF405E559935921C696D7D95F94F331DFC79E47 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, List_1_tE7746C234F913BA0579DAC892E7288A1C7664A0A * ___results0, const RuntimeMethod* method)
@@ -11359,7 +11359,7 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR SliderEvent_t64A824F56F80FC8E2F233F0A
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Image>()
 inline Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E * Component_GetComponent_TisImage_t18FED07D8646917E1C563745518CF3DD57FF0B3E_m899DB55B6934969ACEB9F317359AFB8745F88925 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
 {
-	return ((  Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m233A1E6EF90A3BA46CD83BFC568F4E4DB4D93CC9_gshared)(__this, method);
+	return ((  Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m15E3130603CE5400743CCCDEE7600FB9EEFAE5C0_gshared)(__this, method);
 }
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507 (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method);

@@ -2,370 +2,370 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source\il2cppOutput">
-      <UniqueIdentifier>{8c6952b2-2404-49d1-97c3-a3aba45834ed}</UniqueIdentifier>
+      <UniqueIdentifier>{55a5eb38-5c3e-480f-93ef-c500ca6a4d39}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc">
-      <UniqueIdentifier>{a7be229f-fc30-4925-baa4-cda39f5a6539}</UniqueIdentifier>
+      <UniqueIdentifier>{ad25339d-1f1b-4ca6-b470-b0874ae5e32a}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\cord">
-      <UniqueIdentifier>{761d1bd1-0ba9-4735-af83-2c021e0b6ccd}</UniqueIdentifier>
+      <UniqueIdentifier>{5ec5210e-618e-43a3-a024-3d29b4a8cdae}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\cord\tests">
-      <UniqueIdentifier>{2578d137-170f-4867-b981-c226ee75d7a9}</UniqueIdentifier>
+      <UniqueIdentifier>{de88100a-2c40-4507-92c8-1a6a3e797fe4}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\extra">
-      <UniqueIdentifier>{e64528c2-457c-4f6d-8ac0-3fdf83faf21a}</UniqueIdentifier>
+      <UniqueIdentifier>{f6eace45-271c-41b8-98c6-08e808f4bac5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\extra\Mac_files">
-      <UniqueIdentifier>{5206f4ad-551d-4438-a3c6-075958652221}</UniqueIdentifier>
+      <UniqueIdentifier>{b4049fb9-93f6-435b-af7b-9a9bffb8cdba}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src">
-      <UniqueIdentifier>{dd70f96e-d60d-44ea-9f45-b226f30c3c20}</UniqueIdentifier>
+      <UniqueIdentifier>{42870c1a-dcd1-4051-a4d3-5a24e0187dc5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\tests">
-      <UniqueIdentifier>{ec4fad94-5511-41e2-9dd2-1c650494ddc8}</UniqueIdentifier>
+      <UniqueIdentifier>{46f9a2c1-70fa-41ae-84db-07d5f1b40d0a}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\tools">
-      <UniqueIdentifier>{20fe37d8-0da7-4efc-b6e4-7c112ed0fa11}</UniqueIdentifier>
+      <UniqueIdentifier>{c100b60f-0969-4e9f-b42f-c2fe3903c2e0}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\windows-untested">
-      <UniqueIdentifier>{98c47247-5d66-4afa-bd61-4193fe27d5a0}</UniqueIdentifier>
+      <UniqueIdentifier>{15153c0b-51af-4e22-bed1-e75f05b3a68f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\eglib">
-      <UniqueIdentifier>{bf4acec3-c545-4efb-8c32-ebcde8539e83}</UniqueIdentifier>
+      <UniqueIdentifier>{311498bb-d22d-49d4-b0e3-897130727b25}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\metadata">
-      <UniqueIdentifier>{c8053ea8-c647-4031-9365-2e29746c7ac8}</UniqueIdentifier>
+      <UniqueIdentifier>{fbbf25d2-0bef-4fc2-b9e1-164ad802fbb5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\metadata\private">
-      <UniqueIdentifier>{a2b16b14-b2de-4b7d-988e-c44af117be8d}</UniqueIdentifier>
+      <UniqueIdentifier>{88a9b48f-ac77-4d22-9bb0-bc4e9de4853f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\mini">
-      <UniqueIdentifier>{8f0a6810-fa3d-4ce1-a1b9-91d6caedc147}</UniqueIdentifier>
+      <UniqueIdentifier>{29e50cea-9698-4ee7-b1a0-69ce46915904}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\sgen">
-      <UniqueIdentifier>{8912d9d1-5ef3-45b2-b3e1-af2a2408bce0}</UniqueIdentifier>
+      <UniqueIdentifier>{a150ae42-66ce-4b05-9234-c6c6bd2ef66c}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\utils">
-      <UniqueIdentifier>{aaecb7bd-6516-4e85-a32e-8bebc4137682}</UniqueIdentifier>
+      <UniqueIdentifier>{433b763b-6217-441b-9ee0-f45a207cbd67}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\support\libm">
-      <UniqueIdentifier>{03264f11-ca77-4eca-a28f-31b231a5638f}</UniqueIdentifier>
+      <UniqueIdentifier>{6f28f7c4-9dc2-4ac8-9ef4-1a838c956869}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\xamarin-android">
-      <UniqueIdentifier>{850de8cb-9bd2-43ce-8118-9ae7f04ca23c}</UniqueIdentifier>
+      <UniqueIdentifier>{6f3dc2eb-ba41-4485-a359-c9d7096d35f1}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\xxHash">
-      <UniqueIdentifier>{4906bf78-19f8-413a-95ef-23fe1ba53d20}</UniqueIdentifier>
+      <UniqueIdentifier>{d95488aa-98b4-4ef3-bfde-2d937f297da1}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\zlib">
-      <UniqueIdentifier>{779822ec-a527-44d3-848f-c45d87d0831b}</UniqueIdentifier>
+      <UniqueIdentifier>{e80452c8-a7c6-4513-b60a-95435802e2a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp">
-      <UniqueIdentifier>{876ddaa3-73dd-4aaa-a0c7-7b307c6effa4}</UniqueIdentifier>
+      <UniqueIdentifier>{1ae258b3-529d-4a4b-a4e9-a0a0ebd8b530}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\codegen">
-      <UniqueIdentifier>{2906fd0c-9ceb-4680-b3e6-c7118aa4a5f5}</UniqueIdentifier>
+      <UniqueIdentifier>{5f596d16-c0c5-4a43-ba5e-74e755d0781f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\debugger">
-      <UniqueIdentifier>{98f1dd62-25a1-48ab-a80a-0d0db756898a}</UniqueIdentifier>
+      <UniqueIdentifier>{39a5c104-58d2-465f-a3c5-e83f730ff51c}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\gc">
-      <UniqueIdentifier>{a4c2da0e-4578-4de0-ac70-dd656d59c7fb}</UniqueIdentifier>
+      <UniqueIdentifier>{9fd05832-3c43-4fb7-b82f-6251c325c954}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\Mono">
-      <UniqueIdentifier>{9ee95344-a396-47cb-b9bd-54b2b24f8af0}</UniqueIdentifier>
+      <UniqueIdentifier>{ae800866-bbdb-46e0-a9b8-c03caf05ddea}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\Mono.Globalization.Unicode">
-      <UniqueIdentifier>{544a348f-b47a-48e5-b6f9-6a0be4f70eee}</UniqueIdentifier>
+      <UniqueIdentifier>{6cbdda91-07b9-40e7-aa13-1ed78b24e601}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\Mono.Interop">
-      <UniqueIdentifier>{71e85197-840e-46b2-a7a6-dc9676187a41}</UniqueIdentifier>
+      <UniqueIdentifier>{fffb063a-5707-400f-bfca-5edc7ccc4524}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\Mono.Security.Cryptography">
-      <UniqueIdentifier>{b478dbd5-c423-4560-a128-c7016fe1dfb0}</UniqueIdentifier>
+      <UniqueIdentifier>{bf4c0a31-7c0a-4bea-a5dc-96529d238fdc}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\Mono.Unity">
-      <UniqueIdentifier>{74750e48-2d54-4956-9cbd-d30baa74c3d9}</UniqueIdentifier>
+      <UniqueIdentifier>{33c63285-9877-4ac3-97f8-ae85625d6780}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System">
-      <UniqueIdentifier>{37ff25e1-a9d9-4f92-a88d-ab50c946d18a}</UniqueIdentifier>
+      <UniqueIdentifier>{45faa383-a997-4523-805b-6ddd5a5f73e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Diagnostics">
-      <UniqueIdentifier>{6ae71f71-0e4f-4b64-b046-0e08db2036f8}</UniqueIdentifier>
+      <UniqueIdentifier>{9b077d20-5dbc-4b54-82d8-9514f83577e3}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Globalization">
-      <UniqueIdentifier>{e3d800e8-264e-425c-ae7e-36a633662cc7}</UniqueIdentifier>
+      <UniqueIdentifier>{79444d13-eefd-47f7-a9dd-8fbe89f6d20f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.IO">
-      <UniqueIdentifier>{58aaa650-25a2-48db-b447-6f3ca201b9c0}</UniqueIdentifier>
+      <UniqueIdentifier>{582d6410-b7c8-43a5-9b9d-116c0b28f45b}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Reflection">
-      <UniqueIdentifier>{41c53d17-9403-4907-83c6-4280b5d88e47}</UniqueIdentifier>
+      <UniqueIdentifier>{078c7bef-d594-447c-8665-140639ce14e4}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Reflection.Emit">
-      <UniqueIdentifier>{46b0a421-a7ef-4291-86b8-7be8425302c7}</UniqueIdentifier>
+      <UniqueIdentifier>{a2fd989f-7908-4e06-ae49-f4f3fff20802}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.CompilerServices">
-      <UniqueIdentifier>{489a6037-1abf-4eee-8a3b-bd16dd3420b5}</UniqueIdentifier>
+      <UniqueIdentifier>{d7f3ea91-e2cc-4e1e-967f-1b145682bf9e}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.InteropServices">
-      <UniqueIdentifier>{037a9a86-368d-4096-8661-0adb56715f96}</UniqueIdentifier>
+      <UniqueIdentifier>{bea6d044-8791-41a5-84c7-44f6ec0120f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.InteropServices.WindowsRuntime">
-      <UniqueIdentifier>{cd33ee3b-4d35-402d-bbfe-c4625407967d}</UniqueIdentifier>
+      <UniqueIdentifier>{af44162a-58ab-4ba0-8a61-446db5763fec}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Remoting">
-      <UniqueIdentifier>{00a7fecf-e9be-465e-a157-54109a16a785}</UniqueIdentifier>
+      <UniqueIdentifier>{0e0629ff-679e-44ed-9ecf-c94399be71db}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Remoting.Activation">
-      <UniqueIdentifier>{f5a18422-06e4-439c-9fbb-5a2c292d80bd}</UniqueIdentifier>
+      <UniqueIdentifier>{f4e76618-c1d8-4462-bf96-cd27a4c252ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Remoting.Contexts">
-      <UniqueIdentifier>{40d88316-b904-4b14-8805-a45f9300471e}</UniqueIdentifier>
+      <UniqueIdentifier>{927bcb1e-6d99-4ef3-bd2b-d55abe6d3db4}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Remoting.Messaging">
-      <UniqueIdentifier>{3f259cb1-e920-4466-bb3d-f6b1d8d74c3f}</UniqueIdentifier>
+      <UniqueIdentifier>{31a812a1-fabf-4481-9754-5f9ff0dc89a8}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Remoting.Proxies">
-      <UniqueIdentifier>{5ada6ea5-50fb-4cf8-b2d1-92ded771df9c}</UniqueIdentifier>
+      <UniqueIdentifier>{d7774b2c-c32c-468f-a0f5-c2b43f324191}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Runtime.Versioning">
-      <UniqueIdentifier>{c6f541b8-4913-4b60-954f-2394d3917c3f}</UniqueIdentifier>
+      <UniqueIdentifier>{507b89eb-0d3c-48a7-852e-daeed7cb204f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Security">
-      <UniqueIdentifier>{2818c560-dc4f-4502-a5b2-2f15fec8ab94}</UniqueIdentifier>
+      <UniqueIdentifier>{5ff743a2-0df2-4f61-94ad-bbc9ede920f9}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Security.Cryptography">
-      <UniqueIdentifier>{6fbdc7f0-cbd2-48b0-bd66-1c01f6ff17bc}</UniqueIdentifier>
+      <UniqueIdentifier>{2cc09869-334d-4ac3-96f1-b496e8548ac6}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Security.Policy">
-      <UniqueIdentifier>{831fbe35-4b7a-43b5-a968-af4425656ec5}</UniqueIdentifier>
+      <UniqueIdentifier>{7afcf894-69fd-4a4f-a308-b0d52e551776}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Security.Principal">
-      <UniqueIdentifier>{d045f5b1-6aff-4256-9586-d0979e78b04c}</UniqueIdentifier>
+      <UniqueIdentifier>{28f9a342-8759-4f2b-abc5-b4fa733220ab}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Text">
-      <UniqueIdentifier>{465cf0e9-7344-448f-83f1-028560f7327e}</UniqueIdentifier>
+      <UniqueIdentifier>{9ea719b9-0ec0-4403-bade-65cd2846fbea}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Threading">
-      <UniqueIdentifier>{2c64bf74-540f-4efb-bfbb-f65f4d8b0840}</UniqueIdentifier>
+      <UniqueIdentifier>{db310386-aeb6-467e-ae40-36fb3ba1e7aa}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\Microsoft.Win32">
-      <UniqueIdentifier>{17276319-f45f-4982-ae21-a8b919ff5fba}</UniqueIdentifier>
+      <UniqueIdentifier>{e80cbebe-6944-41d8-a91d-708ab12a5464}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\Mono.Net.Security">
-      <UniqueIdentifier>{ff067595-b7ab-4936-8df9-f9b512dc5b86}</UniqueIdentifier>
+      <UniqueIdentifier>{19d61a30-30c9-4768-9ff9-56e1bb64dd93}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System">
-      <UniqueIdentifier>{bcef2b16-d5ee-4191-bb5e-29c5c7001d97}</UniqueIdentifier>
+      <UniqueIdentifier>{e7a4f158-bb83-483c-b470-b7914e1ec5de}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.ComponentModel">
-      <UniqueIdentifier>{07e55447-118a-4afb-add1-f70d509d1626}</UniqueIdentifier>
+      <UniqueIdentifier>{bdbcbcdb-7ef5-4936-9f2e-1745210c3c94}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Configuration">
-      <UniqueIdentifier>{8e1ba49a-0168-4f83-9220-1ef11a047bf7}</UniqueIdentifier>
+      <UniqueIdentifier>{40f7338c-5da9-4086-b609-7d993fd6a6d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Diagnostics">
-      <UniqueIdentifier>{b2d034b4-3215-4ed2-930d-8e0a9be72a87}</UniqueIdentifier>
+      <UniqueIdentifier>{fb3662a7-e896-4588-8f95-346147c58fdb}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.IO">
-      <UniqueIdentifier>{5d2ec72b-2824-49e9-b6c4-bf6666942cb9}</UniqueIdentifier>
+      <UniqueIdentifier>{cd89c897-c01e-44ae-a7fe-5bb65d5205e3}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Net">
-      <UniqueIdentifier>{75578b6b-2ed2-41d3-998f-fe32238aa7e5}</UniqueIdentifier>
+      <UniqueIdentifier>{bfde72ea-6617-4458-a683-0515e805fc80}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Net.NetworkInformation">
-      <UniqueIdentifier>{4425adba-ea36-47c1-9bb2-68f2f76bbf7d}</UniqueIdentifier>
+      <UniqueIdentifier>{ee69f692-fee4-4dda-86e3-d1091d0a26f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Net.Sockets">
-      <UniqueIdentifier>{b2ed5eb8-d1c2-4d55-9c6b-24fe2432302d}</UniqueIdentifier>
+      <UniqueIdentifier>{74ea5a7b-4d87-4510-9265-ff2a2e4a1e58}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System\System.Threading">
-      <UniqueIdentifier>{f2bb1ac5-b590-4904-8261-de235a6fc08a}</UniqueIdentifier>
+      <UniqueIdentifier>{68aeb013-347c-4fed-be10-53cc6615ae43}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System.Configuration\System.Configuration">
-      <UniqueIdentifier>{598cb997-9dc0-4424-8f1a-9337fac99557}</UniqueIdentifier>
+      <UniqueIdentifier>{03499fec-061e-448f-b87c-581fb7f6ab64}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System.Core\System.IO.MemoryMappedFiles">
-      <UniqueIdentifier>{332ba297-e7e1-4f65-85d2-a618ce67f3cb}</UniqueIdentifier>
+      <UniqueIdentifier>{4dc6ca14-1068-4b63-9567-09c09d9d0012}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\metadata">
-      <UniqueIdentifier>{dc7cbc9c-0e77-4056-a67b-d2400815694b}</UniqueIdentifier>
+      <UniqueIdentifier>{f7031406-0c26-46e8-9f66-d0e8e76f6ec4}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\mono">
-      <UniqueIdentifier>{b54aaac0-c452-4043-8e86-ed8897ce80d5}</UniqueIdentifier>
+      <UniqueIdentifier>{16a7e1c6-72c9-481c-9a3b-1391a323c0e0}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\mono\ThreadPool">
-      <UniqueIdentifier>{20432c2f-f33c-44ee-aa1a-784426b2069a}</UniqueIdentifier>
+      <UniqueIdentifier>{b002c0f9-5041-4a07-b911-235faff38e07}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\mono-runtime">
-      <UniqueIdentifier>{a7681d31-3929-4dc6-928d-bba98dceb34f}</UniqueIdentifier>
+      <UniqueIdentifier>{46fc15a0-2dc0-421e-b341-792f717f2ed5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os">
-      <UniqueIdentifier>{c4762bb7-6700-429d-854f-6afd5f6e265d}</UniqueIdentifier>
+      <UniqueIdentifier>{fdc05033-4292-4d67-9ca7-552ecaeba7cf}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Android">
-      <UniqueIdentifier>{f9d5c41a-6820-4939-a2ce-6f5e3fb5fee2}</UniqueIdentifier>
+      <UniqueIdentifier>{d7a735ab-6770-4f83-b146-a23119f483d1}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\c-api">
-      <UniqueIdentifier>{0989964c-a9a9-4a86-9c6c-bfae49cdceaf}</UniqueIdentifier>
+      <UniqueIdentifier>{f86c98b0-8e7a-40d8-8414-5ccafcad1fc2}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\c-api\tests">
-      <UniqueIdentifier>{e48dbf88-486d-42f6-a601-cbb78eb422a4}</UniqueIdentifier>
+      <UniqueIdentifier>{34b41ded-68a7-4659-9686-22db7cfdfa7d}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Emscripten">
-      <UniqueIdentifier>{4fe72cdf-6f36-4e3f-a9ce-a7ec3c178163}</UniqueIdentifier>
+      <UniqueIdentifier>{c50380d8-050a-4fdd-9d6f-746bf97cd847}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Generic">
-      <UniqueIdentifier>{1f9ec7c6-0af8-4ed3-a1ef-4bf402d3dce2}</UniqueIdentifier>
+      <UniqueIdentifier>{69af9ed0-83ac-43bd-8919-9b0616130be9}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Lumin">
-      <UniqueIdentifier>{6385e65c-3546-448c-89b3-33f393ca56ee}</UniqueIdentifier>
+      <UniqueIdentifier>{9e25e8cb-4a89-4ab4-b366-a232b7b679a8}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\OSX">
-      <UniqueIdentifier>{45bd250d-dc80-4720-b68f-9a3b8f609d31}</UniqueIdentifier>
+      <UniqueIdentifier>{298fac51-ce70-4e4c-a0f8-e2311f5b812f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Posix">
-      <UniqueIdentifier>{17dceb97-55b6-4703-a069-9c897498c99b}</UniqueIdentifier>
+      <UniqueIdentifier>{e5883aa6-309b-46fd-a6e2-214ee54f6b59}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Std">
-      <UniqueIdentifier>{4f6f277f-0524-4dee-b5cf-140da5e3ac4b}</UniqueIdentifier>
+      <UniqueIdentifier>{eb9fc579-6ce1-4055-a1fc-cb91569a6600}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Unity">
-      <UniqueIdentifier>{eb03c082-4084-4f9f-a078-8719c28b3bd2}</UniqueIdentifier>
+      <UniqueIdentifier>{65d9db28-ad4b-42a7-ac6f-75d476c8ef64}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\Win32">
-      <UniqueIdentifier>{43a09043-3d38-4630-8f3f-2ab9b00a898c}</UniqueIdentifier>
+      <UniqueIdentifier>{76199f1b-5fc8-4731-9f71-2e2ac45394bb}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\WindowsGames">
-      <UniqueIdentifier>{f96b253c-7b78-446f-97cc-08e3c999e1d5}</UniqueIdentifier>
+      <UniqueIdentifier>{df7f1687-13d7-4840-8919-e86348f576dd}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\WinRT">
-      <UniqueIdentifier>{8a1d2a73-4f2a-456e-b98a-91ecd121371b}</UniqueIdentifier>
+      <UniqueIdentifier>{05e93383-8815-4560-ad33-970e5d05513f}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\utils">
-      <UniqueIdentifier>{2fe91b7a-03ea-498f-b421-d8535adf2cfe}</UniqueIdentifier>
+      <UniqueIdentifier>{39bd2fd7-f21f-4237-bb76-f41af78e3f64}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\vm">
-      <UniqueIdentifier>{4d9f080b-5843-4b36-a459-afb554cab7a5}</UniqueIdentifier>
+      <UniqueIdentifier>{2e59a9d3-6611-49cb-b75e-6dde0cbc4cf7}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\vm-utils">
-      <UniqueIdentifier>{6cb5ea21-730d-453d-a41c-a3ccd66dcc9a}</UniqueIdentifier>
+      <UniqueIdentifier>{cdad8cae-fab5-4e8a-8e8d-585989dd418b}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\include">
-      <UniqueIdentifier>{18ffd340-b3b5-4f48-950d-d9d92ef75d5d}</UniqueIdentifier>
+      <UniqueIdentifier>{a23e44b5-bb89-4273-a109-68762996016a}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\include\extra">
-      <UniqueIdentifier>{4267ce23-9f39-4e83-92f1-a1e6dd2efcd2}</UniqueIdentifier>
+      <UniqueIdentifier>{8eaef5aa-2032-4010-9636-4708a560472d}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\include\private">
-      <UniqueIdentifier>{e8b09cba-18b5-430a-9400-ac035e64e593}</UniqueIdentifier>
+      <UniqueIdentifier>{b7539c2b-e264-4885-b467-6b4438348beb}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops">
-      <UniqueIdentifier>{d05027d0-31cc-4ee7-8f17-24cadd8631e4}</UniqueIdentifier>
+      <UniqueIdentifier>{0b21be64-66b5-4f51-9670-d6de993e1554}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps">
-      <UniqueIdentifier>{cb4766fe-ed7e-4bba-8759-45e1be56a070}</UniqueIdentifier>
+      <UniqueIdentifier>{afb8ce89-3a4d-46c5-b338-9aa609a03ee0}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\armcc">
-      <UniqueIdentifier>{ea9f05f1-5d8c-4721-ab22-20160f5b905c}</UniqueIdentifier>
+      <UniqueIdentifier>{9bb586fb-eddb-442c-b947-ffae2ee53059}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\gcc">
-      <UniqueIdentifier>{c63a7e93-42ab-4701-aa54-9443c4217bb3}</UniqueIdentifier>
+      <UniqueIdentifier>{334e283f-deba-46da-a560-70d08f8f47c5}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\hpc">
-      <UniqueIdentifier>{96522cd9-6ae7-4204-b1f2-876791f88148}</UniqueIdentifier>
+      <UniqueIdentifier>{ffbc27d1-7cf6-494b-94b1-f29e0a30ee6d}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\ibmc">
-      <UniqueIdentifier>{4bee1fa1-7c5a-4afc-ba9b-5f5040ae2375}</UniqueIdentifier>
+      <UniqueIdentifier>{3c88e8eb-fc09-4819-89c8-7736a344a989}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\icc">
-      <UniqueIdentifier>{0a699fdf-831d-4daa-93ba-b81cbc297c1e}</UniqueIdentifier>
+      <UniqueIdentifier>{7af39672-e853-4abc-8726-778071a70f5c}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\loadstore">
-      <UniqueIdentifier>{e61d4741-ddfb-4ab9-8423-b0e8f308bb86}</UniqueIdentifier>
+      <UniqueIdentifier>{2eb7c41c-4f6b-4b62-8334-6e70400c3c34}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\msftc">
-      <UniqueIdentifier>{c5aa4098-6bc0-4e24-9943-8603a636f646}</UniqueIdentifier>
+      <UniqueIdentifier>{9b0ca28c-7e6c-44ca-a0dd-e61429b02987}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops\src\atomic_ops\sysdeps\sunc">
-      <UniqueIdentifier>{d6376196-5e0f-4bc0-9773-a47e2ce73a53}</UniqueIdentifier>
+      <UniqueIdentifier>{ca591306-6cf8-4ca3-bb6b-a168accc075e}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\google\sparsehash">
-      <UniqueIdentifier>{85f057e5-c769-410d-b3bb-a2986924730b}</UniqueIdentifier>
+      <UniqueIdentifier>{c075cdc5-7147-409a-abec-2b4cf3c005da}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\arch\amd64">
-      <UniqueIdentifier>{0a0ded26-7d80-47dc-a5c1-43fd31e63b2f}</UniqueIdentifier>
+      <UniqueIdentifier>{419961f6-2767-49c1-8840-05870edabbfd}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\arch\arm">
-      <UniqueIdentifier>{4ff80d47-e139-4005-a8b4-e77edb0a0b9e}</UniqueIdentifier>
+      <UniqueIdentifier>{890ddb14-2e3d-490d-8b75-fe81b194e58c}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\arch\arm64">
-      <UniqueIdentifier>{874483fa-ff19-43a5-b033-51a823521869}</UniqueIdentifier>
+      <UniqueIdentifier>{7294185c-c6c8-47f2-b7a5-d83575355821}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\arch\x86">
-      <UniqueIdentifier>{5cd989f1-1b40-4e68-9acc-9d798df5a678}</UniqueIdentifier>
+      <UniqueIdentifier>{5e78c905-597b-48bb-864e-f097f5194e7c}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib\System.Globalization\Generated">
-      <UniqueIdentifier>{5f2b5f2c-b476-4d3a-b979-4d5b33420bcb}</UniqueIdentifier>
+      <UniqueIdentifier>{b23d245c-3970-49e4-aa62-4347747a5527}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\c-api\Posix">
-      <UniqueIdentifier>{c371cfcd-209d-4853-b670-7723a3e268b8}</UniqueIdentifier>
+      <UniqueIdentifier>{925d407e-480c-40d2-822f-9be2ea8a048b}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\os\c-api\Win32">
-      <UniqueIdentifier>{6904bdbe-1933-4a03-97a5-71efbf3e1a91}</UniqueIdentifier>
+      <UniqueIdentifier>{20f91cb3-3242-478f-abe7-5c2982f1ec81}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\utils\utf8-cpp\source">
-      <UniqueIdentifier>{a551149b-0939-418d-b35f-206480014592}</UniqueIdentifier>
+      <UniqueIdentifier>{1e2182ec-8125-4bf6-af81-25ade5b87568}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\utils\utf8-cpp\source\utf8">
-      <UniqueIdentifier>{73150507-4d8e-4a5e-86ce-e93829c5f4e0}</UniqueIdentifier>
+      <UniqueIdentifier>{9aa4999d-b7f2-4611-8fff-4998f371dcd8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source">
-      <UniqueIdentifier>{3ae4d185-54ca-4369-a354-e19e1d19ecdc}</UniqueIdentifier>
+      <UniqueIdentifier>{097bcd35-7d1a-4998-b8e8-5d3e536fb398}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external">
-      <UniqueIdentifier>{c25145b4-e3aa-47c5-9f3a-d9398679c533}</UniqueIdentifier>
+      <UniqueIdentifier>{a398f873-715e-4b95-9ad3-3c6a301b396d}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP">
-      <UniqueIdentifier>{41da0ab7-609f-4254-8bb5-634c9c61558a}</UniqueIdentifier>
+      <UniqueIdentifier>{78005a5c-8d02-41e5-b0b2-86721962bbd2}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\bdwgc\libatomic_ops">
-      <UniqueIdentifier>{c0815d6f-d282-41b0-a15c-e8ce7dd70999}</UniqueIdentifier>
+      <UniqueIdentifier>{23df4d40-4532-4c57-b589-5b90604bd018}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono">
-      <UniqueIdentifier>{c02faa30-00a1-44e1-9985-0b87d84c63d6}</UniqueIdentifier>
+      <UniqueIdentifier>{a95d0946-4a96-4ee1-958a-6b1d69038a8a}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono">
-      <UniqueIdentifier>{c3892dea-3dbe-481c-b28a-83e8664b48c9}</UniqueIdentifier>
+      <UniqueIdentifier>{506cbb50-c105-4d16-95b3-3790ff253826}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\support">
-      <UniqueIdentifier>{065a7a51-10fd-424e-8b36-ab8b9bc031bb}</UniqueIdentifier>
+      <UniqueIdentifier>{443418f1-6a44-43be-8432-997ac898d377}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\mscorlib">
-      <UniqueIdentifier>{f6f44a6c-195c-4b97-8fc4-563f490fb8ef}</UniqueIdentifier>
+      <UniqueIdentifier>{3ca38b88-8aa5-401c-8b5e-5d555be221ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls">
-      <UniqueIdentifier>{bad25b64-e781-4948-8671-b3d2b0a78d72}</UniqueIdentifier>
+      <UniqueIdentifier>{5bd2cd74-34fd-431c-a0f5-81632894a129}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System">
-      <UniqueIdentifier>{658ac422-8880-4245-b263-58abfb468ad9}</UniqueIdentifier>
+      <UniqueIdentifier>{d386c171-2c6e-4b0b-8534-c87c8e297207}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System.Configuration">
-      <UniqueIdentifier>{e0bc0a36-e294-4cb3-b961-c035c93ee860}</UniqueIdentifier>
+      <UniqueIdentifier>{0f300323-2c26-4e03-9f61-46ee835fc1fa}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\icalls\System.Core">
-      <UniqueIdentifier>{c3731d10-3117-4456-aff1-779a42fd9990}</UniqueIdentifier>
+      <UniqueIdentifier>{e1c33aa2-ae65-4e58-93f1-6a53a370afa1}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\google">
-      <UniqueIdentifier>{a9000912-0c13-49b3-8d73-984cc821c77a}</UniqueIdentifier>
+      <UniqueIdentifier>{4883bef5-4751-467f-af64-f2e3f805bd29}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\external\mono\mono\arch">
-      <UniqueIdentifier>{82eef3da-d6d8-4537-839d-4b4b5d62166e}</UniqueIdentifier>
+      <UniqueIdentifier>{7df7b0db-63c5-49d0-bced-fad204370e52}</UniqueIdentifier>
     </Filter>
     <Filter Include="IL2CPP\libil2cpp\utils\utf8-cpp">
-      <UniqueIdentifier>{dd119835-226e-4faf-b473-42107f22e92b}</UniqueIdentifier>
+      <UniqueIdentifier>{c9bcc9fc-7367-4866-9bb1-62d3d44b629d}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="Source\il2cppOutput\Assembly-CSharp_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
@@ -409,6 +409,69 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppTypeDefinitions.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Async_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.HandPhysics_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.Tracking_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Gltf_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.XRSDK_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.BoundarySystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.CameraSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputAnimation_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputSimulation_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.SceneSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.TeleportSystem_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
@@ -421,7 +484,16 @@
     <ClCompile Include="Source\il2cppOutput\System.Core_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Numerics.Vectors_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Numerics_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.ObjectModel_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Runtime.InteropServices.WindowsRuntime_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime.UI.Xaml_CodeGen.c">
@@ -437,6 +509,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule_CodeGen.c">
@@ -463,6 +538,9 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.GridModule_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.ImageConversionModule_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.IMGUIModule_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
@@ -470,6 +548,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.InputModule_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.JSONSerializeModule_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.ParticleSystemModule_CodeGen.c">
@@ -488,6 +569,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.TerrainModule_CodeGen.c">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.TextCoreModule_CodeGen.c">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.TextRenderingModule_CodeGen.c">
@@ -538,6 +622,12 @@
     <ClCompile Include="Source\il2cppOutput\GenericMethods1.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods10.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods11.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods2.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
@@ -548,6 +638,18 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods5.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods6.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods7.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods8.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods9.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics.cpp">
@@ -622,13 +724,130 @@
     <ClCompile Include="Source\il2cppOutput\Generics3.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics30.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics31.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics32.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics33.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics34.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics35.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics36.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics37.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics38.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics39.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics4.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics40.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics41.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics42.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics43.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics44.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics45.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics46.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics47.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics48.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics49.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics5.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics50.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics51.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics52.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics53.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics54.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics55.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics56.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics57.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics58.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics59.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics6.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics60.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics61.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics62.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics63.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics64.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics65.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics66.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics67.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics68.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics7.cpp">
@@ -697,10 +916,64 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers17.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers18.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers19.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers2.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers20.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers21.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers22.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers23.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers24.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers25.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers26.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers27.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers28.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers29.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers3.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers30.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers31.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers32.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers33.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers34.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers35.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers4.cpp">
@@ -725,6 +998,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues2.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValuesTable.cpp">
@@ -754,7 +1030,115 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods3.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods4.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods5.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppReversePInvokeWrapperTable.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Async.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.HandPhysics.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Extensions.Tracking.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Gltf.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.XRSDK.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK2.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK3.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK4.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK5.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK6.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK7.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.BoundarySystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.CameraSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputAnimation.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputSimulation.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.InputSystem1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.SceneSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.TeleportSystem.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit2.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit3.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit4.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit5.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security.cpp">
@@ -790,6 +1174,9 @@
     <ClCompile Include="Source\il2cppOutput\mscorlib17.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib18.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib2.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
@@ -823,10 +1210,19 @@
     <ClCompile Include="Source\il2cppOutput\System.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Numerics.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Numerics.Vectors.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.ObjectModel.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Runtime.InteropServices.WindowsRuntime.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime.cpp">
@@ -839,6 +1235,27 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System2.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro1.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro2.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro3.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro4.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro5.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule.cpp">
@@ -874,6 +1291,9 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.GridModule.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.ImageConversionModule.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.IMGUIModule.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
@@ -881,6 +1301,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.InputModule.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.JSONSerializeModule.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.ParticleSystemModule.cpp">
@@ -899,6 +1322,9 @@
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.TerrainModule.cpp">
+      <Filter>Source\il2cppOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.TextCoreModule.cpp">
       <Filter>Source\il2cppOutput</Filter>
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.TextRenderingModule.cpp">

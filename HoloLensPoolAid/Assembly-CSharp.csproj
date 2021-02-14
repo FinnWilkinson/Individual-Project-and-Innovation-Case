@@ -56,6 +56,28 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\SensorStreams.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\MixedRealityToolkit.Generated\link.xml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -602,26 +624,161 @@
  <Reference Include="Unity.Timeline">
  <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Scripting.Python.Editor">
- <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.Scripting.Python.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.XR.WindowsMR.Editor">
- <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="Unity.XR.WindowsMR">
- <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.SceneSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Tools">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Async">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Async.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Gltf">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Gltf.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Tools.Runtime">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Tools.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.StandardAssets.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.StandardAssets.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.Tracking">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Extensions.Tracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ClassExtensions">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.SDK.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.PlaneFinding">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.PlaneFinding.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.CameraSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.SDK">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.SDK.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenVR">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.GpuStats">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.GpuStats.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.TeleportSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.LeapMotion.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Gltf.Importers">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Gltf.Importers.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputAnimation">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Editor.Inspectors">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.Inspectors.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.UnityAR.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Editor.Utilities">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.XRSDK.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.BoundarySystem">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.BoundarySystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.HandPhysics">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Extensions.HandPhysics.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.Tracking.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Extensions.Tracking.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.WindowsMR.Editor">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.WindowsMR">
+ <HintPath>D:/Files/Work/Bristol Uni/Year 4/Individual-Project-and-Innovation-Case/HoloLensPoolAid/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

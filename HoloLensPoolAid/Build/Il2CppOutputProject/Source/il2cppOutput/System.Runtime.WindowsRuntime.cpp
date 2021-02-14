@@ -174,16 +174,16 @@ struct VoidReferenceTypeParameter_t255142D4EFCF5C11FA3FC962097F7D9B2D3B4F6E;
 // System.WindowsRuntimeSystemExtensions/<>c
 struct U3CU3Ec_t7BF0CCB601E6508A9E0072ACC4827D1FFCEAE77E;
 // Windows.Foundation.AsyncActionCompletedHandler
-struct AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7;
+struct AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D;
 // Windows.Foundation.IAsyncAction
-struct IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109;
+struct IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB;
 // Windows.Foundation.IAsyncInfo
-struct IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86;
+struct IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t551A279CEADCF6EEAE8FA2B1E1E757D0D15290D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_2_tC5CBC473593FC52892A3A27575658B0C050584D8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncInfoIdGenerator_t55EA89C24441260F8C3BA5D14A724A154210BF0E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncInfoToTaskBridge_1_tFF70BDD04454A6EBC5FE97283B11BB664C836B27_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CancellationTokenRegistration_tCDB9825D1854DD0D7FF737C82B099FC468107BB2_il2cpp_TypeInfo_var;
@@ -191,8 +191,8 @@ IL2CPP_EXTERN_C RuntimeClass* CancellationTokenSource_tF480B7E74A032667AFBD31F05
 IL2CPP_EXTERN_C RuntimeClass* CancellationToken_t9E956952F7F20908F2AE72EDF36D97E6C7DB63AB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Point_t7C3010F37F6E9DB2B792BBDAFF58C3232A3356AC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F_il2cpp_TypeInfo_var;
@@ -248,8 +248,8 @@ struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
-struct IAsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_ComCallableWrapper;
-struct IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109;
+struct IAsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_ComCallableWrapper;
+struct IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB;
 
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
 struct StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E;
@@ -275,11 +275,11 @@ public:
 // System.Object
 
 // Windows.Foundation.IAsyncAction
-struct NOVTABLE IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109 : Il2CppIInspectable
+struct NOVTABLE IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL IAsyncAction_put_Completed_mFA47FD762A357FA74B185A6CB2229B13A02B4F75(IAsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_ComCallableWrapper* ___handler0) = 0;
-	virtual il2cpp_hresult_t STDCALL IAsyncAction_get_Completed_mECC654248B45FBEA0BBCBD4BF8C1952E1D7313E1(IAsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_ComCallableWrapper** comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IAsyncAction_put_Completed_mFA47FD762A357FA74B185A6CB2229B13A02B4F75(IAsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_ComCallableWrapper* ___handler0) = 0;
+	virtual il2cpp_hresult_t STDCALL IAsyncAction_get_Completed_mECC654248B45FBEA0BBCBD4BF8C1952E1D7313E1(IAsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_ComCallableWrapper** comReturnValue) = 0;
 	virtual il2cpp_hresult_t STDCALL IAsyncAction_GetResults_m192BCF4CC6EE9E2E66722E3D2BFBBAEE124D7AD7() = 0;
 };
 struct Il2CppArrayBounds;
@@ -2039,7 +2039,7 @@ public:
 	// System.Object System.Threading.Tasks.TaskToAsyncInfoAdapter`4::_dataContainer
 	RuntimeObject * ____dataContainer_4;
 	// TCompletedHandler System.Threading.Tasks.TaskToAsyncInfoAdapter`4::_completedHandler
-	AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * ____completedHandler_5;
+	AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * ____completedHandler_5;
 	// TProgressHandler System.Threading.Tasks.TaskToAsyncInfoAdapter`4::_progressHandler
 	VoidReferenceTypeParameter_t255142D4EFCF5C11FA3FC962097F7D9B2D3B4F6E * ____progressHandler_6;
 	// System.Threading.SynchronizationContext System.Threading.Tasks.TaskToAsyncInfoAdapter`4::_startingContext
@@ -2090,9 +2090,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of__completedHandler_5() { return static_cast<int32_t>(offsetof(TaskToAsyncInfoAdapter_4_t6939D2A566A48D499669B8B0865212D2FB4A22BF, ____completedHandler_5)); }
-	inline AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * get__completedHandler_5() const { return ____completedHandler_5; }
-	inline AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 ** get_address_of__completedHandler_5() { return &____completedHandler_5; }
-	inline void set__completedHandler_5(AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * value)
+	inline AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * get__completedHandler_5() const { return ____completedHandler_5; }
+	inline AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D ** get_address_of__completedHandler_5() { return &____completedHandler_5; }
+	inline void set__completedHandler_5(AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * value)
 	{
 		____completedHandler_5 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&____completedHandler_5), (void*)value);
@@ -2119,14 +2119,14 @@ public:
 
 
 // Windows.Foundation.AsyncStatus
-struct  AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC 
+struct  AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E 
 {
 public:
 	// System.Int32 Windows.Foundation.AsyncStatus::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -2656,7 +2656,7 @@ public:
 };
 
 // Windows.Foundation.IAsyncInfo
-struct NOVTABLE IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86 : Il2CppIInspectable
+struct NOVTABLE IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5 : Il2CppIInspectable
 {
 	static const Il2CppGuid IID;
 	virtual il2cpp_hresult_t STDCALL IAsyncInfo_get_Id_mFB9E7E5D042A091EEA5ADBBB479329CE1248351B(uint32_t* comReturnValue) = 0;
@@ -2704,7 +2704,7 @@ public:
 
 
 // Windows.Foundation.AsyncActionCompletedHandler
-struct  AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7  : public MulticastDelegate_t
+struct  AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D  : public MulticastDelegate_t
 {
 public:
 
@@ -2712,10 +2712,10 @@ public:
 };
 
 // COM Callable Wrapper interface definition for Windows.Foundation.AsyncActionCompletedHandler
-struct IAsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_ComCallableWrapper : Il2CppIUnknown
+struct IAsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_ComCallableWrapper : Il2CppIUnknown
 {
 	static const Il2CppGuid IID;
-	virtual il2cpp_hresult_t STDCALL Invoke(IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109* ___asyncInfo0, int32_t ___asyncStatus1) = 0;
+	virtual il2cpp_hresult_t STDCALL Invoke(IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB* ___asyncInfo0, int32_t ___asyncStatus1) = 0;
 };
 
 
@@ -2841,7 +2841,7 @@ inline VoidValueTypeParameter_t4218889FC907F3892F775433493F080BD1A41CAA  TaskToA
 	return ((  VoidValueTypeParameter_t4218889FC907F3892F775433493F080BD1A41CAA  (*) (TaskToAsyncInfoAdapter_4_t6939D2A566A48D499669B8B0865212D2FB4A22BF *, const RuntimeMethod*))TaskToAsyncInfoAdapter_4_GetResultsInternal_mBF7D2CE18369609722053397E88496835BECAC8C_gshared)(__this, method);
 }
 // System.Void Windows.Foundation.AsyncActionCompletedHandler::Invoke(Windows.Foundation.IAsyncAction,Windows.Foundation.AsyncStatus)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncActionCompletedHandler_Invoke_m8A80E5C3A5FAD4F6B043D7431901360C993757BD (AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * __this, RuntimeObject* ___asyncInfo0, int32_t ___asyncStatus1, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncActionCompletedHandler_Invoke_m90ED997977A5C94AE5F5CB92A629FE2EDFA3D466 (AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * __this, RuntimeObject* ___asyncInfo0, int32_t ___asyncStatus1, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
 inline void Action_1__ctor_mAFC7442D9D3CEC6701C3C5599F8CF12476095510 (Action_1_t551A279CEADCF6EEAE8FA2B1E1E757D0D15290D0 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -2907,7 +2907,7 @@ inline void AsyncInfoToTaskBridge_1__ctor_mF7CD592EF952F225806871F14672CE77BDDAB
 	((  void (*) (AsyncInfoToTaskBridge_1_tFF70BDD04454A6EBC5FE97283B11BB664C836B27 *, CancellationToken_t9E956952F7F20908F2AE72EDF36D97E6C7DB63AB , const RuntimeMethod*))AsyncInfoToTaskBridge_1__ctor_mF7CD592EF952F225806871F14672CE77BDDAB0C4_gshared)(__this, ___cancellationToken0, method);
 }
 // System.Void Windows.Foundation.AsyncActionCompletedHandler::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncActionCompletedHandler__ctor_mA3EF78295FFD76E32F23FDCA986E5B9037B11297 (AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncActionCompletedHandler__ctor_m2C0D2BD025FC8CDC21086373277D42874552060D (AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Void System.Threading.Tasks.AsyncInfoToTaskBridge`1<System.VoidValueTypeParameter>::RegisterForCancellation(Windows.Foundation.IAsyncInfo)
 inline void AsyncInfoToTaskBridge_1_RegisterForCancellation_m15301858DFDD9573474DCCD4C3ED3F7B7E112CB4 (AsyncInfoToTaskBridge_1_tFF70BDD04454A6EBC5FE97283B11BB664C836B27 * __this, RuntimeObject* ___asyncInfo0, const RuntimeMethod* method)
 {
@@ -3183,22 +3183,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskToAsyncActionAdapter_GetResults_m507
 	}
 }
 // System.Void System.Threading.Tasks.TaskToAsyncActionAdapter::OnCompleted(Windows.Foundation.AsyncActionCompletedHandler,Windows.Foundation.AsyncStatus)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskToAsyncActionAdapter_OnCompleted_m6285538803AC8D0E9837F8C5C0295BDC925447B5 (TaskToAsyncActionAdapter_t1498B22A4F941563A016F194BD85FBFA44C4528C * __this, AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * ___userCompletionHandler0, int32_t ___asyncStatus1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskToAsyncActionAdapter_OnCompleted_m6285538803AC8D0E9837F8C5C0295BDC925447B5 (TaskToAsyncActionAdapter_t1498B22A4F941563A016F194BD85FBFA44C4528C * __this, AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * ___userCompletionHandler0, int32_t ___asyncStatus1, const RuntimeMethod* method)
 {
 	{
-		AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * L_0 = ___userCompletionHandler0;
+		AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * L_0 = ___userCompletionHandler0;
 		int32_t L_1 = ___asyncStatus1;
 		NullCheck(L_0);
-		AsyncActionCompletedHandler_Invoke_m8A80E5C3A5FAD4F6B043D7431901360C993757BD(L_0, __this, L_1, /*hidden argument*/NULL);
+		AsyncActionCompletedHandler_Invoke_m90ED997977A5C94AE5F5CB92A629FE2EDFA3D466(L_0, __this, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void System.Threading.Tasks.TaskToAsyncActionAdapter::Windows.Foundation.IAsyncAction.put_Completed(Windows.Foundation.AsyncActionCompletedHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskToAsyncActionAdapter_Windows_Foundation_IAsyncAction_put_Completed_m18D923DB9F07206F028620EA470EDBCDF65F1168 (TaskToAsyncActionAdapter_t1498B22A4F941563A016F194BD85FBFA44C4528C * __this, AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * ___handler0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskToAsyncActionAdapter_Windows_Foundation_IAsyncAction_put_Completed_m18D923DB9F07206F028620EA470EDBCDF65F1168 (TaskToAsyncActionAdapter_t1498B22A4F941563A016F194BD85FBFA44C4528C * __this, AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * ___handler0, const RuntimeMethod* method)
 {
 	{
-		AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * L_0 = ___handler0;
-		VirtActionInvoker1< AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * >::Invoke(11 /* System.Void System.Threading.Tasks.TaskToAsyncInfoAdapter`4<Windows.Foundation.AsyncActionCompletedHandler,System.VoidReferenceTypeParameter,System.VoidValueTypeParameter,System.VoidValueTypeParameter>::set_Completed(TCompletedHandler) */, __this, L_0);
+		AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * L_0 = ___handler0;
+		VirtActionInvoker1< AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * >::Invoke(11 /* System.Void System.Threading.Tasks.TaskToAsyncInfoAdapter`4<Windows.Foundation.AsyncActionCompletedHandler,System.VoidReferenceTypeParameter,System.VoidValueTypeParameter,System.VoidValueTypeParameter>::set_Completed(TCompletedHandler) */, __this, L_0);
 		return;
 	}
 }
@@ -3442,7 +3442,7 @@ IL_004f:
 	{
 		RuntimeObject* L_18 = ___source0;
 		NullCheck(L_18);
-		int32_t L_19 = InterfaceFuncInvoker0< int32_t >::Invoke(1 /* Windows.Foundation.AsyncStatus Windows.Foundation.IAsyncInfo::get_Status() */, IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86_il2cpp_TypeInfo_var, L_18);
+		int32_t L_19 = InterfaceFuncInvoker0< int32_t >::Invoke(1 /* Windows.Foundation.AsyncStatus Windows.Foundation.IAsyncInfo::get_Status() */, IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5_il2cpp_TypeInfo_var, L_18);
 		V_3 = L_19;
 		int32_t L_20 = V_3;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_20, (int32_t)1)))
@@ -3476,7 +3476,7 @@ IL_0072:
 	{
 		RuntimeObject* L_22 = ___source0;
 		NullCheck(L_22);
-		Exception_t * L_23 = InterfaceFuncInvoker0< Exception_t * >::Invoke(2 /* System.Exception Windows.Foundation.IAsyncInfo::get_ErrorCode() */, IAsyncInfo_tF3E271B8A10E756703F1BA39E1698F3A0D489E86_il2cpp_TypeInfo_var, L_22);
+		Exception_t * L_23 = InterfaceFuncInvoker0< Exception_t * >::Invoke(2 /* System.Exception Windows.Foundation.IAsyncInfo::get_ErrorCode() */, IAsyncInfo_t9B58E0D0A013D06029CDEAE127A910A69D13FBB5_il2cpp_TypeInfo_var, L_22);
 		Exception_t * L_24 = WindowsRuntimeSystemExtensions_AttachRestrictedErrorInfo_mF39F00CA42F45D3F2EB5B8DB5B450C55A206113C(L_23, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2_il2cpp_TypeInfo_var);
 		Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_25 = Task_FromException_m8D8A19D1CF4B424A3B48F49C7150496075038E54(L_24, /*hidden argument*/NULL);
@@ -3525,10 +3525,10 @@ IL_00a2:
 	{ // begin try (depth: 1)
 		RuntimeObject* L_32 = ___source0;
 		AsyncInfoToTaskBridge_1_tFF70BDD04454A6EBC5FE97283B11BB664C836B27 * L_33 = V_1;
-		AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * L_34 = (AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 *)il2cpp_codegen_object_new(AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7_il2cpp_TypeInfo_var);
-		AsyncActionCompletedHandler__ctor_mA3EF78295FFD76E32F23FDCA986E5B9037B11297(L_34, L_33, (intptr_t)((intptr_t)AsyncInfoToTaskBridge_1_CompleteFromAsyncAction_mA94CADFE8C912F942BAEADC65E4B8E212F5A92E8_RuntimeMethod_var), /*hidden argument*/NULL);
+		AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * L_34 = (AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D *)il2cpp_codegen_object_new(AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D_il2cpp_TypeInfo_var);
+		AsyncActionCompletedHandler__ctor_m2C0D2BD025FC8CDC21086373277D42874552060D(L_34, L_33, (intptr_t)((intptr_t)AsyncInfoToTaskBridge_1_CompleteFromAsyncAction_mA94CADFE8C912F942BAEADC65E4B8E212F5A92E8_RuntimeMethod_var), /*hidden argument*/NULL);
 		NullCheck(L_32);
-		InterfaceActionInvoker1< AsyncActionCompletedHandler_t609AD05A4860888E107296DA98829F161DA0A6A7 * >::Invoke(0 /* System.Void Windows.Foundation.IAsyncAction::put_Completed(Windows.Foundation.AsyncActionCompletedHandler) */, IAsyncAction_tF980B79DBC4BD4F9F262E473628FD971545C5109_il2cpp_TypeInfo_var, L_32, L_34);
+		InterfaceActionInvoker1< AsyncActionCompletedHandler_t1820A7A20AA2CF935463CD8EB21800005EFE488D * >::Invoke(0 /* System.Void Windows.Foundation.IAsyncAction::put_Completed(Windows.Foundation.AsyncActionCompletedHandler) */, IAsyncAction_t763952C2BD8AC50CEB26803FF37B2111537736CB_il2cpp_TypeInfo_var, L_32, L_34);
 		AsyncInfoToTaskBridge_1_tFF70BDD04454A6EBC5FE97283B11BB664C836B27 * L_35 = V_1;
 		RuntimeObject* L_36 = ___source0;
 		NullCheck(L_35);

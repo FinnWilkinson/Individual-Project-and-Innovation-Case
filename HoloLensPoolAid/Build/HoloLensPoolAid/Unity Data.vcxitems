@@ -52,7 +52,23 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets.resS">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets.resS">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.resource">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
@@ -148,6 +164,14 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)GpuStats.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)GpuStats.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll')">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
@@ -161,6 +185,14 @@
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
     <None Include="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)PlaneFinding.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)PlaneFinding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.pdb')">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
@@ -185,6 +217,9 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <Target Name="BeforeResolveReferences" Condition="'$(BuildingProject)' == 'true'">
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.dll" DestinationFiles="$(MSBuildThisFileDirectory)GpuStats.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)GpuStats.pdb" Condition="Exists('$(MSBuildThisFileDirectory)GpuStats.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.pdb" DestinationFiles="$(MSBuildThisFileDirectory)GpuStats.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\GpuStats.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.dll" DestinationFiles="$(MSBuildThisFileDirectory)HoloLensForCV.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)HoloLensForCV.pdb" Condition="Exists('$(MSBuildThisFileDirectory)HoloLensForCV.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.pdb" DestinationFiles="$(MSBuildThisFileDirectory)HoloLensForCV.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\HoloLensForCV.pdb')" />
@@ -194,5 +229,8 @@
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.dll" DestinationFiles="$(MSBuildThisFileDirectory)opencv_world3411.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)opencv_world3411.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb" DestinationFiles="$(MSBuildThisFileDirectory)opencv_world3411.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\opencv_world3411.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.dll" DestinationFiles="$(MSBuildThisFileDirectory)PlaneFinding.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)PlaneFinding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)PlaneFinding.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.pdb" DestinationFiles="$(MSBuildThisFileDirectory)PlaneFinding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.pdb')" />
   </Target>
 </Project>
