@@ -1,6 +1,0 @@
-#include "il2cpp-config.h"
-#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\BlobReader.cpp"
-#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\Debugger.cpp"
-#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\NativeDelegateMethodCache.cpp"
-#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\NativeSymbol.cpp"
-#include "D:\Files\Work\Bristol Uni\Year 4\Individual-Project-and-Innovation-Case\HoloLensPoolAid\Build\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\VmStringUtils.cpp"

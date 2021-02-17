@@ -1,5 +1,0 @@
-GpuStats.dll
-HoloLensForCV.dll
-AudioPluginMsHRTF.dll
-opencv_world3411.dll
-PlaneFinding.dll
