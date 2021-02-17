@@ -18,7 +18,7 @@ public class BallHoloProperties : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //this.GetComponent<Rigidbody>().useGravity = false;
+        //rigidbody temporarily used to get ball to be placed exactly onto table surface.
         Destroy(this.GetComponent<Rigidbody>());
     }
 }
