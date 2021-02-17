@@ -498,5 +498,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pool_Table_SIMPLE
       objectReference: {fileID: 0}
+    - target: {fileID: 5052610415219140962, guid: 3fee6fd810bd0844489e90c6a1b20b68,
+        type: 3}
+      propertyPath: manipulationType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052610415219140962, guid: 3fee6fd810bd0844489e90c6a1b20b68,
+        type: 3}
+      propertyPath: oneHandRotationModeFar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052610415219140962, guid: 3fee6fd810bd0844489e90c6a1b20b68,
+        type: 3}
+      propertyPath: oneHandRotationModeNear
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140492229792447438, guid: 3fee6fd810bd0844489e90c6a1b20b68,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fee6fd810bd0844489e90c6a1b20b68, type: 3}
