@@ -13,7 +13,6 @@ using UnityEngine;
 
 using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Boundary;
-using Microsoft.MixedReality.Toolkit.Editor;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.UI;
@@ -38,13 +37,22 @@ public class TablePlacement : MonoBehaviour
 
     void SavePos()
     {
+        //de-activate scripts responsible for movement
         this.GetComponent<BoxCollider>().enabled = false;
         this.GetComponent<NearInteractionGrabbable>().enabled = false;
         this.GetComponent<ManipulationHandler>().enabled = false;
         this.GetComponent<ConstraintManager>().enabled = false;
         this.GetComponent<BoundsControl>().enabled = false;
 
+        //dissable save btn, enable add ball btn
         saveBtn.SetActive(false);
         addBallBtn.SetActive(true);
+
+        //make table invisible
+        foreach(Transform child in this.transform)
+        {
+            if(child.parent.name == this.name && child.name != "rigRoot") child.GetComponent<MeshRenderer>().enabled = false;
+        }
+
     }
 }
