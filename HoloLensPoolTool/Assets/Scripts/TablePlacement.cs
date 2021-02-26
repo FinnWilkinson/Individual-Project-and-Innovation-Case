@@ -18,14 +18,25 @@ using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 
-public class TablePlacement : MonoBehaviour
+public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
 {
 
     public GameObject saveBtn;
     public GameObject addBallBtn;
+    public GameObject clearBallsBtn;
+    public GameObject toggleBallUIBtn;
+    public GameObject table;
+
     // Start is called before the first frame update
     void Start()
     {
+        //ensure buttons are in correct starting state
+        saveBtn.SetActive(true);
+        addBallBtn.SetActive(false);
+        clearBallsBtn.SetActive(false);
+        toggleBallUIBtn.SetActive(false);
+
+
         saveBtn.GetComponent<Interactable>().OnClick.AddListener(() => SavePos());
     }
 
@@ -38,21 +49,36 @@ public class TablePlacement : MonoBehaviour
     void SavePos()
     {
         //de-activate scripts responsible for movement
-        this.GetComponent<BoxCollider>().enabled = false;
-        this.GetComponent<NearInteractionGrabbable>().enabled = false;
-        this.GetComponent<ManipulationHandler>().enabled = false;
-        this.GetComponent<ConstraintManager>().enabled = false;
-        this.GetComponent<BoundsControl>().enabled = false;
+        table.GetComponent<BoxCollider>().enabled = false;
+        table.GetComponent<NearInteractionGrabbable>().enabled = false;
+        table.GetComponent<ManipulationHandler>().enabled = false;
+        table.GetComponent<ConstraintManager>().enabled = false;
+        table.GetComponent<BoundsControl>().enabled = false;
 
-        //dissable save btn, enable add ball btn
+        //dissable save btn, enable add ball btn & clear balls btn
         saveBtn.SetActive(false);
         addBallBtn.SetActive(true);
+        clearBallsBtn.SetActive(true);
+        toggleBallUIBtn.SetActive(true);
 
         //make table invisible
-        foreach(Transform child in this.transform)
+        foreach(Transform child in table.transform)
         {
-            if(child.parent.name == this.name && child.name != "rigRoot") child.GetComponent<MeshRenderer>().enabled = false;
+            //if(child.parent.name == table.name && child.name != "rigRoot") child.GetComponent<MeshRenderer>().enabled = false;
         }
+
+    }
+
+    void IMixedRealityInputHandler.OnInputDown(InputEventData eventData)
+    {
+        foreach (GameObject ballObj in GameObject.FindGameObjectsWithTag("Ball_Marker"))
+        {
+            ballObj.GetComponent<BallPrefab>().SetSelected(false);
+        }
+    }
+
+    void IMixedRealityInputHandler.OnInputUp(InputEventData eventData)
+    {
 
     }
 }
