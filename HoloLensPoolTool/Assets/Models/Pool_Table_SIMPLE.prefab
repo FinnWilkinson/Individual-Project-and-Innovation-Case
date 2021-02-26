@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3155261970685515095}
   - component: {fileID: 3945964184971042373}
   - component: {fileID: 7105760665755061304}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Table_box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 1462766270922340865}
   - component: {fileID: 4386325575688168894}
   - component: {fileID: 2076820735421429884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Table_surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 1139162831871787944}
   - component: {fileID: 5596248888893485010}
   - component: {fileID: 5122885304401310183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cushion_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1688,7 +1688,7 @@ GameObject:
   - component: {fileID: 2794621715869457453}
   - component: {fileID: 91045091038511394}
   - component: {fileID: 4551383183081249747}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cushion_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3204,7 +3204,7 @@ GameObject:
   - component: {fileID: 3280620419136731682}
   - component: {fileID: 3011225341220978350}
   - component: {fileID: 1118741502071353648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cushion_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3630,7 +3630,7 @@ GameObject:
   - component: {fileID: 6298245558143713067}
   - component: {fileID: 2142404701175829031}
   - component: {fileID: 9037922703647889518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cushion_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

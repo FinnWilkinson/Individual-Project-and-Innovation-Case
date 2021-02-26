@@ -39,6 +39,7 @@ public class BallProperties : MonoBehaviour
         {
             //rigidbody gravity temporarily used to get ball to be placed exactly onto table surface.
             mine.useGravity = false;
+            mine.isKinematic = true;
             //Get ball height so it can be fixed whilst user moves ball into position on table
             ballHeight = this.transform.position.y;
             boundsCreated = true;

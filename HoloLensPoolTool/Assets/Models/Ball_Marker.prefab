@@ -93,6 +93,8 @@ GameObject:
   - component: {fileID: 4847637106080933881}
   - component: {fileID: 7722451759222888806}
   - component: {fileID: 3933177125417923454}
+  - component: {fileID: 4605724613508652634}
+  - component: {fileID: 1081830844557747445}
   m_Layer: 8
   m_Name: Hit_Marker
   m_TagString: Untagged
@@ -107,13 +109,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173999007657630527}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.7}
-  m_LocalScale: {x: 0.10000001, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0.65000004}
+  m_LocalScale: {x: 0.10000001, y: 0.075, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2019008902276421595}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &4078502372000024963
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -229,6 +231,57 @@ MonoBehaviour:
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
+--- !u!54 &4605724613508652634
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173999007657630527}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!59 &1081830844557747445
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173999007657630527}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 8.675, z: 0}
+  m_Axis: {x: 0, y: 0, z: -90}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: -0.0000000029802323, z: 0.000031253698}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &868568112662401267
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +298,7 @@ GameObject:
   - component: {fileID: 4870633874108756775}
   - component: {fileID: 3475996340121443407}
   - component: {fileID: 7691423347716333917}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -733,7 +786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019008902276421595}
   - component: {fileID: 7710220371707769125}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Ball_Marker
   m_TagString: Ball_Marker
   m_Icon: {fileID: 0}
@@ -774,6 +827,7 @@ MonoBehaviour:
   buttonsHolder: {fileID: 7351713763164948131}
   isCueBall: 0
   selected: 0
+  allowUI: 0
 --- !u!1 &4758162590895846818
 GameObject:
   m_ObjectHideFlags: 0
