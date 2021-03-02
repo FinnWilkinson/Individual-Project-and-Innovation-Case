@@ -36,7 +36,19 @@ public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
         clearBallsBtn.SetActive(false);
         toggleBallUIBtn.SetActive(false);
 
+        //Set listeners to keep buttons with table when moved
+        table.GetComponent<ManipulationHandler>().OnManipulationStarted.AddListener((input) => ManipStart(input));
+        table.GetComponent<ManipulationHandler>().OnManipulationEnded.AddListener((data) => ManipEnd(data));
 
+        //Set listeners to keep buttons with table when scaled
+        table.GetComponent<BoundsControl>().RotateStarted.AddListener(() => RotateORScaleStart());
+        table.GetComponent<BoundsControl>().RotateStopped.AddListener(() => RotateORScaleEnd());
+
+        //Set listeners to keep buttons with table when rotated
+        table.GetComponent<BoundsControl>().ScaleStarted.AddListener(() => RotateORScaleStart());
+        table.GetComponent<BoundsControl>().ScaleStopped.AddListener(() => RotateORScaleEnd());
+
+        //Set listeners for when save btn is pressed
         saveBtn.GetComponent<Interactable>().OnClick.AddListener(() => SavePos());
     }
 
@@ -46,6 +58,52 @@ public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
         
     }
 
+    // Update Table UI transform parents when table moved so they stay relative to it
+    ManipulationEventData ManipStart(ManipulationEventData data)
+    {
+        SetParentTable();
+        return data;
+    }
+
+    // Revert Table UI transform parents after table moved so they stay relative to it
+    ManipulationEventData ManipEnd(ManipulationEventData data)
+    {
+        SetParentThis();
+        return data;
+    }
+
+    // Update Table UI transform parents when table rotated/scaled so they stay relative to it
+    void RotateORScaleStart()
+    {
+        SetParentTable();
+    }
+
+    // Revert Table UI transform parents after table rotated/scaled so they stay relative to it
+    void RotateORScaleEnd()
+    {
+        SetParentThis();
+    }
+
+    //Set table UI transform parent to table object
+    void SetParentTable()
+    {
+        saveBtn.transform.parent = table.transform;
+        addBallBtn.transform.parent = table.transform;
+        clearBallsBtn.transform.parent = table.transform;
+        toggleBallUIBtn.transform.parent = table.transform;
+    }
+
+    //Set table UI transform parent to prefab parent game object (this)
+    void SetParentThis()
+    {
+        saveBtn.transform.parent = this.transform;
+        addBallBtn.transform.parent = this.transform;
+        clearBallsBtn.transform.parent = this.transform;
+        toggleBallUIBtn.transform.parent = this.transform;
+    }
+
+
+    //Save table position, make correct UI available, disable un-needed table move scripts
     void SavePos()
     {
         //de-activate scripts responsible for movement

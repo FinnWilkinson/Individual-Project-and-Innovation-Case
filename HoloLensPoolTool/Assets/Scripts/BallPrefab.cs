@@ -69,13 +69,13 @@ public class BallPrefab : MonoBehaviour
         if (moving)
         {
             cueMarker.transform.position = ball.transform.position + new Vector3(0.0f, 0.0f, -0.65f * this.transform.localScale.z);
+            cueMarker.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
         }
     }
 
     //When user grabs ball, make marker follow (and turn off aim guide)
     ManipulationEventData ballManipulationStarted(ManipulationEventData data)
     {
-        cueMarker.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
         moving = true;
         return data;
     }

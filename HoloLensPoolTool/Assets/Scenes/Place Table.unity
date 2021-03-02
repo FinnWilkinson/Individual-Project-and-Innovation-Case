@@ -496,7 +496,7 @@ PrefabInstance:
     - target: {fileID: 3128180923773609700, guid: 3fee6fd810bd0844489e90c6a1b20b68,
         type: 3}
       propertyPath: m_Name
-      value: Pool_Table_SIMPLE
+      value: Pool_Table
       objectReference: {fileID: 0}
     - target: {fileID: 4386325575688168894, guid: 3fee6fd810bd0844489e90c6a1b20b68,
         type: 3}

@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3933177125417923454}
   - component: {fileID: 4605724613508652634}
   - component: {fileID: 1081830844557747445}
+  - component: {fileID: 954949466574554438}
   m_Layer: 8
   m_Name: Hit_Marker
   m_TagString: Untagged
@@ -282,6 +283,20 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &954949466574554438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173999007657630527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81393a6eeec27674dbbc027c8399598a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 868568112662401267}
+  bounces: 2
 --- !u!1 &868568112662401267
 GameObject:
   m_ObjectHideFlags: 0

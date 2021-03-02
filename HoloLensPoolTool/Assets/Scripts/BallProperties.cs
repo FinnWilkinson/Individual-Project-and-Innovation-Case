@@ -19,7 +19,8 @@ public class BallProperties : MonoBehaviour
     {
         boundsCreated = false;
         this.GetComponent<ObjectManipulator>().OnHoverEntered.AddListener((data) => HoverEntered(data));
-
+        //Can scale by tables x scale, as only allowed proportional scale, so all axis scale by same amount
+        this.transform.localScale = this.transform.localScale * GameObject.Find("Pool_Table").gameObject.transform.Find("Table").transform.localScale.x;
 
     }
 
