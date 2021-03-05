@@ -21,13 +21,12 @@ public class CollisionPath : MonoBehaviour
     void Start()
     {
         InitialiseLineRenderer();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        BallCollisionPath();
+        if(this.GetComponent<LineRenderer>().enabled == true) BallCollisionPath();
     }
 
     //Creates and adds a LineRenderer object to the connected GameObject
@@ -36,34 +35,77 @@ public class CollisionPath : MonoBehaviour
         LineRenderer rend = gameObject.AddComponent<LineRenderer>();
         rend.material = new Material(Shader.Find("Sprites/Default"));
         //Can scale by tables x scale, as only allowed proportional scale, so all axis scale by same amount
-        rend.widthMultiplier = 0.01f * GameObject.Find("Pool_Table").gameObject.transform.Find("Table").transform.localScale.x;
+        float tableScale = GameObject.Find("Pool_Table").gameObject.transform.Find("Table").transform.localScale.x;
+        rend.widthMultiplier = 0.75f * tableScale;
+        rend.alignment = LineAlignment.TransformZ;
     }
 
     //Caluclates the points of collision
     void BallCollisionPath()
     {
+        //Disable BallCollider so when path is drawn it doesnt detect collisions with itself
+        ball.GetComponent<SphereCollider>().enabled = false;
+
         RaycastHit[] hits = new RaycastHit[bounces + 1];
+        Vector3 startPos = ball.transform.position;
 
-        //for()
 
+        Vector3 currentPos = startPos;
+        Vector3 direction = this.transform.up;
+        int hitsMade = 0;
 
-        Physics.Raycast(ball.transform.position, this.transform.up, out hits[0]);
-        DrawCollisionPath(hits);
+        for(int i = 0; i < bounces + 1; i++)
+        {
+            if(Physics.Raycast(currentPos, direction, out hits[i]))
+            {
+                hitsMade++;
+                //If it hits ball, calculate post collision path differently
+                if(hits[i].collider.tag == "Ball")
+                {
+                    // Calculate ball to ball collision trajectory for both cue ball and targte ball (both for 1 bounce post collision)
+                    break;
+                }
+                //if it hits the hit indicator collider, ignore it and continue on
+                if(hits[i].collider.tag == "Cue_Hit_Marker")
+                {
+                    Vector3 markerPoint = hits[i].point;
+                    Physics.Raycast(markerPoint, direction, out hits[i]);
+                }
+                currentPos = hits[i].point;
+                direction = direction - 2 * (Vector3.Dot(direction, hits[i].normal)) * hits[i].normal;
+            }
+        }
+
+        //Re-enable Ball's Collider so it can still be moved
+        ball.GetComponent<SphereCollider>().enabled = true;
+
+        DrawCollisionPath(startPos, hits, hitsMade);
     }
 
     //Draws the collision path from the calculated points
-    void DrawCollisionPath(RaycastHit[] hits)
+    void DrawCollisionPath(Vector3 startPos, RaycastHit[] hits, int hitsMade)
     {
-
+        //Avoids floating line error
+        if (hitsMade == 0) return;
+        //Get renderer only once for more efficient computing
         LineRenderer rend = GetComponent<LineRenderer>();
 
-        Color lineColour = Color.white;
-        float lengthOfLine1 = Mathf.Sqrt(Mathf.Pow(ball.transform.position.x - hits[0].point.x, 2)
-                                                                    +
-                                         Mathf.Pow(ball.transform.position.z - hits[0].point.z, 2));
+        //Account for ball size so path drawn onto table surface
+        float ballHeightOffset = ball.GetComponent<SphereCollider>().radius * ball.transform.parent.localScale.x;
 
-        Vector3[] positions = {ball.transform.position, hits[0].point};
+        rend.positionCount = hitsMade + 1;
+        Vector3[] positions = new Vector3[rend.positionCount];
+        positions[0] = startPos - new Vector3(0.0f, ballHeightOffset, 0.0f);
+        for (int i = 0; i < hitsMade; i++)
+        {
+            positions[i + 1] = hits[i].point - new Vector3(0.0f, ballHeightOffset, 0.0f);
+        }
 
         rend.SetPositions(positions);
+    }
+
+    void ballToBallCollision()
+    {
+
     }
 }

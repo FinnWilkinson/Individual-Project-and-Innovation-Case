@@ -23,18 +23,19 @@ public class BallPrefab : MonoBehaviour
     public bool selected;
     public bool allowUI;
 
-    private bool moving;
-
     // Start is called before the first frame update
     void Start()
     {
+        //Can scale by tables x scale, as only allowed proportional scale, so all axis scale by same amount
+        float tableScale = GameObject.Find("Pool_Table").gameObject.transform.Find("Table").transform.localScale.x;
+        this.transform.localScale = this.transform.localScale * tableScale;
+
         //get main camera object
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 
         //set values
         isCueBall = false;
         selected = false;
-        moving = false;
         allowUI = !GameObject.Find("Toggle_Ball_UI_BTN").GetComponent<Interactable>().IsToggled;
         cueMarker.SetActive(false);
         buttonsHolder.SetActive(false);   
@@ -65,25 +66,25 @@ public class BallPrefab : MonoBehaviour
             buttonsHolder.transform.position = ball.transform.position + new Vector3(0.0f, 2.0f * this.transform.localScale.y, 0.0f);
             buttonsHolder.transform.LookAt(mainCamera.transform);
         }
-        //make marker follow cueball if moved
-        if (moving)
-        {
-            cueMarker.transform.position = ball.transform.position + new Vector3(0.0f, 0.0f, -0.65f * this.transform.localScale.z);
-            cueMarker.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
-        }
     }
 
-    //When user grabs ball, make marker follow (and turn off aim guide)
+    //When user grabs ball, turn off aim guide
     ManipulationEventData ballManipulationStarted(ManipulationEventData data)
     {
-        moving = true;
+        if (isCueBall)
+        {
+            cueMarker.GetComponent<LineRenderer>().enabled = false;
+        }
         return data;
     }
 
-    //Once ball is let go, dont lock marker position (turn on aim guide)
+    //Once ball is let go, turn on aim guide
     ManipulationEventData ballManipulationEnded(ManipulationEventData data)
     {
-        moving = false;
+        if (isCueBall)
+        {
+            cueMarker.GetComponent<LineRenderer>().enabled = true;
+        }
         return data;
     }
 
@@ -91,11 +92,12 @@ public class BallPrefab : MonoBehaviour
     ManipulationEventData cueMarkerManipulationStarted(ManipulationEventData data)
     {
         ball.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        cueMarker.GetComponent<HingeJoint>().anchor = cueMarker.transform.position + new Vector3(0.0f, 8.675f, 0.0f);
+        //cueMarker.GetComponent<HingeJoint>().anchor = cueMarker.transform.position + new Vector3(0.0f, 8.675f, 0.0f);
+        cueMarker.GetComponent<HingeJoint>().connectedAnchor = ball.transform.position;
         return data;
     }
 
-    //Once marker is let go, allow for ball to be moved gaain
+    //Once marker is let go, allow for ball to be moved again
     ManipulationEventData cueMarkerManipulationEnded(ManipulationEventData data)
     {
         ball.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
