@@ -840,6 +840,8 @@ MonoBehaviour:
   ball: {fileID: 868568112662401267}
   cueMarker: {fileID: 173999007657630527}
   buttonsHolder: {fileID: 7351713763164948131}
+  ballMat: {fileID: 2100000, guid: 9841e180fe8a17640a2438c462b9848d, type: 2}
+  cueBallMat: {fileID: 2100000, guid: 538900027e8d3bf4e831aa52e6e9209e, type: 2}
   isCueBall: 0
   selected: 0
   allowUI: 0

@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 5122885304401310183}
   m_Layer: 9
   m_Name: Cushion_4
-  m_TagString: Untagged
+  m_TagString: Cushion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 4551383183081249747}
   m_Layer: 9
   m_Name: Cushion_2
-  m_TagString: Untagged
+  m_TagString: Cushion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2564,11 +2564,14 @@ MonoBehaviour:
   - Target: {fileID: 7813049373273768960}
     Themes:
     - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
+    - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
   - Target: {fileID: 2882696447010672739}
     Themes:
     - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
+    - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
   - Target: {fileID: 0}
     Themes:
+    - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
     - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
   OnClick:
     m_PersistentCalls:
@@ -2800,11 +2803,14 @@ MonoBehaviour:
   - Target: {fileID: 9173425425991115885}
     Themes:
     - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
+    - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
   - Target: {fileID: 3674437551601819840}
     Themes:
     - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
+    - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
   - Target: {fileID: 0}
     Themes:
+    - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
     - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
   OnClick:
     m_PersistentCalls:
@@ -2973,7 +2979,7 @@ GameObject:
   - component: {fileID: 1118741502071353648}
   m_Layer: 9
   m_Name: Cushion_3
-  m_TagString: Untagged
+  m_TagString: Cushion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3147,11 +3153,14 @@ MonoBehaviour:
   - Target: {fileID: 2975579669661968748}
     Themes:
     - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
+    - {fileID: 11400000, guid: d37afabc007bf774d9431b9a7cbe6fba, type: 2}
   - Target: {fileID: 2659618771206774087}
     Themes:
     - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
+    - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
   - Target: {fileID: 0}
     Themes:
+    - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
     - {fileID: 11400000, guid: 6a4ada4b285469047946e8662531da54, type: 2}
   OnClick:
     m_PersistentCalls:
@@ -3399,7 +3408,7 @@ GameObject:
   - component: {fileID: 9037922703647889518}
   m_Layer: 9
   m_Name: Cushion_1
-  m_TagString: Untagged
+  m_TagString: Cushion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

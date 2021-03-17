@@ -14,12 +14,13 @@ public class CollisionPath : MonoBehaviour
 {
 
     public GameObject ball;
+    private GameObject invisiball; //is invisible version of cue ball used for collision path estimations
     public int bounces;
-
 
     // Start is called before the first frame update
     void Start()
     {
+        invisiball = GameObject.Find("InvisiBall");
         InitialiseLineRenderer();
     }
 
@@ -46,6 +47,10 @@ public class CollisionPath : MonoBehaviour
         //Disable BallCollider so when path is drawn it doesnt detect collisions with itself
         ball.GetComponent<SphereCollider>().enabled = false;
 
+        //Set layerMask so that raycast doesnt interact or detect unwanted physics layers
+        //Unwanted  = Layer 8 : ball_marker
+        int layerMask = unchecked((int)0xFFFFFFFF - (1<< 8));
+
         RaycastHit[] hits = new RaycastHit[bounces + 1];
         Vector3 startPos = ball.transform.position;
 
@@ -56,20 +61,14 @@ public class CollisionPath : MonoBehaviour
 
         for(int i = 0; i < bounces + 1; i++)
         {
-            if(Physics.Raycast(currentPos, direction, out hits[i]))
+            if(Physics.Raycast(currentPos, direction, out hits[i], Mathf.Infinity, layerMask))
             {
                 hitsMade++;
                 //If it hits ball, calculate post collision path differently
-                if(hits[i].collider.tag == "Ball")
+                if (hits[i].collider.tag == "Ball")
                 {
                     // Calculate ball to ball collision trajectory for both cue ball and targte ball (both for 1 bounce post collision)
                     break;
-                }
-                //if it hits the hit indicator collider, ignore it and continue on
-                if(hits[i].collider.tag == "Cue_Hit_Marker")
-                {
-                    Vector3 markerPoint = hits[i].point;
-                    Physics.Raycast(markerPoint, direction, out hits[i]);
                 }
                 currentPos = hits[i].point;
                 direction = direction - 2 * (Vector3.Dot(direction, hits[i].normal)) * hits[i].normal;
@@ -80,6 +79,32 @@ public class CollisionPath : MonoBehaviour
         ball.GetComponent<SphereCollider>().enabled = true;
 
         DrawCollisionPath(startPos, hits, hitsMade);
+    }
+
+    //Caluclates the points of collision on cue balls path
+    void BallCollisionPathEstimation()
+    {
+        //Disable BallCollider so when path is drawn it doesnt detect collisions with itself
+        ball.GetComponent<SphereCollider>().enabled = false;
+
+        //callibrate invisiball to cue ball
+        Debug.Log(ball.transform.position);
+        invisiball.transform.position = ball.transform.position;
+        invisiball.GetComponent<SphereCollider>().radius = ball.GetComponent<SphereCollider>().radius * ball.transform.parent.transform.localScale.x;
+
+        //initialise start variables
+        Vector3 startPos = ball.transform.position;
+        Vector3[] hits = new Vector3[bounces + 1];
+
+        //initialise loop variables
+        Vector3 direction = this.transform.up;
+        Vector3 currentPos = startPos;
+
+
+        //Re-enable Ball's Collider so it can still be moved
+        ball.GetComponent<SphereCollider>().enabled = true;
+
+        //DrawCollisionPath(startPos, hits, hitsMade);
     }
 
     //Draws the collision path from the calculated points

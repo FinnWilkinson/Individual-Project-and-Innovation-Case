@@ -7,6 +7,9 @@ TagManager:
   - Button
   - Ball_Marker
   - Ball
+  - Cue_Hit_Marker
+  - Cue_Ball
+  - Cushion
   layers:
   - Default
   - TransparentFX

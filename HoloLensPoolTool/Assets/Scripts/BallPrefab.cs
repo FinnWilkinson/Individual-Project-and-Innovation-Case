@@ -19,6 +19,9 @@ public class BallPrefab : MonoBehaviour
     private GameObject removeBtn;
     private GameObject makeCueBallBtn;
 
+    public Material ballMat;
+    public Material cueBallMat;
+
     public bool isCueBall;
     public bool selected;
     public bool allowUI;
@@ -68,22 +71,22 @@ public class BallPrefab : MonoBehaviour
         }
     }
 
-    //When user grabs ball, turn off aim guide
+    //When user grabs ball, turn off aim guide  NOT IN USE ATM - USE IF BAD HOLOLENS PERFORMANCE
     ManipulationEventData ballManipulationStarted(ManipulationEventData data)
     {
         if (isCueBall)
         {
-            cueMarker.GetComponent<LineRenderer>().enabled = false;
+            //cueMarker.GetComponent<LineRenderer>().enabled = false;
         }
         return data;
     }
 
-    //Once ball is let go, turn on aim guide
+    //Once ball is let go, turn on aim guide    NOT IN USE ATM - USE IF BAD HOLOLENS PERFORMANCE
     ManipulationEventData ballManipulationEnded(ManipulationEventData data)
     {
         if (isCueBall)
         {
-            cueMarker.GetComponent<LineRenderer>().enabled = true;
+            //cueMarker.GetComponent<LineRenderer>().enabled = true;
         }
         return data;
     }
@@ -111,9 +114,11 @@ public class BallPrefab : MonoBehaviour
         {
             ballObj.GetComponent<BallPrefab>().isCueBall = false;
             ballObj.GetComponent<BallPrefab>().cueMarker.SetActive(false);
+            ballObj.GetComponent<BallPrefab>().ball.GetComponent<MeshRenderer>().material = ballMat;
         }
         this.cueMarker.SetActive(true);
         this.isCueBall = true;
+        ball.GetComponent<MeshRenderer>().material = cueBallMat;
     }
 
     //Shows this balls UI, Invoked by ballProperties.cs when hovered over by user
