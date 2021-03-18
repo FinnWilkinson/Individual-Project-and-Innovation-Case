@@ -115,10 +115,12 @@ public class BallPrefab : MonoBehaviour
             ballObj.GetComponent<BallPrefab>().isCueBall = false;
             ballObj.GetComponent<BallPrefab>().cueMarker.SetActive(false);
             ballObj.GetComponent<BallPrefab>().ball.GetComponent<MeshRenderer>().material = ballMat;
+            ballObj.layer = 10; //Layer 10 = Ball
         }
         this.cueMarker.SetActive(true);
         this.isCueBall = true;
         ball.GetComponent<MeshRenderer>().material = cueBallMat;
+        ball.layer = 11; //Layer 11 = Cue_Ball
     }
 
     //Shows this balls UI, Invoked by ballProperties.cs when hovered over by user

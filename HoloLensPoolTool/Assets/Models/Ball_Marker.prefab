@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 868568112662401267}
-  bounces: 2
+  bounces: 4
 --- !u!1 &868568112662401267
 GameObject:
   m_ObjectHideFlags: 0
