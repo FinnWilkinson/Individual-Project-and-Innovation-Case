@@ -97,19 +97,18 @@ public class CollisionPath : MonoBehaviour
 
         //Set layerMask so that raycast doesnt interact or detect unwanted physics layers
         //Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball
-        int layerMask = unchecked((int)0xFFFFFFFF - (1 << 8));
-        layerMask -= (1 << 11);
+        int layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11);
 
         //initialise start variables
         Vector3 startPos = ball.transform.position;
-        //RaycastHit[] hits = new RaycastHit[bounces + 1];
 
         //initialise loop variables
         int hitsMade = 0;
         Vector3 direction = this.transform.up;
         Vector3 dirNormal = Vector3.Cross(direction, Vector3.up); //Get normal to ray in y axis (imagine plane edge made through direction, normal to that plane)
         Vector3[] currentPos = {startPos, startPos - (dirNormal * radius), startPos + (dirNormal * radius)};  // (0 = middle, 1 = left side of ball, 2 = right side of ball)
-        
+
+
         RaycastHit[] initialHits = new RaycastHit[3];
         Vector3[] hitPoints = new Vector3[bounces + 2];
 
@@ -117,15 +116,42 @@ public class CollisionPath : MonoBehaviour
         for (int j = 0; j < bounces + 1; j++)
         {
             //find intial collisions
-            if (Physics.Raycast(currentPos[0], direction, out initialHits[0], Mathf.Infinity, layerMask) &&
-                Physics.Raycast(currentPos[1], direction, out initialHits[1], Mathf.Infinity, layerMask) &&
-                Physics.Raycast(currentPos[2], direction, out initialHits[2], Mathf.Infinity, layerMask))
+            if (Physics.Raycast(currentPos[0], direction, out initialHits[0], Mathf.Infinity, layerMask))
             {
-                // if all tags same, either hits cushion or ball full on, 
-                if (initialHits[0].collider.tag == initialHits[1].collider.tag && initialHits[0].collider.tag == initialHits[2].collider.tag)
+                //if none hit a ball, cushion is hit so only need middle raycast
+                if (initialHits[0].collider.tag == "Ball")
                 {
-                    // if cushion, update positions, store hit position and move on to next bounce
-                    if (initialHits[0].collider.tag == "Cushion")
+                    //do ball stuff
+                    //store hit point to draw path
+                    hitPoints[hitsMade] = initialHits[0].point;
+                    hitsMade++;
+                    break;
+                }
+                else
+                {
+                    //Fire rays either side of ball to see if we will collide with another ball not down centre line
+                    bool leftSideHit = false, rightSideHit = false;
+                    if (Physics.Raycast(currentPos[1], direction, out initialHits[1], Mathf.Infinity, layerMask))
+                    {
+                        leftSideHit = true;
+                    }
+                    if (Physics.Raycast(currentPos[2], direction, out initialHits[2], Mathf.Infinity, layerMask))
+                    {
+                        rightSideHit = true;
+                    }
+
+                    bool ballHitL = false, ballHitR = false;
+                    if(leftSideHit == true)
+                    {
+                        if (initialHits[1].collider.tag == "Ball") ballHitL = true;
+                    }
+                    if(rightSideHit == true)
+                    {
+                        if (initialHits[2].collider.tag == "Ball") ballHitR = true;
+                    }
+
+                    //If no ball hit, go from centre hit point as hit cushion
+                    if(!ballHitL && !ballHitR)
                     {
                         //get new direction vector
                         direction = direction - 2 * (Vector3.Dot(direction, initialHits[0].normal)) * initialHits[0].normal;
@@ -135,47 +161,21 @@ public class CollisionPath : MonoBehaviour
                         hitsMade++;
                         //update current firing positions
                         currentPos[0] = initialHits[0].point;
-                        currentPos[1] = currentPos[0] - (dirNormal * radius);
-                        currentPos[2] = currentPos[0] + (dirNormal * radius);
+                        currentPos[1] = initialHits[0].point - (dirNormal * radius);
+                        currentPos[2] = initialHits[0].point + (dirNormal * radius);
                     }
-                    //if ball, find 1 next collision after ball and add this point, then break (as will hit ball full face so straight path post hit)
-                    else if (initialHits[0].collider.tag == "Ball")
+                    //else do ball stuff
+                    else
                     {
-                        //store hit point to draw path
-                        hitPoints[hitsMade] = initialHits[0].point;
-                        hitsMade++;
-                        //update current firing positions
-                        currentPos[0] = initialHits[0].point;
-                        currentPos[1] = currentPos[0] - (dirNormal * radius);
-                        currentPos[2] = currentPos[0] + (dirNormal * radius);
-                        if (Physics.Raycast(currentPos[0], direction, out initialHits[0], Mathf.Infinity, layerMask))
-                        {
-                            //store hit point to draw path
-                            hitPoints[hitsMade] = initialHits[0].point;
-                            hitsMade++;
-                            break;
-                        }
+                        break;
                     }
-                    //else, something is wrong, dont draw at all
-                    else return;
-                }
-                //if tags not all same, then a ball is hit at an angle
-                else
-                {
-                    //if none hit ball, error so dont draw
-                    if (initialHits[0].collider.tag != "Ball" && initialHits[1].collider.tag != "Ball" && initialHits[2].collider.tag != "Ball") return;
 
-                    //find collision point
-                    //work out this balls trajectory after (0-1 bounces)
-                    //work out target ball trajectory after (0-1 bounces)
-                    //break
                 }
             }
         }
-        
+
         //Re-enable Ball's Collider so it can still be moved
         ball.GetComponent<SphereCollider>().enabled = true;
-
         DrawCollisionPath(startPos, hitPoints, hitsMade);
     }
 
@@ -192,6 +192,7 @@ public class CollisionPath : MonoBehaviour
 
         rend.positionCount = hitsMade + 1;
         Vector3[] positions = new Vector3[rend.positionCount];
+
         positions[0] = startPos - new Vector3(0.0f, ballHeightOffset, 0.0f);
         for (int i = 0; i < hitsMade; i++)
         {
