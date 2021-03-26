@@ -10,6 +10,7 @@ TagManager:
   - Cue_Hit_Marker
   - Cue_Ball
   - Cushion
+  - LineRendObj
   layers:
   - Default
   - TransparentFX

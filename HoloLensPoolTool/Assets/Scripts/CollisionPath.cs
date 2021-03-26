@@ -40,52 +40,6 @@ public class CollisionPath : MonoBehaviour
         rend.alignment = LineAlignment.TransformZ;
     }
 
-    //Caluclates the points of collision
-    void BallCollisionPath()
-    {
-        //Disable BallCollider so when path is drawn it doesnt detect collisions with itself
-        ball.GetComponent<SphereCollider>().enabled = false;
-
-        //Set layerMask so that raycast doesnt interact or detect unwanted physics layers
-        //Unwanted  = Layer 8 : ball_marker
-        int layerMask = unchecked((int)0xFFFFFFFF - (1<< 8));
-
-        RaycastHit[] hits = new RaycastHit[bounces + 1];
-        Vector3 startPos = ball.transform.position;
-
-
-        Vector3 currentPos = startPos;
-        Vector3 direction = this.transform.up;
-        int hitsMade = 0;
-
-        for(int i = 0; i < bounces + 1; i++)
-        {
-            if(Physics.Raycast(currentPos, direction, out hits[i], Mathf.Infinity, layerMask))
-            {
-                hitsMade++;
-                //If it hits ball, calculate post collision path differently
-                if (hits[i].collider.tag == "Ball")
-                {
-                    // Calculate ball to ball collision trajectory for both cue ball and targte ball (both for 1 bounce post collision)
-                    break;
-                }
-                currentPos = hits[i].point;
-                direction = direction - 2 * (Vector3.Dot(direction, hits[i].normal)) * hits[i].normal;
-            }
-        }
-
-        //Re-enable Ball's Collider so it can still be moved
-        ball.GetComponent<SphereCollider>().enabled = true;
-
-        Vector3[] hitPoints = new Vector3[hitsMade];
-        for(int i = 0; i < hitsMade; i++)
-        {
-            hitPoints[i] = hits[i].point;
-        }
-
-        DrawCollisionPath(startPos, hitPoints, hitsMade);
-    }
-
     //Caluclates the points of collision on cue balls path
     void BallCollisionPathEstimation()
     {
@@ -112,6 +66,9 @@ public class CollisionPath : MonoBehaviour
         RaycastHit[] initialHits = new RaycastHit[3];
         Vector3[] hitPoints = new Vector3[bounces + 2];
 
+        GameObject lastHitBall = this.ball;
+        bool anytimeBallHit = false;
+
         // Loop through to find all collisions
         for (int j = 0; j < bounces + 1; j++)
         {
@@ -135,14 +92,12 @@ public class CollisionPath : MonoBehaviour
                 if (initialHits[0].collider.tag == "Ball")
                 {
                     ballHitC = true;
-                    Debug.Log("centre hit");
                 }
                 if (leftSideHit == true)
                 {
                     if (initialHits[1].collider.tag == "Ball")
                     {
                         ballHitL = true;
-                        Debug.Log("left hit");
                     }
 
                 }
@@ -151,7 +106,6 @@ public class CollisionPath : MonoBehaviour
                     if (initialHits[2].collider.tag == "Ball")
                     {
                         ballHitR = true;
-                        Debug.Log("right hit");
                     }
                 }
 
@@ -172,6 +126,8 @@ public class CollisionPath : MonoBehaviour
                 //else do ball collision stuff
                 else
                 {
+                    anytimeBallHit = true;
+
                     // For all calculations, can emmit y as this will be the same for every ball (all same size on a flat plane)
                     // Find closest ball which was hit
                     List<GameObject> ballsHit = new List<GameObject>();
@@ -194,34 +150,65 @@ public class CollisionPath : MonoBehaviour
                         }
                     }
 
+                    //update which was last ball to be hit, turn on appropriate ball's line renderer
+                    if(lastHitBall != closestBall)
+                    {
+                        foreach (GameObject lro in GameObject.FindGameObjectsWithTag("LineRendObj"))
+                        {
+                            lro.GetComponent<LineRenderer>().enabled = false;
+                        }
+                        lastHitBall = closestBall;
+                        lastHitBall.GetComponent<BallProperties>().lineRendObj.GetComponent<LineRenderer>().enabled = true;
+                    }
+
                     // Find centre point of where cue ball will be at collision
                     Vector3 cueBallCentre = prevPoint;
                     Vector3 hitBallCentre = closestBall.transform.position;
                     Vector3 cueBallCollCentre = new Vector3();
 
                     //if either z or x coordinates the approx. same, then plug into circle equation immediatly to get cue ball centre point on collision
-                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.01)
+                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.0001)
                     {
-                        break;
+                        // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
+                        // simplify and find x
+                        float[] potentialXcoords = new float[2];
+                        float q = Mathf.Pow(hitBallCentre.x, 2) + Mathf.Pow(cueBallCentre.z, 2) - (2 * hitBallCentre.z * cueBallCentre.z) + Mathf.Pow(hitBallCentre.z, 2) - Mathf.Pow(2 * radius, 2);
+                        potentialXcoords[0] = -(((-2 * hitBallCentre.x) + Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.x, 2) - (4 * q))) / (2));    //quadratic formula with +
+                        potentialXcoords[1] = -(((-2 * hitBallCentre.x) - Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.x, 2) - (4 * q))) / (2));    //quadratic formula with -
+
+                        if ((potentialXcoords[0] - cueBallCentre.x) < (potentialXcoords[1] - cueBallCentre.x)) cueBallCollCentre = new Vector3(potentialXcoords[0], cueBallCentre.y, cueBallCentre.z);
+                        else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, cueBallCentre.z);
                     }
-                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.01) 
+                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.0001) 
                     {
-                        break;
+                        // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
+                        // simplify and find z
+                        float[] potentialZcoords = new float[2];
+                        float q = Mathf.Pow(cueBallCentre.x, 2) - (2 * hitBallCentre.x * cueBallCentre.x) + Mathf.Pow(hitBallCentre.x, 2) + Mathf.Pow(hitBallCentre.z, 2) - Mathf.Pow(2 * radius, 2);
+                        potentialZcoords[0] = -(((-2 * hitBallCentre.z) + Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.z, 2) - (4 * q))) / (2));    //quadratic formula with +
+                        potentialZcoords[1] = -(((-2 * hitBallCentre.z) - Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.z, 2) - (4 * q))) / (2));    //quadratic formula with -
+
+                        if ((potentialZcoords[0] - cueBallCentre.x) < (potentialZcoords[1] - cueBallCentre.x)) cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[0]);
+                        else cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[0]);
                     }
-                    //else, calculate as normal
+                    //else, calculate z=mx+c line as normal
                     else
                     {
                         // Get line equation of centre ray
+                        // z = mx+c
                         float gradient = (cueBallCentre.z - initialHits[0].point.z) / (cueBallCentre.x - initialHits[0].point.x);
                         float intercept = cueBallCentre.z - gradient * cueBallCentre.x;
 
                         //Plug into simplified circle equation to get x intercept coords
+                        //plug z=mx+c int (x-a)^2 + (z-b)^2 = radius^2          where a and b are coordinates of hitBallCentre
+                        //we want to find centre of cue ball on contact, so radius will be 2*ball_radius
+                        //maths below is simplified version of (x-a)^2 + (mx+c-b)^2 = (2*radius)^2  =>  tx^2 - ux - v = 0
                         float[] potentialXcoords = new float[2], potentialZcoords = new float[2];
                         float t = 1 + (gradient * gradient);
                         float u = 2 * (hitBallCentre.x - (gradient * (intercept - hitBallCentre.z)));
                         float v = (4 * (radius * radius)) - Mathf.Pow(hitBallCentre.x, 2) - Mathf.Pow(intercept - hitBallCentre.z, 2);
-                        potentialXcoords[0] = -(((-u) + Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));
-                        potentialXcoords[1] = -(((-u) - Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));
+                        potentialXcoords[0] = -(((-u) + Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));       //quadratic formula with +
+                        potentialXcoords[1] = -(((-u) - Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));       //quadratic formula with -
                         potentialZcoords[0] = gradient * potentialXcoords[0] + intercept;
                         potentialZcoords[1] = gradient * potentialXcoords[1] + intercept;
 
@@ -231,20 +218,51 @@ public class CollisionPath : MonoBehaviour
                         else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, potentialZcoords[1]);
                     }
 
-                    //find point on object ball where collision occurs
-                    //float ballZdiff = Mathf.Abs(cueBallCentre.z - hitBallCentre.z);
-                    //float ballXdiff = Mathf.Abs(cueBallCentre.x - hitBallCentre.x);
-                    //float angle = (Mathf.PI / 2) - Mathf.Asin(ballXdiff / (2 * radius));
-                    //Vector3 collisionPoint = cueBallCentre + new Vector3(radius*Mathf.Sin(angle), 0.0f, radius*Mathf.Cos(angle));
-
                     //add centre point of where cue ball will be at collision to hitPoints
-                    hitPoints[hitsMade] = cueBallCollCentre;
+                    hitPoints[hitsMade] = cueBallCollCentre; // + (radius * direction)?
                     hitsMade++;
 
-                    //calculate balls path afterwards (0 bounce)
-                    //calculate cue balls path after collision (0 bounce)
+                    //calculate and draw balls path afterwards (0 bounce, 1 more collision)
+                    Vector3 hitBallDirection = hitBallCentre - cueBallCollCentre;
+                    closestBall.GetComponent<BallProperties>().DrawCollisionPath(hitBallDirection);
+
+                    //calculate cue balls path after collision (0 bounce, 1 more collision)
+                    float newX, newZ;
+                    if (ballHitR)
+                    {
+                        newX = hitBallDirection.x * Mathf.Cos(-Mathf.PI / 2) - hitBallDirection.z * Mathf.Sin(-Mathf.PI / 2);
+                        newZ = hitBallDirection.x * Mathf.Sin(-Mathf.PI / 2) + hitBallDirection.z * Mathf.Cos(-Mathf.PI / 2);
+                    }
+                    else
+                    {
+                        newX = hitBallDirection.x * Mathf.Cos(Mathf.PI / 2) - hitBallDirection.z * Mathf.Sin(Mathf.PI / 2);
+                        newZ = hitBallDirection.x * Mathf.Sin(Mathf.PI / 2) + hitBallDirection.z * Mathf.Cos(Mathf.PI / 2);
+                    }
+
+                    //update current firing positions
+                    direction = new Vector3(newX, direction.y, newZ);
+                    dirNormal = Vector3.Cross(direction, Vector3.up);
+                    currentPos[0] = cueBallCollCentre;
+                    RaycastHit hit;
+
+                    //fire single raycast to get collision point
+                    if (Physics.Raycast(currentPos[0], direction, out hit, Mathf.Infinity, layerMask))
+                    {
+                        hitPoints[hitsMade] = hit.point;
+                        hitsMade++;
+                    }
+                    else break;
+
                     break;
                 }
+            }
+        }
+
+        if (!anytimeBallHit)
+        {
+            foreach (GameObject lro in GameObject.FindGameObjectsWithTag("LineRendObj"))
+            {
+                lro.GetComponent<LineRenderer>().enabled = false;
             }
         }
 

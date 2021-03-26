@@ -11,6 +11,8 @@ using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 
 public class BallProperties : MonoBehaviour
 {
+    public GameObject lineRendObj;
+
     private bool boundsCreated;
     private float ballHeight;
 
@@ -18,6 +20,8 @@ public class BallProperties : MonoBehaviour
     void Start()
     {
         boundsCreated = false;
+        InitialiseLineRenderer();
+        lineRendObj.GetComponent<LineRenderer>().enabled = false;
         this.GetComponent<ObjectManipulator>().OnHoverEntered.AddListener((data) => HoverEntered(data));
     }
 
@@ -61,4 +65,47 @@ public class BallProperties : MonoBehaviour
         this.transform.parent.gameObject.GetComponent<BallPrefab>().SetSelected(true);
         return data;
     }
+
+    //sets up the LineRenderer object in the connected GameObject
+    void InitialiseLineRenderer()
+    {
+        LineRenderer rend = lineRendObj.GetComponent<LineRenderer>();
+        rend.material = new Material(Shader.Find("Sprites/Default"));
+        //Can scale by tables x scale, as only allowed proportional scale, so all axis scale by same amount
+        float tableScale = GameObject.Find("Pool_Table").gameObject.transform.Find("Table").transform.localScale.x;
+        rend.widthMultiplier = 0.75f * tableScale;
+        rend.alignment = LineAlignment.TransformZ;
+        //rend.sharedMaterial.SetColor("_Color", Color.yellow);
+    }
+
+    //Draws the collision path from the given points
+    public void DrawCollisionPath(Vector3 direction)
+    {
+        //Get renderer only once for more efficient computing
+        LineRenderer rend = lineRendObj.GetComponent<LineRenderer>();
+        rend.positionCount = 2;
+        Vector3[] positions = new Vector3[2];
+
+        //Account for ball size so path drawn onto table surface
+        float ballHeightOffset = this.GetComponent<SphereCollider>().radius * this.transform.parent.localScale.x;
+
+        //set start pos
+        positions[0] = this.transform.position - new Vector3(0.0f, ballHeightOffset, 0.0f);
+
+        //Set layerMask so that raycast doesnt interact or detect unwanted physics layers
+        //Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball
+        int layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11);
+
+        RaycastHit hit;
+
+        //fire single raycast to get collision point
+        if (Physics.Raycast(this.transform.position, direction, out hit, Mathf.Infinity, layerMask))
+        {
+            positions[1] = hit.point - new Vector3(0.0f, ballHeightOffset, 0.0f);
+        }
+        else return;
+
+        rend.SetPositions(positions);
+    }
+
 }
