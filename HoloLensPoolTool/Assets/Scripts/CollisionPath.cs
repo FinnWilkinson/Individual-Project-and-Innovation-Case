@@ -180,11 +180,12 @@ public class CollisionPath : MonoBehaviour
                     if (ballHitL) ballsHit.Add(initialHits[1].collider.gameObject);
                     if (ballHitR) ballsHit.Add(initialHits[2].collider.gameObject);
 
+                    Vector3 prevPoint = ball.transform.position;
+                    if (hitsMade > 0) prevPoint = hitPoints[hitsMade - 1];
+
                     closestBall = ballsHit[0];
                     if (ballsHit.Count > 1)
                     {
-                        Vector3 prevPoint = ball.transform.position;
-                        if (hitsMade > 0) prevPoint = hitPoints[hitsMade - 1];
                         for (int i = 1; i < ballsHit.Count; i++)
                         {
                             float closestDist = Mathf.Sqrt(Mathf.Pow(closestBall.transform.position.x - prevPoint.x, 2) + Mathf.Pow(closestBall.transform.position.z - prevPoint.z, 2));
@@ -194,38 +195,47 @@ public class CollisionPath : MonoBehaviour
                     }
 
                     // Find centre point of where cue ball will be at collision
-                    Vector3 cueBallCentre = ball.transform.position;
+                    Vector3 cueBallCentre = prevPoint;
                     Vector3 hitBallCentre = closestBall.transform.position;
-                    Vector3 cueBallCollCentre;
+                    Vector3 cueBallCollCentre = new Vector3();
 
-                    // Get line equation of centre ray
-                    float gradient = Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) / Mathf.Abs(cueBallCentre.x - initialHits[0].point.x);
-                    if (cueBallCentre.z - initialHits[0].point.z == 0) gradient = 1;
-                    if (cueBallCentre.x - initialHits[0].point.x == 0) gradient = 0;
-                    float intercept = cueBallCentre.z - gradient * cueBallCentre.x;
+                    //if either z or x coordinates the approx. same, then plug into circle equation immediatly to get cue ball centre point on collision
+                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.01)
+                    {
+                        break;
+                    }
+                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.01) 
+                    {
+                        break;
+                    }
+                    //else, calculate as normal
+                    else
+                    {
+                        // Get line equation of centre ray
+                        float gradient = (cueBallCentre.z - initialHits[0].point.z) / (cueBallCentre.x - initialHits[0].point.x);
+                        float intercept = cueBallCentre.z - gradient * cueBallCentre.x;
 
-                    //Plug into simplified circle equation to get x intercept coords
-                    float[] potentialXcoords = new float[2], potentialZcoords = potentialXcoords = new float[2];
-                    float t = 1 + (gradient * gradient);
-                    float u = 2 * (hitBallCentre.x - (gradient * (intercept - hitBallCentre.z)));
-                    float v = (4 * (radius * radius)) - Mathf.Pow(hitBallCentre.x, 2) - Mathf.Pow(intercept - hitBallCentre.z, 2);
-                    potentialXcoords[0] = -( ( (-u) + Mathf.Sqrt((u*u) - (4*t*(-v))) ) / (2 * t));
-                    potentialXcoords[1] = -(((-u) - Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));
-                    potentialZcoords[0] = gradient * potentialXcoords[0] + intercept;
-                    potentialZcoords[1] = gradient * potentialXcoords[1] + intercept;
+                        //Plug into simplified circle equation to get x intercept coords
+                        float[] potentialXcoords = new float[2], potentialZcoords = new float[2];
+                        float t = 1 + (gradient * gradient);
+                        float u = 2 * (hitBallCentre.x - (gradient * (intercept - hitBallCentre.z)));
+                        float v = (4 * (radius * radius)) - Mathf.Pow(hitBallCentre.x, 2) - Mathf.Pow(intercept - hitBallCentre.z, 2);
+                        potentialXcoords[0] = -(((-u) + Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));
+                        potentialXcoords[1] = -(((-u) - Mathf.Sqrt((u * u) - (4 * t * (-v)))) / (2 * t));
+                        potentialZcoords[0] = gradient * potentialXcoords[0] + intercept;
+                        potentialZcoords[1] = gradient * potentialXcoords[1] + intercept;
 
-                    if (Mathf.Sqrt(Mathf.Pow(potentialXcoords[0] - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[0] - cueBallCentre.z, 2)) <
-                        Mathf.Sqrt(Mathf.Pow(potentialXcoords[1] - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[1] - cueBallCentre.z, 2)))
-                        cueBallCollCentre = new Vector3(potentialXcoords[0], cueBallCentre.y, potentialZcoords[0]);
-                    else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, potentialZcoords[1]);
-
-                    Debug.Log("hit centre = " + hitBallCentre + ".      cue ball coll centre = " + cueBallCollCentre);
+                        if (Mathf.Sqrt(Mathf.Pow(potentialXcoords[0] - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[0] - cueBallCentre.z, 2)) <
+                            Mathf.Sqrt(Mathf.Pow(potentialXcoords[1] - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[1] - cueBallCentre.z, 2)))
+                            cueBallCollCentre = new Vector3(potentialXcoords[0], cueBallCentre.y, potentialZcoords[0]);
+                        else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, potentialZcoords[1]);
+                    }
 
                     //find point on object ball where collision occurs
-                    float ballZdiff = Mathf.Abs(cueBallCentre.z - hitBallCentre.z);
-                    float ballXdiff = Mathf.Abs(cueBallCentre.x - hitBallCentre.x);
-                    float angle = (Mathf.PI / 2) - Mathf.Asin(ballXdiff / (2 * radius));
-                    Vector3 collisionPoint = cueBallCentre + new Vector3(radius*Mathf.Sin(angle), 0.0f, radius*Mathf.Cos(angle));
+                    //float ballZdiff = Mathf.Abs(cueBallCentre.z - hitBallCentre.z);
+                    //float ballXdiff = Mathf.Abs(cueBallCentre.x - hitBallCentre.x);
+                    //float angle = (Mathf.PI / 2) - Mathf.Asin(ballXdiff / (2 * radius));
+                    //Vector3 collisionPoint = cueBallCentre + new Vector3(radius*Mathf.Sin(angle), 0.0f, radius*Mathf.Cos(angle));
 
                     //add centre point of where cue ball will be at collision to hitPoints
                     hitPoints[hitsMade] = cueBallCollCentre;
