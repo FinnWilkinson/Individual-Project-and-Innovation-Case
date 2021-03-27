@@ -18,6 +18,8 @@ using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 
+using UnityEngine.XR.WSA;
+
 public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
 {
 
@@ -106,6 +108,9 @@ public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
     //Save table position, make correct UI available, disable un-needed table move scripts
     void SavePos()
     {
+        // Add a world anchor to improve hologram stability within scene
+        this.gameObject.AddComponent<WorldAnchor>();
+
         //de-activate scripts responsible for movement
         table.GetComponent<BoxCollider>().enabled = false;
         table.GetComponent<NearInteractionGrabbable>().enabled = false;

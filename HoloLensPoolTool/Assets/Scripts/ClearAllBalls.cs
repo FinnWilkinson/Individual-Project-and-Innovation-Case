@@ -26,7 +26,7 @@ public class ClearAllBalls : MonoBehaviour
 
     void ClearAllCurrentBalls()
     {
-        var listBalls = GameObject.FindGameObjectsWithTag("Ball");
+        var listBalls = GameObject.FindGameObjectsWithTag("Ball_Marker");
         foreach(GameObject ball in listBalls)
         {
             Destroy(ball);

@@ -12,6 +12,7 @@ using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 public class BallProperties : MonoBehaviour
 {
     public GameObject lineRendObj;
+    public GameObject halo;
 
     private bool boundsCreated;
     private float ballHeight;
@@ -106,6 +107,20 @@ public class BallProperties : MonoBehaviour
         else return;
 
         rend.SetPositions(positions);
+    }
+
+    // Call to make this ball draw post collision path and show "halo"
+    public void enableLineRenderer()
+    {
+        lineRendObj.GetComponent<LineRenderer>().enabled = true;
+        halo.SetActive(true);
+    }
+
+    // Call to disbale line renderer and not show "halo"
+    public void disbaleLineRenderer()
+    {
+        lineRendObj.GetComponent<LineRenderer>().enabled = false;
+        halo.SetActive(false);
     }
 
 }

@@ -34,6 +34,6 @@ public class AddBall : MonoBehaviour
         //So the ball no longer acts under gravity or any other forces.
         float scale = table.transform.localScale.y;
         Vector3 ball_Pos = table.transform.position + new Vector3(0, (0.25f * scale), 0); 
-        Instantiate(ball_Prefab, ball_Pos, Quaternion.identity);
+        Instantiate(ball_Prefab, ball_Pos, Quaternion.identity, this.transform);
     }
 }
