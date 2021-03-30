@@ -95,7 +95,6 @@ public class BallPrefab : MonoBehaviour
     ManipulationEventData cueMarkerManipulationStarted(ManipulationEventData data)
     {
         ball.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        //cueMarker.GetComponent<HingeJoint>().anchor = cueMarker.transform.position + new Vector3(0.0f, 8.675f, 0.0f);
         cueMarker.GetComponent<HingeJoint>().connectedAnchor = ball.transform.position;
         return data;
     }

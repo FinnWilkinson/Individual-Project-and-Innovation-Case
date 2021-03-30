@@ -71,6 +71,8 @@ public class CollisionPath : MonoBehaviour
         // Loop to find all collisions in n-bounces
         for (int j = 0; j < bounces + 1; j++)
         {
+            // Keeps track if pocket was hit on this bounce, if so, break after this collision is drawn.
+            bool pocketHit = false;
             // Find intial collisions from centre of cue ball. If no collision detected then dont continue
             if (Physics.Raycast(currentPos[0], direction, out initialHits[0], Mathf.Infinity, layerMask))
             {
@@ -96,6 +98,8 @@ public class CollisionPath : MonoBehaviour
                 // If no ball is hit from any raycast, we only hit cushion; go from centre hit point
                 if (!ballHitL && !ballHitR && !ballHitC)
                 {
+                    // If no ball was hit, check if the centre line hits a pocket, if it does then the cue ball will go into this pocket
+                    if (initialHits[0].collider.tag == "Pocket") pocketHit = true;
                     // Update direction vector by reflection off of cushion
                     direction = direction - 2 * (Vector3.Dot(direction, initialHits[0].normal)) * initialHits[0].normal;
                     dirNormal = Vector3.Cross(direction, Vector3.up);
@@ -153,7 +157,7 @@ public class CollisionPath : MonoBehaviour
                     Vector3 cueBallCollCentre = new Vector3();
 
                     // If z coordinates the approx. same, then plug into circle equation immediatly to get x positions of cue ball centre point on collision, as line is horizontal
-                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.0001)
+                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.001)
                     {
                         // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
                         // simplify and find x
@@ -163,11 +167,13 @@ public class CollisionPath : MonoBehaviour
                         potentialXcoords[1] = -(((-2 * hitBallCentre.x) - Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.x, 2) - (4 * q))) / (2));    //quadratic formula with -
 
                         // Find which of the 2 possible points is closest to cue ball, and will therefore be the correct coordinates
-                        if ((potentialXcoords[0] - cueBallCentre.x) < (potentialXcoords[1] - cueBallCentre.x)) cueBallCollCentre = new Vector3(potentialXcoords[0], cueBallCentre.y, cueBallCentre.z);
+                        if (Mathf.Sqrt(Mathf.Pow(potentialXcoords[0] - cueBallCentre.x, 2) + Mathf.Pow(cueBallCentre.z - cueBallCentre.z, 2)) <
+                            Mathf.Sqrt(Mathf.Pow(potentialXcoords[1] - cueBallCentre.x, 2) + Mathf.Pow(cueBallCentre.z - cueBallCentre.z, 2)))
+                            cueBallCollCentre = new Vector3(potentialXcoords[0], cueBallCentre.y, cueBallCentre.z);
                         else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, cueBallCentre.z);
                     }
                     // If x coordinates the approx. same, then plug into circle equation immediatly to get z positions of cue ball centre point on collision, as line is verticle (undefined gradient)
-                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.0001) 
+                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.001) 
                     {
                         // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
                         // simplify and find z
@@ -177,8 +183,10 @@ public class CollisionPath : MonoBehaviour
                         potentialZcoords[1] = -(((-2 * hitBallCentre.z) - Mathf.Sqrt(Mathf.Pow(-2 * hitBallCentre.z, 2) - (4 * q))) / (2));    //quadratic formula with -
 
                         // Find which of the 2 possible points is closest to cue ball, and will therefore be the correct coordinates
-                        if ((potentialZcoords[0] - cueBallCentre.x) < (potentialZcoords[1] - cueBallCentre.x)) cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[0]);
-                        else cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[0]);
+                        if (Mathf.Sqrt(Mathf.Pow(cueBallCentre.x - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[0] - cueBallCentre.z, 2)) <
+                            Mathf.Sqrt(Mathf.Pow(cueBallCentre.x - cueBallCentre.x, 2) + Mathf.Pow(potentialZcoords[1] - cueBallCentre.z, 2)))
+                            cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[0]);
+                        else cueBallCollCentre = new Vector3(cueBallCentre.x, cueBallCentre.y, potentialZcoords[1]);
                     }
                     // Else, calculate z=mx+c line for centre raycast and ball we hit's circle equation (of double radius) to calculate the intersection points and hence 
                     // cue ball's centre point at time of collision
@@ -220,6 +228,9 @@ public class CollisionPath : MonoBehaviour
                     // Invokle object ball's line drawing function to draw correct post collision path (0 bounces, 1 collision)
                     closestBall.GetComponent<BallProperties>().DrawCollisionPath(hitBallDirection);
 
+                    // if angle between cue ball direction pre collision and hitBallDirection < 10 degrees, then dont draw post collision cue ball line as will continue straight
+                    if (Vector3.Angle(direction, hitBallDirection) < 10) break;
+
                     // Rotate hit ball's post collision vector 90 degrees to get cue ball's post collision direction vector
                     float newX, newZ;
                     // If right side of cue ball hits, rotate anti-clockwise
@@ -252,6 +263,8 @@ public class CollisionPath : MonoBehaviour
                     break;      // Stop loop as all collision points have been calculated
                 }
             }
+            // If a pocket was hit on cue ball's path, dont figure out any more collisions
+            if (pocketHit) break;
         }
 
         // If no balls are hit at any point, ensure all object ball line renderers are off
