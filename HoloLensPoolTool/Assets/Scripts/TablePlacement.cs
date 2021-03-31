@@ -129,7 +129,6 @@ public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
         {
             if(child.parent.name == table.name && child.name != "rigRoot" && child.tag != "Pocket") child.GetComponent<MeshRenderer>().enabled = false;
         }
-
     }
 
     void IMixedRealityInputHandler.OnInputDown(InputEventData eventData)
