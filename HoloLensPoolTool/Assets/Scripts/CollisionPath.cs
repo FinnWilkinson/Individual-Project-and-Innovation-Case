@@ -157,7 +157,7 @@ public class CollisionPath : MonoBehaviour
                     Vector3 cueBallCollCentre = new Vector3();
 
                     // If z coordinates the approx. same, then plug into circle equation immediatly to get x positions of cue ball centre point on collision, as line is horizontal
-                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.001)
+                    if (Mathf.Abs(cueBallCentre.z - initialHits[0].point.z) <= 0.01)
                     {
                         // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
                         // simplify and find x
@@ -173,7 +173,7 @@ public class CollisionPath : MonoBehaviour
                         else cueBallCollCentre = new Vector3(potentialXcoords[1], cueBallCentre.y, cueBallCentre.z);
                     }
                     // If x coordinates the approx. same, then plug into circle equation immediatly to get z positions of cue ball centre point on collision, as line is verticle (undefined gradient)
-                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.001) 
+                    else if (Mathf.Abs(cueBallCentre.x - initialHits[0].point.x) <= 0.01) 
                     {
                         // (x-a)^2 + (z-b)^2 = (2*radius)^2         where a and b are x and z coords repectivley of hitBallCentre
                         // simplify and find z
@@ -229,7 +229,8 @@ public class CollisionPath : MonoBehaviour
                     closestBall.GetComponent<BallProperties>().DrawCollisionPath(hitBallDirection);
 
                     // if angle between cue ball direction pre collision and hitBallDirection < 10 degrees, then dont draw post collision cue ball line as will continue straight
-                    if (Vector3.Angle(direction, hitBallDirection) < 10) break;
+                    float angleBetween = Vector3.Angle(direction, hitBallDirection);
+                    if (angleBetween < 10) break;
 
                     // Rotate hit ball's post collision vector 90 degrees to get cue ball's post collision direction vector
                     float newX, newZ;
