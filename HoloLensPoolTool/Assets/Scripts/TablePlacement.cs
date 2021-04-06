@@ -127,7 +127,7 @@ public class TablePlacement : MonoBehaviour, IMixedRealityInputHandler
         //make table invisible
         foreach(Transform child in table.transform)
         {
-            if(child.parent.name == table.name && child.name != "rigRoot" && child.tag != "Pocket") child.GetComponent<MeshRenderer>().enabled = false;
+            //if(child.parent.name == table.name && child.name != "rigRoot" && child.tag != "Pocket") child.GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
