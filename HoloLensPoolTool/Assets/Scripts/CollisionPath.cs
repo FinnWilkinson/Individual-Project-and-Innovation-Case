@@ -18,6 +18,10 @@ public class CollisionPath : MonoBehaviour
     private float radius;       // Radius of the ball in global scale
     private int layerMask;      // Mask of physics layers we dont want raycast to detect
 
+    // Constants needed for cushion rebound path calculations
+    private const float initalVelocity = 1.4f;  // Assumed velocity before impact - based on medium powered shot
+    private const float coefOfRestitution = 0.6f;   // Coefficient of restitution of the table's cushions
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,12 +61,12 @@ public class CollisionPath : MonoBehaviour
         Vector3 startPos = ball.transform.position;
 
         // Initialise loop variables
-        Vector3 direction = this.transform.up;      //direction ball will be hit
-        Vector3 dirNormal = Vector3.Cross(direction, Vector3.up); //Get normal to ray in y axis (imagine plane edge made through direction, normal to that plane)
+        Vector3 direction = this.transform.up;      // Direction ball will be hit
+        Vector3 dirNormal = Vector3.Cross(direction, Vector3.up); // Get normal to ray in y axis (imagine plane edge made through direction, normal to that plane)
         Vector3[] currentPos = {startPos, startPos - (dirNormal * radius), startPos + (dirNormal * radius)};  // (0 = middle, 1 = left side of ball, 2 = right side of ball)
-        RaycastHit[] initialHits = new RaycastHit[3];   //stores collision data for each of the three rays fired
-        Vector3[] hitPoints = new Vector3[bounces + 2];     //stores valid path points we want to draw between 
-        int hitsMade = 0;       //tracks number of hit points stored
+        RaycastHit[] initialHits = new RaycastHit[3];   // Stores collision data for each of the three rays fired
+        Vector3[] hitPoints = new Vector3[bounces + 2];     // Stores valid path points we want to draw between 
+        int hitsMade = 0;       // Tracks number of hit points stored
 
         // Variables used to help control which object ball should have line renderer enables (which ball is being hit)
         GameObject lastHitBall = this.ball;
@@ -71,8 +75,6 @@ public class CollisionPath : MonoBehaviour
         // Loop to find all collisions in n-bounces
         for (int j = 0; j < bounces + 1; j++)
         {
-            // Keeps track if pocket was hit on this bounce, if so, break after this collision is drawn.
-            bool pocketHit = false;
             // Find intial collisions from centre of cue ball. If no collision detected then dont continue
             if (Physics.Raycast(currentPos[0], direction, out initialHits[0], Mathf.Infinity, layerMask))
             {
@@ -90,23 +92,59 @@ public class CollisionPath : MonoBehaviour
                     rightSideHit = true;
                 }
 
-                //check which rays hit balls
+                // Check which rays hit balls
                 if (initialHits[0].collider.tag == "Ball") ballHitC = true;
                 if (leftSideHit == true && initialHits[1].collider.tag == "Ball") ballHitL = true;
                 if (rightSideHit == true && initialHits[2].collider.tag == "Ball") ballHitR = true;
 
+                // Store the previous point on path that cue ball would be before this collision
+                Vector3 prevPoint = ball.transform.position;
+                if (hitsMade > 0) prevPoint = hitPoints[hitsMade - 1];
+
                 // If no ball is hit from any raycast, we only hit cushion; go from centre hit point
                 if (!ballHitL && !ballHitR && !ballHitC)
                 {
-                    // If no ball was hit, check if the centre line hits a pocket, if it does then the cue ball will go into this pocket
-                    if (initialHits[0].collider.tag == "Pocket") pocketHit = true;
-                    // Update direction vector by reflection off of cushion
-                    direction = direction - 2 * (Vector3.Dot(direction, initialHits[0].normal)) * initialHits[0].normal;
+                    // If a pocket was hit on cue ball's path, dont figure out any more collisions
+                    if (initialHits[0].collider.tag == "Pocket")
+                    {
+                        // Store hit point
+                        hitPoints[hitsMade] = initialHits[0].point;
+                        hitsMade++;
+                        break;
+                    }
+
+                    // Get normal to surface we hit (need to invert as points outwards)
+                    Vector3 surfaceNormal = -initialHits[0].normal;
+                    // Get the angle between the cushion normal and the inbound cue ball path
+                    float normalDirAngle = Vector3.SignedAngle(direction, surfaceNormal, Vector3.up);
+                    // Calculate the angle between inbound cue ball path and cushion
+                    float alpha = (90 - Mathf.Abs(normalDirAngle)) * (Mathf.PI / 180);
+
+                    // Calculate velocity in direction parallel to cushion immediatly after collision
+                    float postColVelocityTangent = initalVelocity * Mathf.Cos(alpha);
+                    //Calculate velocity in direction parallel to cushion normal immediatly after collision
+                    float postColVelocityNormal = coefOfRestitution * (initalVelocity * Mathf.Sin(alpha));
+                    // Calculate the angle between cushion and outbound direction of cue ball after the collision
+                    float beta = Mathf.Abs(Mathf.Atan(postColVelocityNormal / postColVelocityTangent));
+
+                    // Find reverse of inbound direction vector
+                    Vector3 reverseVector = new Vector3(prevPoint.x - initialHits[0].point.x, 0.0f, prevPoint.z - initialHits[0].point.z);
+
+                    // Calculate Rotation
+                    float newX, newZ;
+                    float rotationAngle = -(Mathf.PI - alpha - beta);
+                    if (normalDirAngle < 0) rotationAngle = -rotationAngle;
+                    newX = (reverseVector.x) * Mathf.Cos(rotationAngle) - (reverseVector.z) * Mathf.Sin(rotationAngle);
+                    newZ = (reverseVector.x) * Mathf.Sin(rotationAngle) + (reverseVector.z) * Mathf.Cos(rotationAngle);
+
+                    // Update Direction Vector and its normal
+                    direction = new Vector3(newX, direction.y, newZ);   // y stays the same as balls all at the exact same height
                     dirNormal = Vector3.Cross(direction, Vector3.up);
+
                     // Store hit point
                     hitPoints[hitsMade] = initialHits[0].point;
                     hitsMade++;
-                    // Update current firing positions
+                    // Update raycast firing positions
                     currentPos[0] = initialHits[0].point;
                     currentPos[1] = initialHits[0].point - (dirNormal * radius);
                     currentPos[2] = initialHits[0].point + (dirNormal * radius);
@@ -117,10 +155,6 @@ public class CollisionPath : MonoBehaviour
                 {
                     // For all calculations, can emmit y as this will be the same for every ball (all same size and on a level plane)
                     anytimeBallHit = true;
-
-                    // Store the previous point on path that cue ball would be before this collision
-                    Vector3 prevPoint = ball.transform.position;
-                    if (hitsMade > 0) prevPoint = hitPoints[hitsMade - 1];
 
                     // Store list of all balls that were hit
                     List<GameObject> ballsHit = new List<GameObject>();
@@ -264,8 +298,6 @@ public class CollisionPath : MonoBehaviour
                     break;      // Stop loop as all collision points have been calculated
                 }
             }
-            // If a pocket was hit on cue ball's path, dont figure out any more collisions
-            if (pocketHit) break;
         }
 
         // If no balls are hit at any point, ensure all object ball line renderers are off
