@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CameraFeedTest.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
+    path: Assets/OpenCVForUnity/Examples/ContribModules/aruco/ArUcoExample/ArUcoExample.unity
+    guid: 89e1e0e7cb778a9459dc29461ecb3007
+  - enabled: 0
     path: Assets/Scenes/PoolTablePlacement.unity
     guid: 56386abe2ddfc2e4caca6dda2d15f51d
   m_configObjects: {}

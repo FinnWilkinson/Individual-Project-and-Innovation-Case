@@ -17,6 +17,12 @@ using UnityEngine.UI;
 using UnityEngine.XR.WSA.Input;
 using System.Threading;
 
+using OpenCVForUnity.CoreModule;
+using OpenCVForUnity.Calib3dModule;
+using OpenCVForUnity.ArucoModule;
+using OpenCVForUnity.UnityUtils;
+using OpenCVForUnityExample;
+
 
 
 // App permissions, modify the appx file for research mode streams
@@ -32,6 +38,9 @@ namespace HoloLensPoolAid
     public class SensorStreams : MonoBehaviour
     {
         public Text myText;
+
+        private float interval = (1 / 20);
+        private float nextTime = 0;
 
         public enum SensorTypeUnity
         {
@@ -97,7 +106,17 @@ namespace HoloLensPoolAid
         // Update is called once per frame
         void Update()
         {
-            UpdateHoloLensMediaFrameSourceGroup();
+            if(Time.time >= nextTime)
+            {
+                // Get next camera frame
+                UpdateHoloLensMediaFrameSourceGroup();
+
+                // Do every interval seconds
+                nextTime += interval;
+            }
+
+
+
         }
 
         async void OnApplicationQuit()
@@ -173,12 +192,18 @@ namespace HoloLensPoolAid
             cameraFrameTexture.LoadRawTextureData((IntPtr)inBytesPV, pvFrame.PixelWidth * pvFrame.PixelHeight * 4);
             cameraFrameTexture.Apply();
 
+
+
+            // Aruco detection
+            arucoDetection();
+         
             //update material texture
             cameraFrameMaterial.mainTexture = cameraFrameTexture;
 
-            myText.text = "Began streaming sensor frames. Double tap to end streaming.";
+            //myText.text = "Began streaming sensor frames. Double tap to end streaming.";
 #endif
         }
+
 
         /// <summary>
         /// Stop the media frame source groups.
@@ -270,6 +295,47 @@ namespace HoloLensPoolAid
         }
         #endregion
 
+
+        // Aruco detection and setup
+        public GameObject ARobject;
+
+        private bool showRejectedCroners = false;
+        private bool applyEstPose = true;
+        private float markerLength = 0.1f;
+
+        
+         
+        private void arucoDetection()
+        {
+            Mat rgbMat = new Mat(cameraFrameTexture.height, cameraFrameTexture.width, CvType.CV_8UC3);
+
+            Utils.fastTexture2DToMat(cameraFrameTexture, rgbMat);
+            Mat ids = new Mat();
+            List<Mat> corners = new List<Mat>();
+            List<Mat> rejectedCorners = new List<Mat>();
+            DetectorParameters parameters = DetectorParameters.create();
+
+
+            Aruco.detectMarkers(rgbMat, Aruco.getPredefinedDictionary(Aruco.DICT_6X6_250), corners, ids, parameters, rejectedCorners);
+
+            myText.text = "Detected " + ids.total().ToString() + " markers. Rejected " + rejectedCorners.Count.ToString() + " corners." ;
+
+            if(ids.total() > 0)
+            {
+                Aruco.drawDetectedMarkers(rgbMat, corners, ids);
+
+                Utils.matToTexture2D(rgbMat, cameraFrameTexture);
+
+                //update material texture
+                cameraFrameMaterial.mainTexture = cameraFrameTexture;
+
+                StopHoloLensMediaFrameSourceGroup();
+            }
+            if(rejectedCorners.Count > 0)
+            {
+                Aruco.drawDetectedMarkers(rgbMat, rejectedCorners);
+            }
+        }
     }
 }
 
