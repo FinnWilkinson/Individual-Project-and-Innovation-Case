@@ -21,6 +21,8 @@ using OpenCVForUnity.CoreModule;
 using OpenCVForUnity.Calib3dModule;
 using OpenCVForUnity.ArucoModule;
 using OpenCVForUnity.UnityUtils;
+using OpenCVForUnity.UtilsModule;
+using OpenCVForUnity.ImgprocModule;
 using OpenCVForUnityExample;
 
 
@@ -195,6 +197,7 @@ namespace HoloLensPoolAid
 
 
             // Aruco detection
+            //arucoDetection();
             arucoDetection();
          
             //update material texture
@@ -305,18 +308,26 @@ namespace HoloLensPoolAid
 
         
          
-        private void arucoDetection()
+        unsafe private void arucoDetection()
         {
             Mat rgbMat = new Mat(cameraFrameTexture.height, cameraFrameTexture.width, CvType.CV_8UC3);
 
-            Utils.fastTexture2DToMat(cameraFrameTexture, rgbMat);
+            
+
+            Utils.texture2DToMat(cameraFrameTexture, rgbMat, flip:false);
+            //int len = Marshal.SizeOf((IntPtr)inBytesPV);
+            //byte[] imageBytes = new byte[len];
+            //Marshal.Copy((IntPtr)inBytesPV, imageBytes, 0, len);
+
+            //MatUtils.copyToMat<Byte>(imageBytes, rgbMat);
+
             Mat ids = new Mat();
             List<Mat> corners = new List<Mat>();
             List<Mat> rejectedCorners = new List<Mat>();
             DetectorParameters parameters = DetectorParameters.create();
 
 
-            Aruco.detectMarkers(rgbMat, Aruco.getPredefinedDictionary(Aruco.DICT_6X6_250), corners, ids, parameters, rejectedCorners);
+            Aruco.detectMarkers(rgbMat, Aruco.getPredefinedDictionary(Aruco.DICT_4X4_50), corners, ids, parameters, rejectedCorners);
 
             myText.text = "Detected " + ids.total().ToString() + " markers. Rejected " + rejectedCorners.Count.ToString() + " corners." ;
 
@@ -324,18 +335,18 @@ namespace HoloLensPoolAid
             {
                 Aruco.drawDetectedMarkers(rgbMat, corners, ids);
 
-                Utils.matToTexture2D(rgbMat, cameraFrameTexture);
 
                 //update material texture
-                cameraFrameMaterial.mainTexture = cameraFrameTexture;
+                Utils.matToTexture2D(rgbMat, cameraFrameTexture);
+                cameraFrameTexture.Apply();
+                //cameraFrameMaterial.mainTexture = cameraFrameTexture;
 
                 StopHoloLensMediaFrameSourceGroup();
-            }
-            if(rejectedCorners.Count > 0)
-            {
-                Aruco.drawDetectedMarkers(rgbMat, rejectedCorners);
-            }
+            }            
         }
+
+
+        
     }
 }
 
