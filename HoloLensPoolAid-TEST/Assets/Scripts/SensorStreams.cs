@@ -312,20 +312,17 @@ namespace HoloLensPoolAid
         {
             Mat rgbMat = new Mat(cameraFrameTexture.height, cameraFrameTexture.width, CvType.CV_8UC3);
 
-            
-
             Utils.texture2DToMat(cameraFrameTexture, rgbMat, flip:false);
-            //int len = Marshal.SizeOf((IntPtr)inBytesPV);
-            //byte[] imageBytes = new byte[len];
-            //Marshal.Copy((IntPtr)inBytesPV, imageBytes, 0, len);
-
-            //MatUtils.copyToMat<Byte>(imageBytes, rgbMat);
 
             Mat ids = new Mat();
             List<Mat> corners = new List<Mat>();
             List<Mat> rejectedCorners = new List<Mat>();
             DetectorParameters parameters = DetectorParameters.create();
 
+            // Camera calib stuff
+            /*
+            Mat distCoeffs = new MatOfDouble(-0.002602963842533594, -0.008751170499511022, -0.0022398259556777236, -5.941804169976817e-05, 0.0);
+            */
 
             Aruco.detectMarkers(rgbMat, Aruco.getPredefinedDictionary(Aruco.DICT_4X4_50), corners, ids, parameters, rejectedCorners);
 
@@ -333,16 +330,94 @@ namespace HoloLensPoolAid
 
             if(ids.total() > 0)
             {
+                // Draw markers 
                 Aruco.drawDetectedMarkers(rgbMat, corners, ids);
 
+                // Camera calibration
+                float width = rgbMat.width();
+                float height = rgbMat.height();
 
-                //update material texture
-                Utils.matToTexture2D(rgbMat, cameraFrameTexture);
+                float imageSizeScale = 1.0f;
+
+                int max_d = (int)Mathf.Max(width, height);
+                double fx = max_d;
+                double fy = max_d;
+                double cx = width / 2.0f;
+                double cy = height / 2.0f;
+                Mat cameraMatrix = new Mat(3, 3, CvType.CV_64FC1);
+                cameraMatrix.put(0, 0, 677.8968352717175f);
+                cameraMatrix.put(0, 1, 0);
+                cameraMatrix.put(0, 2, 439.2388714449508f);
+                cameraMatrix.put(1, 0, 0);
+                cameraMatrix.put(1, 1, 677.1775976226464f);
+                cameraMatrix.put(1, 2, 231.50848952714483f);
+                cameraMatrix.put(2, 0, 0);
+                cameraMatrix.put(2, 1, 0);
+                cameraMatrix.put(2, 2, 1.0f);
+
+                MatOfDouble distCoeffs = new MatOfDouble(0, 0, 0, 0);
+
+                Size imageSize = new Size(width * imageSizeScale, height * imageSizeScale);
+                double apertureWidth = 0;
+                double apertureHeight = 0;
+                double[] fovx = new double[1];
+                double[] fovy = new double[1];
+                double[] focalLength = new double[1];
+                Point principalPoint = new Point(0, 0);
+                double[] aspectratio = new double[1];
+
+                Calib3d.calibrationMatrixValues(cameraMatrix, imageSize, apertureWidth, apertureHeight, fovx, fovy, focalLength, principalPoint, aspectratio);
+
+
+                // Get pose transformations and draw axis 
+                Mat rvecs = new Mat();
+                Mat tvecs = new Mat();
+                Aruco.estimatePoseSingleMarkers(corners, 0.1f, cameraMatrix, distCoeffs, rvecs, tvecs);
+                Calib3d.drawFrameAxes(rgbMat, cameraMatrix, distCoeffs, rvecs, tvecs, 0.05f);
+
+
+
+
+                // Put cube in place
+                ARobject.SetActive(true);
+
+                // Get translation vector
+                double[] tvecArr = tvecs.get(0, 0);
+                // Get rotation vector
+                double[] rvecArr = rvecs.get(0, 0);
+
+                // Convert rotation vectyor to matric
+                Mat rvec = new Mat(3, 1, CvType.CV_64FC1);
+                rvec.put(0, 0, rvecArr);
+
+                Mat rotMat = new Mat(3, 3, CvType.CV_64FC1);
+                double[] rotMatArr = new double[rotMat.total()];
+                Calib3d.Rodrigues(rvec, rotMat);
+                rotMat.get(0, 0, rotMatArr);
+
+                // Convert OpenCV camera extrinsic parameters to Unity Matrix4x4.
+                Matrix4x4 transformationM = new Matrix4x4(); // from OpenCV
+                transformationM.SetRow(0, new Vector4((float)rotMatArr[0], (float)rotMatArr[1], (float)rotMatArr[2], (float)tvecArr[0]));
+                transformationM.SetRow(1, new Vector4((float)rotMatArr[3], (float)rotMatArr[4], (float)rotMatArr[5], (float)tvecArr[1]));
+                transformationM.SetRow(2, new Vector4((float)rotMatArr[6], (float)rotMatArr[7], (float)rotMatArr[8], (float)tvecArr[2]));
+                transformationM.SetRow(3, new Vector4(0, 0, 0, 1));
+
+                Matrix4x4 invertYM = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(1, -1, 1));
+                // right-handed coordinates system (OpenCV) to left-handed one (Unity)
+                // https://stackoverflow.com/questions/30234945/change-handedness-of-a-row-major-4x4-transformation-matrix
+                Matrix4x4 ARM = invertYM * transformationM * invertYM;
+
+                ARM = Camera.main.transform.localToWorldMatrix * ARM;
+
+                ARUtils.SetTransformFromMatrix(ARobject.transform, ref ARM);
+                ARobject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+
+
+                // Update material texture
+                Utils.matToTexture2D(rgbMat, cameraFrameTexture, flip:false);
                 cameraFrameTexture.Apply();
-                //cameraFrameMaterial.mainTexture = cameraFrameTexture;
+            }
 
-                StopHoloLensMediaFrameSourceGroup();
-            }            
         }
 
 
