@@ -19,8 +19,8 @@ public class CollisionPath : MonoBehaviour
     private int layerMask;      // Mask of physics layers we dont want raycast to detect
 
     // Constants needed for cushion rebound path calculations
-    private const float initalVelocity = 1.4f;  // Assumed velocity before impact - based on medium powered shot
-    private const float coefOfRestitution = 0.54f;   // Coefficient of restitution of the table's cushions
+    private const float initalVelocity = 3.0f;  // Assumed velocity before impact - based on medium powered shot
+    private const float coefOfRestitution = 0.9f; //0.54f;   // Coefficient of restitution of the table's cushions
 
     // Start is called before the first frame update
     void Start()
