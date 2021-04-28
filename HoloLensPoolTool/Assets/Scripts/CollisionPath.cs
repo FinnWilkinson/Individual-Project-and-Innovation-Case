@@ -262,23 +262,31 @@ public class CollisionPath : MonoBehaviour
                     // Invokle object ball's line drawing function to draw correct post collision path (0 bounces, 1 collision)
                     closestBall.GetComponent<BallProperties>().DrawCollisionPath(hitBallDirection);
 
-                    // if angle between cue ball direction pre collision and hitBallDirection < 10 degrees, then dont draw post collision cue ball line as will continue straight
                     float angleBetween = Vector3.Angle(direction, hitBallDirection);
-                    if (angleBetween < 10) break;
+                    float rotationAngle = Mathf.PI / 2; // (90 degrees)
+                    // If angle between cue ball direction pre collision and hitBallDirection < 15 degrees, cue ball will travel about 3x angle of hit ball to original vector 
+                    if (angleBetween < 15) rotationAngle = (angleBetween*3 * (Mathf.PI / 180));
+
+                    // If angle between cue ball direction pre collision and hitBallDirection is between 20 and 55 degrees, then cue ball will travel about 30 degrees from initial trajectory line
+                    if (angleBetween >= 15 && angleBetween <= 55) rotationAngle = ((angleBetween + 30.0f) * (Mathf.PI/180));
+
+                    // If angle between cue ball direction pre collision and hitBallDirection is > 55 degrees, cue ball will travel 70% of angle to tangent
+                    if (angleBetween > 55) rotationAngle = (90 + ((90 - angleBetween) * 0.7f)) * (Mathf.PI / 180);
+
 
                     // Rotate hit ball's post collision vector 90 degrees to get cue ball's post collision direction vector
                     float newX, newZ;
                     // If right side of cue ball hits, rotate anti-clockwise
                     if (ballHitR && closestBall == initialHits[2].collider.gameObject)
                     {
-                        newX = hitBallDirection.x * Mathf.Cos(-Mathf.PI / 2) - hitBallDirection.z * Mathf.Sin(-Mathf.PI / 2);
-                        newZ = hitBallDirection.x * Mathf.Sin(-Mathf.PI / 2) + hitBallDirection.z * Mathf.Cos(-Mathf.PI / 2);
+                        newX = hitBallDirection.x * Mathf.Cos(-rotationAngle) - hitBallDirection.z * Mathf.Sin(-rotationAngle);
+                        newZ = hitBallDirection.x * Mathf.Sin(-rotationAngle) + hitBallDirection.z * Mathf.Cos(-rotationAngle);
                     }
                     // If left side of cue ball hits (or centre hit), rotate clockwise
                     else
                     {
-                        newX = hitBallDirection.x * Mathf.Cos(Mathf.PI / 2) - hitBallDirection.z * Mathf.Sin(Mathf.PI / 2);
-                        newZ = hitBallDirection.x * Mathf.Sin(Mathf.PI / 2) + hitBallDirection.z * Mathf.Cos(Mathf.PI / 2);
+                        newX = hitBallDirection.x * Mathf.Cos(rotationAngle) - hitBallDirection.z * Mathf.Sin(rotationAngle);
+                        newZ = hitBallDirection.x * Mathf.Sin(rotationAngle) + hitBallDirection.z * Mathf.Cos(rotationAngle);
                     }
 
                     // Update cue ball's direction vector and firing position
