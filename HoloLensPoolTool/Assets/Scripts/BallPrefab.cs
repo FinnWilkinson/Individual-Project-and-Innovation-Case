@@ -19,6 +19,9 @@ public class BallPrefab : MonoBehaviour
     private GameObject removeBtn;
     private GameObject makeCueBallBtn;
 
+    public GameObject minusBtn;
+    public GameObject plusBtn;
+
     public Material ballMat;
     public Material cueBallMat;
 
@@ -41,7 +44,10 @@ public class BallPrefab : MonoBehaviour
         selected = false;
         allowUI = !GameObject.Find("Toggle_Ball_UI_BTN").GetComponent<Interactable>().IsToggled;
         cueMarker.SetActive(false);
-        buttonsHolder.SetActive(false);   
+        buttonsHolder.SetActive(false);
+
+        minusBtn.SetActive(false);
+        plusBtn.SetActive(false);
 
         //get button game objects 
         removeBtn = buttonsHolder.transform.GetChild(0).gameObject;
@@ -50,10 +56,8 @@ public class BallPrefab : MonoBehaviour
         //Adding button listeners for ball UI
         removeBtn.GetComponent<Interactable>().OnClick.AddListener(() => removeThisBall());
         makeCueBallBtn.GetComponent<Interactable>().OnClick.AddListener(() => setCueBall());
-
-        //Add listeners so know when ball is being moved.
-        ball.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((data) => ballManipulationStarted(data));
-        ball.GetComponent<ObjectManipulator>().OnManipulationEnded.AddListener((data) => ballManipulationEnded(data));
+        plusBtn.GetComponent<Interactable>().OnClick.AddListener(() => addDegree());
+        minusBtn.GetComponent<Interactable>().OnClick.AddListener(() => minusDegree());
 
         //Add listeners so know when marker is being manipulated.
         cueMarker.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((data) => cueMarkerManipulationStarted(data));
@@ -69,26 +73,11 @@ public class BallPrefab : MonoBehaviour
             buttonsHolder.transform.position = ball.transform.position + new Vector3(0.0f, 2.0f * this.transform.localScale.y, 0.0f);
             buttonsHolder.transform.LookAt(mainCamera.transform);
         }
-    }
-
-    //When user grabs ball, turn off aim guide  NOT IN USE ATM - USE IF BAD HOLOLENS PERFORMANCE
-    ManipulationEventData ballManipulationStarted(ManipulationEventData data)
-    {
         if (isCueBall)
         {
-            //cueMarker.GetComponent<LineRenderer>().enabled = false;
+            minusBtn.transform.position = ball.transform.position + new Vector3(-1.0f *this.transform.localScale.y, 0.0f, 0.0f);
+            plusBtn.transform.position = ball.transform.position + new Vector3(1.0f * this.transform.localScale.y, 0.0f, 0.0f);
         }
-        return data;
-    }
-
-    //Once ball is let go, turn on aim guide    NOT IN USE ATM - USE IF BAD HOLOLENS PERFORMANCE
-    ManipulationEventData ballManipulationEnded(ManipulationEventData data)
-    {
-        if (isCueBall)
-        {
-            //cueMarker.GetComponent<LineRenderer>().enabled = true;
-        }
-        return data;
     }
 
     //When user grabs marker, freeze cueball position and change hinge anchor
@@ -113,6 +102,8 @@ public class BallPrefab : MonoBehaviour
         {
             ballObj.GetComponent<BallPrefab>().isCueBall = false;
             ballObj.GetComponent<BallPrefab>().cueMarker.SetActive(false);
+            ballObj.GetComponent<BallPrefab>().minusBtn.SetActive(false);
+            ballObj.GetComponent<BallPrefab>().plusBtn.SetActive(false);
             ballObj.GetComponent<BallPrefab>().ball.GetComponent<MeshRenderer>().material = ballMat;
             ballObj.GetComponent<BallPrefab>().ball.gameObject.layer = 10; //Layer 10 = Ball
         }
@@ -120,6 +111,8 @@ public class BallPrefab : MonoBehaviour
         this.isCueBall = true;
         ball.GetComponent<MeshRenderer>().material = cueBallMat;
         ball.layer = 11; //Layer 11 = Cue_Ball
+        minusBtn.SetActive(true);
+        plusBtn.SetActive(true);
     }
 
     //Shows this balls UI, Invoked by ballProperties.cs when hovered over by user
@@ -136,5 +129,33 @@ public class BallPrefab : MonoBehaviour
     void removeThisBall()
     {
         Destroy(this.gameObject);
+    }
+
+    // Rotates cue marker clockwise 1 degree
+    void addDegree()
+    {
+        //cueMarker.GetComponent<Rigidbody>().isKinematic = false;
+
+        HingeJoint hinge = cueMarker.GetComponent<HingeJoint>();
+        JointSpring hingeSpring = hinge.spring;
+        hingeSpring.spring = 1000;
+        hingeSpring.damper = 0;
+        hingeSpring.targetPosition = hinge.angle + 5.0f;
+        hinge.spring = hingeSpring;
+        hinge.useSpring = true;
+
+        //cueMarker.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
+    // Rotates cue marker anti-clockwise 1 degree
+    void minusDegree()
+    {
+        HingeJoint hinge = cueMarker.GetComponent<HingeJoint>();
+        JointSpring hingeSpring = hinge.spring;
+        hingeSpring.spring = 1000;
+        hingeSpring.damper = 0;
+        hingeSpring.targetPosition = hinge.angle - 5.0f;
+        hinge.spring = hingeSpring;
+        hinge.useSpring = true;
     }
 }
