@@ -267,11 +267,11 @@ public class CollisionPath : MonoBehaviour
                     // If angle between cue ball direction pre collision and hitBallDirection < 15 degrees, cue ball will travel about 3x angle of hit ball to original vector 
                     if (angleBetween < 15) rotationAngle = (angleBetween*3 * (Mathf.PI / 180));
 
-                    // If angle between cue ball direction pre collision and hitBallDirection is between 20 and 55 degrees, then cue ball will travel about 30 degrees from initial trajectory line
+                    // If angle between cue ball direction pre collision and hitBallDirection is between 15 and 55 degrees, then cue ball will travel about 30 degrees from initial trajectory line
                     if (angleBetween >= 15 && angleBetween <= 55) rotationAngle = ((angleBetween + 30.0f) * (Mathf.PI/180));
 
                     // If angle between cue ball direction pre collision and hitBallDirection is > 55 degrees, cue ball will travel 70% of angle to tangent
-                    if (angleBetween > 55) rotationAngle = (90 + ((90 - angleBetween) * 0.7f)) * (Mathf.PI / 180);
+                    if (angleBetween > 55) rotationAngle = (angleBetween + ((90 - angleBetween) * 0.7f)) * (Mathf.PI / 180);
 
 
                     // Rotate hit ball's post collision vector 90 degrees to get cue ball's post collision direction vector
