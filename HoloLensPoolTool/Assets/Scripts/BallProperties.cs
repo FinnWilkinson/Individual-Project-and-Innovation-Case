@@ -94,8 +94,8 @@ public class BallProperties : MonoBehaviour
         positions[0] = this.transform.position - new Vector3(0.0f, ballHeightOffset, 0.0f);
 
         //Set layerMask so that raycast doesnt interact or detect unwanted physics layers
-        //Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball
-        int layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11);
+        //Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball, Layer 5 : UI
+        int layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11); layerMask -= (1 << 5);
 
         RaycastHit hit;
 

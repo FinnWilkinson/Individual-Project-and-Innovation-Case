@@ -32,9 +32,15 @@ public class ToggleBallUI : MonoBehaviour
             //if toggled, Hide all currently showing UI
             foreach (GameObject ballObj in GameObject.FindGameObjectsWithTag("Ball_Marker"))
             {
-                ballObj.GetComponent<BallPrefab>().SetSelected(false);
+                BallPrefab script = ballObj.GetComponent<BallPrefab>();
+                script.SetSelected(false);
                 //prevent any UI from showing
-                ballObj.GetComponent<BallPrefab>().allowUI = false;
+                script.allowUI = false;
+                // Hide +- btns
+                if(script.isCueBall == true)
+                {
+                    script.degreeBtnHolder.SetActive(false);
+                }
             }
         }
         else
@@ -43,6 +49,11 @@ public class ToggleBallUI : MonoBehaviour
             foreach (GameObject ballObj in GameObject.FindGameObjectsWithTag("Ball_Marker"))
             {
                 ballObj.GetComponent<BallPrefab>().allowUI = true;
+                // Show +- btns
+                if (ballObj.GetComponent<BallPrefab>().isCueBall == true)
+                {
+                    ballObj.GetComponent<BallPrefab>().degreeBtnHolder.SetActive(true);
+                }
             }
         }
     }

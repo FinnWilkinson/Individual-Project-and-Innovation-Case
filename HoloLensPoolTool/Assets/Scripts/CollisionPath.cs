@@ -29,8 +29,8 @@ public class CollisionPath : MonoBehaviour
         radius = ball.transform.parent.transform.localScale.x * ball.GetComponent<SphereCollider>().radius;
 
         // Set layerMask so that raycast doesnt interact or detect unwanted physics layers
-        // Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball
-        layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11);
+        // Unwanted  = Layer 8 : ball_marker, Layer 11 : Cue_Ball, Layer 5 : UI
+        layerMask = unchecked((int)0xFFFFFFFF - (1 << 8)); layerMask -= (1 << 11); layerMask -= (1 << 5);
 
         // Initialise the line renderer
         InitialiseLineRenderer();

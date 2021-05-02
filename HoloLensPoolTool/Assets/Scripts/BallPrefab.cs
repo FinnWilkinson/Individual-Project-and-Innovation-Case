@@ -21,9 +21,13 @@ public class BallPrefab : MonoBehaviour
 
     public GameObject minusBtn;
     public GameObject plusBtn;
+    public GameObject degreeBtnHolder;
 
     public Material ballMat;
     public Material cueBallMat;
+
+    public Material cueMarkerDefault;
+    public Material cueMarkerHovered;
 
     public bool isCueBall;
     public bool selected;
@@ -45,9 +49,7 @@ public class BallPrefab : MonoBehaviour
         allowUI = !GameObject.Find("Toggle_Ball_UI_BTN").GetComponent<Interactable>().IsToggled;
         cueMarker.SetActive(false);
         buttonsHolder.SetActive(false);
-
-        minusBtn.SetActive(false);
-        plusBtn.SetActive(false);
+        degreeBtnHolder.SetActive(false);
 
         //get button game objects 
         removeBtn = buttonsHolder.transform.GetChild(0).gameObject;
@@ -62,6 +64,13 @@ public class BallPrefab : MonoBehaviour
         //Add listeners so know when marker is being manipulated.
         cueMarker.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((data) => cueMarkerManipulationStarted(data));
         cueMarker.GetComponent<ObjectManipulator>().OnManipulationEnded.AddListener((data) => cueMarkerManipulationEnded(data));
+
+        //Add Listener so know when ball is being manipulated.
+        ball.GetComponent<ObjectManipulator>().OnManipulationStarted.AddListener((data) => ballManipulationStarted(data));
+
+        //Add listener so know when hover entered and exited for cue marker
+        cueMarker.GetComponent<ObjectManipulator>().OnHoverEntered.AddListener((data) => markerHoverEntered(data));
+        cueMarker.GetComponent<ObjectManipulator>().OnHoverExited.AddListener((data) => markerHoverExit(data));
     }
 
     // Update is called once per frame
@@ -73,16 +82,17 @@ public class BallPrefab : MonoBehaviour
             buttonsHolder.transform.position = ball.transform.position + new Vector3(0.0f, 2.0f * this.transform.localScale.y, 0.0f);
             buttonsHolder.transform.LookAt(mainCamera.transform);
         }
-        if (isCueBall)
+        if (isCueBall && allowUI)
         {
-            minusBtn.transform.position = ball.transform.position + new Vector3(-1.0f *this.transform.localScale.y, 0.0f, 0.0f);
-            plusBtn.transform.position = ball.transform.position + new Vector3(1.0f * this.transform.localScale.y, 0.0f, 0.0f);
+            degreeBtnHolder.transform.position = ball.transform.position;
+            degreeBtnHolder.transform.LookAt(cueMarker.transform);
         }
     }
 
-    //When user grabs marker, freeze cueball position and change hinge anchor
+    //When user grabs marker, freeze cueball position and change hinge anchor, makes kinematic so not bound to hinge spring and marker moves with ball.
     ManipulationEventData cueMarkerManipulationStarted(ManipulationEventData data)
     {
+        cueMarker.GetComponent<Rigidbody>().isKinematic = true;
         ball.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         cueMarker.GetComponent<HingeJoint>().connectedAnchor = ball.transform.position;
         return data;
@@ -95,6 +105,27 @@ public class BallPrefab : MonoBehaviour
         return data;
     }
 
+    // When ball grabbed, make marker kinematic so spring hinge doesnt effect it, and marker moves with the ball
+    ManipulationEventData ballManipulationStarted(ManipulationEventData data)
+    {
+        cueMarker.GetComponent<Rigidbody>().isKinematic = true;
+        return data;
+    }
+
+    // When cue marker is hovered over, change material so know youre looking at it
+    ManipulationEventData markerHoverEntered(ManipulationEventData data)
+    {
+        cueMarker.GetComponent<MeshRenderer>().material = cueMarkerHovered;
+        return data;
+    }
+
+    // When cue marker is not hovered over anymore, change material back to default
+    ManipulationEventData markerHoverExit(ManipulationEventData data)
+    {
+        cueMarker.GetComponent<MeshRenderer>().material = cueMarkerDefault;
+        return data;
+    }
+
     //Makes this ball cue ball, and all others not
     void setCueBall()
     {
@@ -102,8 +133,7 @@ public class BallPrefab : MonoBehaviour
         {
             ballObj.GetComponent<BallPrefab>().isCueBall = false;
             ballObj.GetComponent<BallPrefab>().cueMarker.SetActive(false);
-            ballObj.GetComponent<BallPrefab>().minusBtn.SetActive(false);
-            ballObj.GetComponent<BallPrefab>().plusBtn.SetActive(false);
+            ballObj.GetComponent<BallPrefab>().degreeBtnHolder.SetActive(false);
             ballObj.GetComponent<BallPrefab>().ball.GetComponent<MeshRenderer>().material = ballMat;
             ballObj.GetComponent<BallPrefab>().ball.gameObject.layer = 10; //Layer 10 = Ball
         }
@@ -111,11 +141,11 @@ public class BallPrefab : MonoBehaviour
         this.isCueBall = true;
         ball.GetComponent<MeshRenderer>().material = cueBallMat;
         ball.layer = 11; //Layer 11 = Cue_Ball
-        minusBtn.SetActive(true);
-        plusBtn.SetActive(true);
+        degreeBtnHolder.SetActive(true);
     }
 
-    //Shows this balls UI, Invoked by ballProperties.cs when hovered over by user
+    // Shows this balls UI, Invoked by ballProperties.cs when hovered over by user
+    // Makes cue marker kinematic so not bound to hinge spring and marker moves with ball.
     public void SetSelected(bool val)
     {
         if (allowUI)
@@ -134,27 +164,33 @@ public class BallPrefab : MonoBehaviour
     // Rotates cue marker clockwise 1 degree
     void addDegree()
     {
-        //cueMarker.GetComponent<Rigidbody>().isKinematic = false;
+        cueMarker.GetComponent<Rigidbody>().isKinematic = false;
+        cueMarker.GetComponent<Rigidbody>().WakeUp();
+
+        cueMarker.GetComponent<HingeJoint>().connectedAnchor = ball.transform.position;
 
         HingeJoint hinge = cueMarker.GetComponent<HingeJoint>();
         JointSpring hingeSpring = hinge.spring;
         hingeSpring.spring = 1000;
         hingeSpring.damper = 0;
-        hingeSpring.targetPosition = hinge.angle + 5.0f;
+        hingeSpring.targetPosition = hinge.angle + 1.0f;
         hinge.spring = hingeSpring;
         hinge.useSpring = true;
-
-        //cueMarker.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     // Rotates cue marker anti-clockwise 1 degree
     void minusDegree()
     {
+        cueMarker.GetComponent<Rigidbody>().isKinematic = false;
+        cueMarker.GetComponent<Rigidbody>().WakeUp();
+
+        cueMarker.GetComponent<HingeJoint>().connectedAnchor = ball.transform.position;
+
         HingeJoint hinge = cueMarker.GetComponent<HingeJoint>();
         JointSpring hingeSpring = hinge.spring;
         hingeSpring.spring = 1000;
         hingeSpring.damper = 0;
-        hingeSpring.targetPosition = hinge.angle - 5.0f;
+        hingeSpring.targetPosition = hinge.angle - 1.0f;
         hinge.spring = hingeSpring;
         hinge.useSpring = true;
     }
